@@ -67,15 +67,13 @@ This research builds on and cross-verifies earlier disclosures, binary teardowns
 │   └── tools/                       # Reproduction tooling
 │       ├── tailscale_ssh_proxy.py   # Port 3130 stdio CONNECT tunnel helper
 │       └── README.md
-├── part2-the-mind/                  # Track 2: Cognitive Engine & Sentinel Whitepaper
-│   ├── README.md                    # Multi-cadence loops, dreaming, and Sentinel security
-│   └── references/                  # Sanitized architecture references
-│       ├── alignment_synthesis_sample.md
-│       ├── hatch_hook_runtime.sh    # silent() vs wake() event throttling wrapper
-│       ├── inferred_goal_leads_sample.md
-│       └── self_improvement.md
-└── articles/                        # Editorial Release
-    └── deconstructing-meta-muse-architecture.md  # Condensed technical article
+└── part2-the-mind/                  # Track 2: Cognitive Engine & Sentinel Whitepaper
+    ├── README.md                    # Multi-cadence loops, dreaming, and Sentinel security
+    └── references/                  # Sanitized architecture references
+        ├── alignment_synthesis_sample.md
+        ├── hatch_hook_runtime.sh    # silent() vs wake() event throttling wrapper
+        ├── inferred_goal_leads_sample.md
+        └── self_improvement.md
 ```
 
 * 📁 [**Part 1: The Cage — Sandbox Confinement, Storage & Network Mediation**](part1-the-cage/README.md)
@@ -87,14 +85,11 @@ This research builds on and cross-verifies earlier disclosures, binary teardowns
   * Autonomous agent systems whitepaper deconstructing the multi-frequency cognitive daemons, nightly alignment synthesis, latent goal inference engine (`INFERRED_GOAL_LEADS`), shell hook throttling (`silent()` vs `wake()`), and Sentinel IPC architecture.
   * [Architecture References](part2-the-mind/references/) (sanitized cognitive engine schemas and hook runtime)
 
-* 📄 [**Editorial Article: Deconstructing Meta Muse Architecture**](articles/deconstructing-meta-muse-architecture.md)
-  * Condensed architectural teardown and takeaways for enterprise AI platform engineers.
-
 ---
 
 ## Methodology & Safety
 
-All findings were obtained via non-invasive, black-box diagnostic probing from within an authorized container session. No exploits were attempted, no host boundaries were breached, and no external services were disrupted. 
+All findings were obtained via non-invasive, black-box diagnostic probing from within an authorized container session. No exploits were attempted, no host boundaries were breached, and no external services were disrupted.
 
 All proprietary session identifiers, internal hostnames (`*.metaaivm.com`), access tokens, and personal user context have been rigorously scrubbed and de-identified.
 
