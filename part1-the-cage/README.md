@@ -2,7 +2,8 @@
 
 ## A boundary, resource-accounting, storage, and egress whitepaper
 
-**Assessment date:** 29 September 2026  
+**Assessment date:** 29 September 2026
+**Provenance:** single instance, single session — all measurements from one workload cell on the date above.  
 **Platform observed:** Ubuntu 24.04.5 LTS, Linux 7.0.0-38-generic, x86_64  
 **Assessment style:** non-invasive, black-box diagnostics from inside the workload environment
 

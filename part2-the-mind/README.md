@@ -148,7 +148,7 @@ The defining security innovation in Meta Muse is the **complete decoupling of au
 ### Core Security Rules
 
 1. **Free Text is Never Consent:**
-   If a user types *"Go ahead and charge my card"*, the LLM cannot execute the transaction. Tool calls that perform state-changing operations trigger Sentinel, which pushes an interactive cryptographic card to the client UI.
+   If a user types *"Go ahead and charge my card"*, the LLM cannot execute the transaction. Tool calls that perform state-changing operations trigger Sentinel, which pushes an interactive approval card to the client UI.
 2. **Opaque Approval Cards:**
    The agent is blind to the approval card's layout, buttons, and wording (`docs/privacy-and-credentials.md`). This eliminates prompt-injection attacks where an adversarial prompt instructs the model to mislead the user about what button they are pressing.
 3. **Credential Isolation (`authd`):**
@@ -174,7 +174,7 @@ During diagnostic probing of the container environment (Diagnostic Session 1, tu
    ```
 4. **Agent Self-Remediation:** The injection forced the agent to immediately re-steer its execution path, running `sed` commands across disk evidence files to sanitize the leaked token before resuming normal execution.
 
-This empirical sequence proves Sentinel is a **real-time bidirectional proxy and middlebox**, preventing credential leaks even when the agent is running with unrestricted container root authority.
+This empirical sequence is consistent with Sentinel acting as a **real-time bidirectional proxy and middlebox**, preventing credential leaks even when the agent is running with unrestricted container root authority. A single incident does not prove the full mechanism; it establishes the interception behavior for this class of event.
 
 ---
 
@@ -182,5 +182,5 @@ This empirical sequence proves Sentinel is a **real-time bidirectional proxy and
 
 1. **Decouple Cognitive Frequencies:** Do not run memory consolidation inside the active conversational turn. Move it to hourly and nightly background passes.
 2. **Implement Conversational Self-Healing:** Maintain an alignment synthesis document where the agent logs communication frictions and register preferences.
-3. **Never Trust the LLM for Approvals:** Build an out-of-band security interceptor (like Sentinel) where financial and sensitive operations require cryptographic UI interaction outside the model's token stream.
+3. **Never Trust the LLM for Approvals:** Build an out-of-band security interceptor (like Sentinel) where financial and sensitive operations require out-of-band UI interaction outside the model's token stream.
 4. **Throttle Polling with Shell Hooks:** Never invoke an LLM just to check if a web page changed. Use lightweight shell scripts with `silent()` / `wake()` gates.

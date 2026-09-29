@@ -2,7 +2,7 @@
 
 Most discussions about autonomous AI agents revolve around prompt engineering, function calling, or basic vector RAG. But when hyperscalers build stateful, persistent personal agents that run on dedicated cloud instances, the engineering challenges shift entirely to **operating system virtualization, execution throttling, memory consolidation, and non-bypassable security planes**.
 
-Over the last several days, through non-invasive black-box probing and telemetry audits of Meta’s **Muse / Hatch** runtime (`htch-runtime`), we reverse-engineered the underlying architecture.
+On 29 September 2026, through a single session of non-invasive black-box probing and telemetry audits of Meta’s **Muse / Hatch** runtime (`htch-runtime`), we reverse-engineered the underlying architecture.
 
 Here is what is actually running under the hood—and the lessons enterprise agent builders can take from it.
 
@@ -18,7 +18,7 @@ A common misconception is that personal AI agents run in bare containers or gene
 │ ┌─────────────────────────────────────────────────────────┐ │
 │ │ systemd-nspawn Container (htch-runtime)                 │ │
 │ │  - User Namespace: in-container uid 0 -> host uid 131072 │ │
-│ │  - Seccomp Mode 2 (4 BPF filters; dmesg/ptrace blocked) │ │
+│ │  - Seccomp Mode 2 (4 BPF filters); `dmesg` gated by `dmesg_restrict`, ptrace limited to own children │ │
 │ │  - Storage: Btrfs 100GB (compress-force=zstd:3)         │ │
 │ └────────────────────────────┬────────────────────────────┘ │
 │                              │                              │
@@ -31,9 +31,9 @@ A common misconception is that personal AI agents run in bare containers or gene
 └─────────────────────────────────────────────────────────────┘
 ```
 
-1. **Unrestricted In-Container Root:** The agent is `root` (`uid=0`) inside the container. It can run `apt-get install`, compile C/Rust code, and write across `/`, `/etc`, and `/usr`.
+1. **Unrestricted In-Container Root:** The agent is `root` (`uid=0`) inside the container. It can run `apt-get install`, compile C code, and write across `/`, `/etc`, and `/usr`.
 2. **Hard User Namespace Boundary:** Container `uid 0` is remapped to `131072` on the host. `NoNewPrivs: 1` is permanently set, and `cap_sys_ptrace` is dropped from effective sets.
-3. **Storage Overmounts for Package Caching:** To prevent package updates from exhausting the 7.5 GB overlayfs root, `/var/cache/apt/archives` is overmounted on a 100 GB Btrfs partition backed by `compress-force=zstd:3`. Writing 2 GB of zeroes consumes near-zero physical disk blocks.
+3. **Storage Overmounts for Package Caching:** To prevent package updates from exhausting the 7.5 GB overlayfs root, `/var/cache/apt/archives` is overmounted on a 100 GB Btrfs partition backed by `compress-force=zstd:3`. Writing 2 GB of zeroes consumed about 58 MB of reported space.
 4. **Synthetic DNS & Ephemeral VIP Pools:** The container cannot reach external DNS resolvers. The local resolver hijacks all queries and assigns dynamic VIPs in the benchmark supernet `198.18.0.0/15`. An `A` record lookup for `non-existent-probe.invalid` returns `NOERROR` with a valid VIP.
 
 ---
@@ -55,7 +55,7 @@ If an agent decides whether to charge a card or send an email based on prompt co
 
 Muse enforces an **out-of-band policy daemon called "Sentinel"**:
 - Sentinel communicates into the container via dedicated Unix domain sockets (`/run/hatch/sentinel/`, `authd.sock`, `security.sock`).
-- **Core Rule: Free Text is Never Consent.** If the user types *"Yes, send the money"*, the model is architecturally prevented from acting. The tool call is intercepted by Sentinel, which renders a native cryptographic approval card on the user's client device.
+- **Core Rule: Free Text is Never Consent.** If the user types *"Yes, send the money"*, the model is architecturally prevented from acting. The tool call is intercepted by Sentinel, which renders a native approval card on the user's client device.
 - **Agent Blindness:** The model cannot see the approval card, its layout, or its wording. It cannot instruct the user on which button to click.
 - **Credential Isolation:** 2FA SMS verification codes never enter the LLM's prompt context. `authd` isolates the code and directly injects it into the browser DOM via `credential_fill`.
 
