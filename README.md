@@ -1,5 +1,11 @@
 # Meta Muse Systems Architecture
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Ubuntu%2024.04%20%7C%20Linux%207.0-informational.svg)](part1-the-cage/)
+[![Isolation](https://img.shields.io/badge/Isolation-Cloud%20Hypervisor%20%2B%20nspawn-orange.svg)](part1-the-cage/)
+[![Security Plane](https://img.shields.io/badge/Security-Sentinel%20Daemon%20(Out--of--Band)-red.svg)](part2-the-mind/)
+[![Methodology](https://img.shields.io/badge/Methodology-Black--Box%20Verification-brightgreen.svg)](part1-the-cage/evidence/)
+
 > Meta published the blueprint. We measured the building.<br>
 > Independent black-box verification of Meta's published Secure VM architecture, with new measurements from inside the runtime cell (`htch-runtime`).
 
@@ -84,6 +90,17 @@ This research builds on and cross-verifies earlier disclosures, binary teardowns
 * 📁 [**Part 2: The Mind — Cognitive Cadences, State Loops & Sentinel Security**](part2-the-mind/README.md)
   * Autonomous agent systems whitepaper deconstructing the multi-frequency cognitive daemons, nightly alignment synthesis, latent goal inference engine (`INFERRED_GOAL_LEADS`), shell hook throttling (`silent()` vs `wake()`), and Sentinel IPC architecture.
   * [Architecture References](part2-the-mind/references/) (sanitized cognitive engine schemas and hook runtime)
+
+---
+
+## About `sys-dissect`
+
+**sys-dissect** is an independent systems research initiative dedicated to the empirical dissection, boundary verification, and containment analysis of production AI runtimes and autonomous agent infrastructure.
+
+### Research Principles
+- **Measure Runtime Realities:** Architecture blueprints and design disclosures present intended models; empirical probing verifies actual kernel filters, hypervisor mediation, and storage behavior.
+- **Zero-Trust Boundary Analysis:** Model token streams and prompt wrappers are never trusted for authorization; isolation guarantees must be physically enforced out-of-band by the operating system, container runtime, and hypervisor.
+- **Responsible & Non-Invasive:** All diagnostics are conducted via bounded, black-box inspection inside authorized workload sessions. No exploits are staged, no host boundaries are breached, and all proprietary tokens or user telemetry are strictly sanitized before publication.
 
 ---
 
