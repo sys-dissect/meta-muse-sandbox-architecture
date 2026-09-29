@@ -9,6 +9,16 @@
 
 > **Central finding:** This is not a conventional unrestricted virtual machine. It is a layered runtime: a Cloud Hypervisor/KVM guest contains a systemd-nspawn workload cell whose root user is remapped through a user namespace. Filesystem overlays, capability rules, seccomp filters, read-only bind mounts, synthetic DNS, transparent traffic redirection, and TLS re-signing create separate control planes. `uid 0` is useful inside the cell, but it is not host root and does not imply direct device, kernel, network, or host-service access.
 
+> [!IMPORTANT]
+> **Novel Observations (What's New Beyond Meta's Published Architecture):**
+> 1. **Synthetic DNS VIP Allocation:** RFC 2544 benchmark supernet (`198.18.0.0/15`) dynamically mapped to external hosts, returning `NOERROR` even for non-existent domains.
+> 2. **Egress CA Certificate Details:** On-the-fly TLS inspection and re-signing verified via locally installed per-instance egress CA trust anchors.
+> 3. **AF_VSOCK Hypervisor Channel:** Confirmed connectivity to CID 2 (the hypervisor host) on port 512, identifying the narrow guest-host boundary.
+> 4. **Transparent Compression Accounting:** 2 GB of zeroes written to `/var/cache/apt/archives` consumed only ~58 MB of physical storage, verifying Btrfs `compress-force=zstd:3` overmount behavior.
+> 5. **Observed Sentinel Interception:** Empirical capture of real-time stream scrubbing and transcript excision when credentials were leaked during diagnostics, forcing an immediate out-of-band agent re-steering.
+>
+> *For context against prior teardowns, host hardware analyses, and official disclosures, see the [Related Work](../README.md#related-work) section in the root repository.*
+
 ---
 
 ## Table of contents

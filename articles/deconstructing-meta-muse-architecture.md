@@ -2,9 +2,11 @@
 
 Most discussions about autonomous AI agents revolve around prompt engineering, function calling, or basic vector RAG. But when hyperscalers build stateful, persistent personal agents that run on dedicated cloud instances, the engineering challenges shift entirely to **operating system virtualization, execution throttling, memory consolidation, and non-bypassable security planes**.
 
-On 29 September 2026, through a single session of non-invasive black-box probing and telemetry audits of Meta’s **Muse / Hatch** runtime (`htch-runtime`), we reverse-engineered the underlying architecture.
+On September 8, 2026, Meta published the high-level architecture for Muse (*"Security and safety for AI agents: our approach with Muse"*, research.meta.ai), detailing their Secure VM design, `systemd-nspawn` containerization, and out-of-band Sentinel security daemon.
 
-Here is what is actually running under the hood—and the lessons enterprise agent builders can take from it.
+On 29 September 2026, through a single session of non-invasive black-box probing and telemetry audits of the live **Muse / Hatch** runtime (`htch-runtime`), we conducted an independent verification of Meta's architecture from inside the workload cell—confirming the published boundaries and capturing new, undocumented runtime measurements.
+
+Here is what empirical measurement confirms—and what was observed beyond the blueprint.
 
 ---
 
@@ -31,10 +33,10 @@ A common misconception is that personal AI agents run in bare containers or gene
 └─────────────────────────────────────────────────────────────┘
 ```
 
-1. **Unrestricted In-Container Root:** The agent is `root` (`uid=0`) inside the container. It can run `apt-get install`, compile C code, and write across `/`, `/etc`, and `/usr`.
-2. **Hard User Namespace Boundary:** Container `uid 0` is remapped to `131072` on the host. `NoNewPrivs: 1` is permanently set, and `cap_sys_ptrace` is dropped from effective sets.
-3. **Storage Overmounts for Package Caching:** To prevent package updates from exhausting the 7.5 GB overlayfs root, `/var/cache/apt/archives` is overmounted on a 100 GB Btrfs partition backed by `compress-force=zstd:3`. Writing 2 GB of zeroes consumed about 58 MB of reported space.
-4. **Synthetic DNS & Ephemeral VIP Pools:** The container cannot reach external DNS resolvers. The local resolver hijacks all queries and assigns dynamic VIPs in the benchmark supernet `198.18.0.0/15`. An `A` record lookup for `non-existent-probe.invalid` returns `NOERROR` with a valid VIP.
+1. **Unrestricted In-Container Root:** Confirmed from inside the cell: the agent operates as `root` (`uid=0`) inside the container. It can run `apt-get install`, compile C code, and write across `/`, `/etc`, and `/usr`.
+2. **Hard User Namespace Boundary & Capability Drops:** As outlined in Meta's architecture disclosure, container `uid 0` is remapped to `131072` on the host. Empirical probes confirm that `NoNewPrivs: 1` is permanently enforced, `cap_sys_ptrace` is dropped from effective sets (limiting ptrace to own children), `dmesg` is gated by `dmesg_restrict`, and `io_uring` is strictly rejected under Seccomp Mode 2 (4 BPF filters).
+3. **Storage Overmounts for Package Caching:** To prevent package updates from exhausting the 7.5 GB overlayfs root, `/var/cache/apt/archives` is overmounted on a 100 GB Btrfs partition backed by `compress-force=zstd:3`. Writing 2 GB of zeroes consumed only ~58 MB of actual disk space, confirming aggressive transparent compression in practice.
+4. **Synthetic DNS & Ephemeral VIP Pools (Undocumented):** The container cannot reach external DNS resolvers. The local resolver hijacks all queries and assigns dynamic VIPs in the RFC 2544 benchmark supernet `198.18.0.0/15`. An `A` record lookup for `non-existent-probe.invalid` returns `NOERROR` with an allocated VIP, proving service discovery is fully synthetic.
 
 ---
 
@@ -53,11 +55,12 @@ Stateless agent frameworks fail over long horizons because context windows degra
 
 If an agent decides whether to charge a card or send an email based on prompt context, it is vulnerable to prompt injection and social engineering.
 
-Muse enforces an **out-of-band policy daemon called "Sentinel"**:
+Meta disclosed the existence of an **out-of-band policy daemon called "Sentinel"** as the sole egress and policy authority. Probing the runtime cell confirms the physical implementation of this design and captures its active enforcement mechanisms:
 - Sentinel communicates into the container via dedicated Unix domain sockets (`/run/hatch/sentinel/`, `authd.sock`, `security.sock`).
-- **Core Rule: Free Text is Never Consent.** If the user types *"Yes, send the money"*, the model is architecturally prevented from acting. The tool call is intercepted by Sentinel, which renders a native approval card on the user's client device.
+- **Core Rule: Free Text is Never Consent.** If the user types *"Yes, send the money"*, the model is architecturally prevented from acting. The tool call is intercepted by Sentinel, which renders a native approval card on the user's client device (verifying the "hard gate" reported in industry coverage).
 - **Agent Blindness:** The model cannot see the approval card, its layout, or its wording. It cannot instruct the user on which button to click.
 - **Credential Isolation:** 2FA SMS verification codes never enter the LLM's prompt context. `authd` isolates the code and directly injects it into the browser DOM via `credential_fill`.
+- **Observed In-Flight Interception:** Beyond the static socket interfaces, runtime testing captured live output scrubbing in action: when an environment dump exposed proxy credentials during diagnostics, Sentinel intercepted the stream in flight, excised the turn from the transcript, and injected an out-of-band runtime notice that forced the agent to self-remediate.
 
 ---
 

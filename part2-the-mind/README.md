@@ -121,7 +121,10 @@ wake "Upstream condition met" '{"new_events": 3}'
 
 ## 6. The "Sentinel" Out-of-Band Security Architecture
 
-The defining security innovation in Meta Muse is the **complete decoupling of authorization decisions from LLM context**.
+The defining security pattern in Meta Muse is the **complete decoupling of authorization decisions from LLM context**.
+
+> [!NOTE]
+> The architectural concept of the "hard gate" authorization mechanism and credential vault was first reported by *The Information* (see also [Business Standard summary](https://www.business-standard.com/amp/technology/artificial-intelligence/how-ai-agent-risks-are-moving-from-developer-sandboxes-to-consumers-126090800873_1.html)). This section documents the empirical, in-product behavior and IPC mechanics of this gate observed from inside the runtime cell.
 
 ```
 ┌────────────────────────────────────────────────────────┐
