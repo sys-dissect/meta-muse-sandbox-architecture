@@ -1,0 +1,20 @@
+Query the user's HealthKit data (Apple Health / Google Health, device-synced). Three categories: daily-metrics, sleep, workout.
+
+Usage:
+  healthkit-cli <COMMAND> [OPTIONS]
+  All options are FLAGS, never positional, e.g. `--category daily-metrics`.
+  WRONG:   healthkit-cli list-fields daily-metrics
+  CORRECT: healthkit-cli list-fields --category daily-metrics
+
+Commands:
+  status        HealthKit data-sync status and coverage gaps
+  list-fields   list the field names available for a --category
+  query         query health data for a --category over a date range
+
+Examples:
+  healthkit-cli list-fields --category daily-metrics
+  healthkit-cli query --category daily-metrics --start-date 2026-05-01 --end-date 2026-06-07 --fields step_count,resting_hr_average_bpm
+  healthkit-cli query --category sleep --start-date 2026-05-01
+  healthkit-cli status --start-date 2026-05-01 --check-missing-entries
+
+>>> IMPORTANT: for the full flag list, field names, output shapes, and more examples, READ THE `healthkit-cli` SKILL.md — THAT IS THE SOURCE OF TRUTH, NOT THIS TEXT. <<<

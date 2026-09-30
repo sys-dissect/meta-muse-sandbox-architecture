@@ -1,0 +1,11 @@
+Read or delete stored contacts and calendar data
+
+Usage: device-data <COMMAND>
+
+Commands:
+  contacts  
+  calendar  
+  help      Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help

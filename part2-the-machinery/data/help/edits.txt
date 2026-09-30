@@ -1,0 +1,14 @@
+Development-only client for the Multimango edits worker. Available only on internal-test builds. Reads one per-session capability token from JARVIS_EDITS_CAPABILITY_TOKEN, which is HMAC-scoped, expiring, and carries no authority beyond this tool's four fixed operations. There is no command-line flag for the token, so that it never enters a command line: assign it on the same line as the command, because every invocation is a fresh shell.
+
+Usage: edits <COMMAND>
+
+Commands:
+  open     Open the edit session this capability token names
+  status   Report the current state of this token's edit session
+  reorder  Replace the session's clip order with this exact ordered list
+  close    Close this token's edit session
+  help     Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help
+          Print help (see a summary with '-h')

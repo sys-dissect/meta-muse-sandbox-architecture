@@ -1,0 +1,80 @@
+Meta 1P product catalog search.
+
+Usage: meta-catalog-search [OPTIONS]
+
+Options:
+  -q, --query <QUERIES>
+          Semantic query (repeatable)
+
+      --visual-query <VISUAL_QUERIES>
+          Visual/text-to-visual search queries (repeatable)
+
+      --image-path <IMAGE>
+          Image file path for direct catalog image search (repeatable)
+
+  -n, --num-results <NUM_RESULTS>
+          Number of products to request per semantic query
+          
+          [default: 20]
+
+      --category <CATEGORIES>
+          Category constraint (repeatable). Products MUST match
+
+      --brand <BRANDS>
+          Product-brand ranking preference (repeatable). Matching brands rank first, with other brands available as backfill
+
+      --domain <DOMAINS>
+          Seller-domain ranking preference (repeatable). Accepts a canonical hostname, ranks matching sellers first, and may backfill from others
+
+      --gender <GENDER>
+          Gender constraint
+          
+          [possible values: male, female, unisex]
+
+      --currency <CURRENCIES>
+          Price currency constraint (repeatable). Required when using price filters
+
+      --min-price <MIN_PRICE>
+          Minimum price in cents (e.g. 500 = $5.00). Requires --currency
+
+      --max-price <MAX_PRICE>
+          Maximum price in cents (e.g. 2500 = $25.00). Requires --currency
+
+      --color <COLORS>
+          Color preference boost (repeatable)
+
+      --material <MATERIALS>
+          Material preference boost (repeatable)
+
+      --style <STYLES>
+          Style preference boost (repeatable)
+
+      --prefer-brand <PREFER_BRANDS>
+          Brand preference boost (repeatable). Distinct from --brand constraint
+
+      --prefer-gender <PREFER_GENDER>
+          Gender preference boost
+          
+          [possible values: male, female, unisex]
+
+      --age-group <AGE_GROUPS>
+          Age group preference boost (repeatable)
+
+      --seller-type <SELLER_TYPE>
+          Seller-type ranking preference: direct (default) or secondhand
+          
+          [default: direct]
+          [possible values: direct, secondhand]
+
+      --boost-brand-seller-website <BOOL>
+          Boost official seller websites associated with --brand (default: true)
+          
+          [possible values: true, false]
+
+      --out <OUT>
+          Where to write the parsed products JSON output.
+          
+          Required unless using --no-save, --stdout, --raw, or --json.
+
+      --no-save
+          Don't write the tool payload to disk

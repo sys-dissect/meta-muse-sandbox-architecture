@@ -1,0 +1,13 @@
+Publish podcasts, and put a workspace file on Hatch's own storage and get a link back.
+
+Usage: remote-storage [OPTIONS] <COMMAND>
+
+Commands:
+  upload-file        Publish a workspace file and print a link to it that expires on its own
+  delete-file        Take down a file published by `upload-file`, before its link expires
+  publish-episode    Publish a podcast episode: upload audio, update the feed manifest, and regenerate the RSS
+  unpublish-episode  Remove an episode from a feed and regenerate the RSS
+
+Options:
+      --timeout-secs <TIMEOUT_SECS>  HTTP timeout in seconds. Not applied to `upload-file`, whose duration is a function of file size rather than of anything going wrong [default: 120]
+  -h, --help                         Print help

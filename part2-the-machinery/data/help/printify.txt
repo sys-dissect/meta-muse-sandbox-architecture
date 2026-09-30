@@ -1,0 +1,28 @@
+Printify API helper for Jarvis (personal access token auth).
+
+Usage: printify [OPTIONS] <COMMAND>
+
+Commands:
+  status           Check connection status
+  authorize-url    Return the Muse connect URL for Printify API-key setup
+  verify           Verify stored API key by calling the Printify API
+  set-token        Store a personal access token (reads from stdin)
+  disconnect       Disconnect by removing the stored personal access token config
+  shops            List shops
+  products         List or get products
+  create-product   Create a product
+  update-product   Update a product
+  delete-product   Delete a product
+  publish-product  Publish a product
+  orders           List or get orders
+  create-order     Create an order
+  upload           Upload an image
+  blueprints       List or get blueprints
+  print-providers  List print providers
+  variants         List variants for a blueprint + provider
+  shipping         Get shipping info for a blueprint + provider
+  request          Raw API request (escape hatch)
+
+Options:
+      --timeout-secs <TIMEOUT_SECS>  HTTP timeout in seconds [default: 30]
+  -h, --help                         Print help

@@ -1,0 +1,15 @@
+Use Linear's official remote MCP server
+
+Usage: linear <COMMAND>
+
+Commands:
+  status         Check OAuth state or whether the grant covers one command
+  authorize-url  Generate an OAuth authorization URL
+  exchange-code  Exchange an OAuth authorization code for tokens
+  refresh        Refresh the stored access token
+  disconnect     Delete the stored OAuth connection
+  list-tools     List the live MCP tools, schemas, and reviewed capabilities needing access
+  call-tool      Call a reviewed tool from the official MCP server
+
+Options:
+  -h, --help  Print help

@@ -1,0 +1,23 @@
+OpenTable reservation helper CLI. Calls route through Muse's managed OpenTable integration.
+
+Usage: opentable [OPTIONS] <COMMAND>
+
+Commands:
+  status                        Check whether OpenTable is connected and the managed integration is reachable. Emits `connect_url` while disconnected so the agent can post the in-chat consent link
+  disconnect                    Disconnect OpenTable: clear the managed-consent acknowledgment so the user must re-accept before any further OpenTable use
+  lookup-rid                    Look up OpenTable restaurant IDs from the synced Stefi restaurant index
+  availability                  Deprecated compatibility alias for search-availability
+  search-availability           Search availability through the OpenTable partner API
+  list-experiences              List active OpenTable experiences for a restaurant
+  availability-metadata         Fetch OpenTable availability metadata for a restaurant
+  delete-slot-lock              Delete/release a known slot lock after a failed or abandoned hold
+  book-reservation              Lock a time slot and make a reservation in one confirmed booking action
+  get-reservation               Get reservation details
+  modify-reservation-with-lock  Lock a new time slot and modify an existing reservation in one action
+  cancel-reservation            Cancel an existing reservation
+  booking-policies              Fetch booking policies for a date/time/party size
+  cancellation-policies         Fetch cancellation policy details
+
+Options:
+      --timeout-secs <TIMEOUT_SECS>  HTTP timeout, in seconds [default: 30]
+  -h, --help                         Print help

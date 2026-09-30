@@ -1,0 +1,1088 @@
+[
+ {
+  "binary": "aftership",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "aftership",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "asana",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "asana",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "authdc",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "^_`abcdefghijklmnopqrstuvwxyz | internal error: entered unreachable codeexact_url_from_conversationpublic_site_filter_for_requested_platformfresh_browser_snapshotcontinue_without_toolactionconstraintpayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_"
+ },
+ {
+  "binary": "box-cli",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "box-cli",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "browser-broker",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "chmod | prctl | readv"
+ },
+ {
+  "binary": "browser-broker",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "TaskOwnedBrowserInternalSharedWorkerUnowned`DateTime + TimeDelta` overflowedTargetOwnerdescription() is deprecated; use Display | capacity overflowFatal internal error. Please consider filing a bug report at https://github.com/clap-rs/clap/issuesignoring malformed optional public egress IP valueigno"
+ },
+ {
+  "binary": "browser-service",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "^_`abcdefghijklmnopqrstuvwxyz | internal error: entered unreachable codeexact_url_from_conversationpublic_site_filter_for_requested_platformfresh_browser_snapshotcontinue_without_toolactionconstraintpayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_"
+ },
+ {
+  "binary": "calendly",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "url::form_urlencoded::Serializer finishedstart of range should be a character boundaryend of range should be a character boundary`Extensions` tracks values by type | assertion failed: edge.height == self.node.height - 1assertion failed: n <= init_unfilledfailed to fill whole bufferfailed to spawn th"
+ },
+ {
+  "binary": "canva",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "canva",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "device-data",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "^_`abcdefghijklmnopqrstuvwxyz | internal error: entered unreachable codeexact_url_from_conversationpublic_site_filter_for_requested_platformfresh_browser_snapshotcontinue_without_toolactionconstraintpayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_"
+ },
+ {
+  "binary": "dropbox",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "dropbox",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "duffel",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": " !\"#$%&'()*+,-./0123 | Vec is sized conservativelyInvalid UTF8compactduffel_versioncommandCommandSearchSeatOptionsValidateBookingBookingStatusCancellationQuoteCancelBookingSearchArgsorigindestinationdeparture_datereturn_datecabinadultschild_ageslap_infantsmax_connectionslimitmax_pricerefundableSeatO"
+ },
+ {
+  "binary": "edits",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "^_`abcdefghijklmnopqrstuvwxyz | internal error: entered unreachable codeexact_url_from_conversationpublic_site_filter_for_requested_platformfresh_browser_snapshotcontinue_without_toolactionconstraintpayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_"
+ },
+ {
+  "binary": "etsy-cli",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "etsy-cli",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "evernote",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "evernote",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "facebook-cli",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": " !\"#$%&'()*+,-./0123 | Vec is sized conservativelyInvalid UTF8Statedraftscheduledpublishedunknownpage_idacting_account_idstatescheduled_publish_timepost_idmedia_idsmedia_typesmedia_captionscontent_hashimage_sha256scomposer_urlrequest_idsource_draft_idsource_draft_retainedpayload_metacommandtimeout_s"
+ },
+ {
+  "binary": "feature-request",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "^_`abcdefghijklmnopqrstuvwxyz | internal error: entered unreachable codeexact_url_from_conversationpublic_site_filter_for_requested_platformfresh_browser_snapshotcontinue_without_toolactionconstraintpayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_"
+ },
+ {
+  "binary": "figma",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "figma",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "flightaware",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "    LeftOrRight::Right(idx) => idx <= right_len, | }assertion failed: new_left_len <= CAPACITYassertion failed: edge.height == self.node.height - 1assertion failed: self.height > 0internal error: entered unreachable codeassertion failed: src.len() == dst.len()methodheadersresource_tokenstimeout_secs"
+ },
+ {
+  "binary": "function-health",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "trampoline: create request pipetrampoline: resolve executabletrampoline: missing client stdin fdtrampoline: missing client stdout fdtrampoline: missing client stderr fdPRIVSEP_RESPONSE_FDPRIVSEP_REQUEST_FDPRIVSEP_OUTPUT_FD_COUNTPRIVSEP_INPUT_FD_COUNTJARVIS_LOCAL_CLI_REQUEST_IDJARVIS_RUNTIME_CONTEXT_"
+ },
+ {
+  "binary": "genui-display-render",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "genui-display-render",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variabl"
+ },
+ {
+  "binary": "geocode",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "^_`abcdefghijklmnopqrstuvwxyz | internal error: entered unreachable codeexact_url_from_conversationpublic_site_filter_for_requested_platformfresh_browser_snapshotcontinue_without_toolactionconstraintpayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_"
+ },
+ {
+  "binary": "ghl",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "ghl",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "github",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "github",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "granola-cli",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": " !\"#$%&'()*+,-./0123 | Vec is sized conservativelyInvalid UTF8country_codemessageerror_codeerror_typeerror_categoryerror_stageerror_retryablereconnect_availableConnectorQuotaFailureconnectorretry_after_secondslimitrequested_unitsused_unitsremaining_unitsterminal_for_attemptpayment_methodpayment_type"
+ },
+ {
+  "binary": "hatch",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "hatch",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "exec_chain_idexec_tool_call_idexec_chain_root_tool_call_idexec_parent_tool_call_idexec_chain_start_request_idexec_chain_root_componentexec_chain_root_sourceexec_chain_root_request_originexec_chain_root_product_flowexec_chain_root_product_activation_idexec_chain_root_product_surfaceexec_chain_root_pr"
+ },
+ {
+  "binary": "hatch",
+  "artifact": "cGroup",
+  "kind": "cgroup",
+  "context": "]Variable length lookbehinds with fancy featuresinternal error: entered unreachable codeBackref exists condition with relative recursion levelBacktracking control verbs other than 'fail'Nested absent operatorsAbsent expressionAbsent stopperRange clearShould have been rejected during analysisalready "
+ },
+ {
+  "binary": "hatch",
+  "artifact": "Cgroup",
+  "kind": "cgroup",
+  "context": "failed to remove audit sandbox database directory on session dropfatal runtime error: thread local panicked on drop, aborting | variant identifierTryFlatten polled after completionMap must not be polled after it returned `Poll::Ready`struct GroupWorkerBindingstruct VerificationRequeststruct Verifica"
+ },
+ {
+  "binary": "hatch",
+  "artifact": "ebpf",
+  "kind": "ebpf_word",
+  "context": "reading Cosmos RTC Media Bridge responsedecoding Cosmos RTC Media Bridge responseCosmos RTC Media Bridge response has an invalid shapeCosmos RTC Media Bridge provider rejected the handshakeCosmos RTC Media Bridge response exceeded its size limitCosmos RTC Media Bridge connection closed before its re"
+ },
+ {
+  "binary": "hatch",
+  "artifact": "connect4",
+  "kind": "connect46",
+  "context": " even if they don't say those exact words.bundled_skill.life_management.titleDisplay title for the bundled life_management skill shown in the client skill picker0f82c34ad84816f13391d0d6eaebbec75eb554c8c9604ca0c5733b09dd6376a5Life ManagementDescription of the bundled linear skill shown in the client "
+ },
+ {
+  "binary": "hatch",
+  "artifact": "eBPF",
+  "kind": "ebpf_word",
+  "context": "invalid process statfile watcher event buffer full, dropping eventsMemTotal not found in /proc/meminfo/proc/stat is emptySO_PEERPIDFD succeeded but returned no descriptorpeer pid changed identity mid-readwatching path/proccgroup/proc/self/cgroup::MemTotal:MemAvailable:Cached:AnonPages:Shmem:SwapTota"
+ },
+ {
+  "binary": "hatch",
+  "artifact": "BPF_PROG",
+  "kind": "bpf_const",
+  "context": "/jarvis/hatch-engine/crates/hatch-os/../../ebpf/daemon_guard.bpf.c | int BPF_PROG(daemon_guard_ptrace, struct task_struct *child, unsigned int mode, int ret) |     if (ret != 0)"
+ },
+ {
+  "binary": "hatch",
+  "artifact": "BPF_CORE_READ",
+  "kind": "bpf_const",
+  "context": "        bpf_cgroup_release(cell); |     __u32 child_tgid = BPF_CORE_READ(child, tgid); |     if (child_tgid == daemon_tgid)"
+ },
+ {
+  "binary": "hatch",
+  "artifact": "libbpf",
+  "kind": "libbpf",
+  "context": "searcher | libbpf_ntimeZonexmlnstblUriError/fs/readpagedown | policies"
+ },
+ {
+  "binary": "hatch",
+  "artifact": "seccompiler",
+  "kind": "seccompiler",
+  "context": "cargo-registry/index.crates.io-1949cf8c6b5b557f/tokio-1.52.1/src/fs/metadata.rs | cargo-registry/index.crates.io-1949cf8c6b5b557f/seccompiler-0.5.0/src/backend/filter.rs | affinity"
+ },
+ {
+  "binary": "hatch",
+  "artifact": "BPF_PROG_BIND_MAP",
+  "kind": "bpf_const",
+  "context": ",`view` must be `active` or `archived`, got ` | BPF_PROG_BIND_MAP support | - Current status title: "
+ },
+ {
+  "binary": "hatch",
+  "artifact": "libbpf-rs",
+  "kind": "libbpf",
+  "context": ", but sector count is only  | cargo-registry/index.crates.io-1949cf8c6b5b557f/libbpf-rs-0.24.8/src/skeleton.rs | K]: candidate must be the candidate's packet number, an integer of 1 or more"
+ },
+ {
+  "binary": "hatch",
+  "artifact": "BPF_PROG_LOAD",
+  "kind": "bpf_const",
+  "context": "SELECT level, count(*) AS cnt FROM %Q.'%q_segdir'   GROUP BY level HAVING cnt>=?  ORDER BY (level %% 1024) ASC, 2 DESC LIMIT 1 | BPF_PROG_LOAD expected_attach_type attribute | libbpf: map '%s': skipped auto-creating..."
+ },
+ {
+  "binary": "hatch-browser-lease-helper",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "/run/hatch/gk-proxy/gk.sockJARVIS_GK_PROXY_SOCKGK response exceeds 64 KiB | peer process was reaped before its credentials could be pinnedstruct BrowserLeaseLocationContexta Display implementation returned an error unexpectedlyErrordescription() is deprecated; use DisplaySO_PEERPIDFD succeeded but r"
+ },
+ {
+  "binary": "hatch-doctor",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variabl"
+ },
+ {
+  "binary": "hatch-execd",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "hatch-execd",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "assertion failed: N::next(&stream).is_none()called `Result::unwrap()` on an `Err` valueassertion failed: self.pending_pong.is_none()pending_ping should be for shutdownrecv PING SHUTDOWN ackrecv PING USER ackrecv_close: HalfClosedLocal => Closedsend_close: HalfClosedRemote => Closedstream closed beca"
+ },
+ {
+  "binary": "hatch-execd",
+  "artifact": "Cgroup",
+  "kind": "cgroup",
+  "context": "inner has gone awayfailed to write whole buffer | assertion failed: self.is_char_boundary(end), failed to lock pty writerJoinHandle polled after completionmid > lenvariant identifierdescription() is deprecated; use Display[internal exception] blocking task ran twice.struct StartRequeststruct Prepare"
+ },
+ {
+  "binary": "hatch-execd",
+  "artifact": "ebpf",
+  "kind": "ebpf_word",
+  "context": "cell_cgroup_id | /jarvis/hatch-engine/crates/hatch-os/../../ebpf/daemon_guard.bpf.c | int BPF_PROG(daemon_guard_ptrace, struct task_struct *child, unsigned int mode, int ret)"
+ },
+ {
+  "binary": "hatch-execd",
+  "artifact": "BPF_PROG",
+  "kind": "bpf_const",
+  "context": "/jarvis/hatch-engine/crates/hatch-os/../../ebpf/daemon_guard.bpf.c | int BPF_PROG(daemon_guard_ptrace, struct task_struct *child, unsigned int mode, int ret) |     if (ret != 0)"
+ },
+ {
+  "binary": "hatch-execd",
+  "artifact": "BPF_CORE_READ",
+  "kind": "bpf_const",
+  "context": "        bpf_cgroup_release(cell); |     __u32 child_tgid = BPF_CORE_READ(child, tgid); |     if (child_tgid == daemon_tgid)"
+ },
+ {
+  "binary": "hatch-execd",
+  "artifact": "libbpf",
+  "kind": "libbpf",
+  "context": "size overflows MAX_SIZEinternal error: entered unreachable codederegistering event source from pollermio::poll | attempt to join into collection with len > usize::MAXagent_typedb_backenderror_codeevent_typeingress_msrelease_idrequest_idrollout_idsession_idshare_stepskill_namespace_slugtool_inputttit"
+ },
+ {
+  "binary": "hatch-execd",
+  "artifact": "BPF_ANY",
+  "kind": "bpf_const",
+  "context": "    bpf_map_delete_elem(&domain_class, &tgid); // recycled tgid: drop stale classes |     if (bpf_map_update_elem(&domain, &tgid, &ref, BPF_ANY) != 0) { |         clamp_descendant(tgid, 0);"
+ },
+ {
+  "binary": "hatch-execd",
+  "artifact": "CGROUP",
+  "kind": "cgroup",
+  "context": "    if (!classes) |     return m == SYSFS_MAGIC || m == CGROUP_SUPER_MAGIC || |     int nr = 0;"
+ },
+ {
+  "binary": "hatch-execd",
+  "artifact": "BPF_NOEXIST",
+  "kind": "bpf_const",
+  "context": "        bpf_map_update_elem(&inode_class, &k, &classes, BPF_ANY); |     long r = bpf_map_update_elem(&tainted_inode, &k, &val, BPF_NOEXIST); |     if (r == -EEXIST)"
+ },
+ {
+  "binary": "hatch-execd",
+  "artifact": "BPF_PROG_BIND_MAP",
+  "kind": "bpf_const",
+  "context": "guarded_max | BPF_PROG_BIND_MAP support | /proc/"
+ },
+ {
+  "binary": "hatch-execd",
+  "artifact": "libbpf-rs",
+  "kind": "libbpf",
+  "context": "debug level : %d | cargo-registry/index.crates.io-1949cf8c6b5b557f/libbpf-rs-0.24.8/src/skeleton.rs | dev="
+ },
+ {
+  "binary": "hatch-execd",
+  "artifact": "BPF_PROG_LOAD",
+  "kind": "bpf_const",
+  "context": "libbpf: sec '%s': failed to find name of DATASEC's member #%d | BPF_PROG_LOAD expected_attach_type attribute | libbpf: map '%s': skipped auto-creating..."
+ },
+ {
+  "binary": "hatch-healthd",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "    LeftOrRight::Right(idx) => idx <= right_len, | }assertion failed: new_left_len <= CAPACITYassertion failed: edge.height == self.node.height - 1assertion failed: self.height > 0HEALTHD_DNS_COMPONENT_ENABLEDinternal error: entered unreachable codeassertion failed: src.len() == dst.len()exec_chain_"
+ },
+ {
+  "binary": "hatch-multicall",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "^_`abcdefghijklmnopqrstuvwxyz | internal error: entered unreachable codeexact_url_from_conversationpublic_site_filter_for_requested_platformfresh_browser_snapshotcontinue_without_toolactionconstraintpayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_"
+ },
+ {
+  "binary": "hatch-rescue",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "chmod | prctl | readv"
+ },
+ {
+  "binary": "hatch-rescue",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "size overflows MAX_SIZEa formatting trait implementation returned an error when the underlying stream did notinternal error: entered unreachable codeCannot start a runtime from within a runtime. This happens because a function (like `block_on`) attempted to block the current thread while the thread "
+ },
+ {
+  "binary": "hatch-rescue",
+  "artifact": "Cgroup",
+  "kind": "cgroup",
+  "context": "/proc/uptime start request repeated too quicklytimed outschemaiostatOperation not permitted | CmdlinePidCPUMEMRSSReadsWritesTimestampCgroup://&du_home_hatchdu_var_loglarge_files_var_logdf_inodesjournal_disk_usageMESSAGE_SYSTEMD_UNITSYSLOG_IDENTIFIER.jarvis-keep-services-downALIVEruntime_workruntime "
+ },
+ {
+  "binary": "hatch-rescue",
+  "artifact": "ebpf",
+  "kind": "ebpf_word",
+  "context": "rsv3dumpdiskZero | [8mHINTTERMnvmeebpf | zDfile"
+ },
+ {
+  "binary": "hatch-rescue-systemctl",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "description() is deprecated; use Displayfailed to write whole buffer | DangerouslySandboxNoAuthNginxIngressHostPrivilegedSurrogatepeer process was reaped before its credentials could be pinneduid-literalcurrent-process-uiduid-at-leastuid-belowPeerMatch::User did not match: NSS lookup returned no ent"
+ },
+ {
+  "binary": "hatch-rescuectl",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "size overflows MAX_SIZEa formatting trait implementation returned an error when the underlying stream did notinternal error: entered unreachable codeerrorexpected a header name, but got Nonefailed to stat telemetry-proxy access token credentialsUDS HTTP request path must start with '/'internal error"
+ },
+ {
+  "binary": "hatch-slide-style",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variabl"
+ },
+ {
+  "binary": "hatch-vault",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "size overflows MAX_SIZEa formatting trait implementation returned an error when the underlying stream did notinternal error: entered unreachable codeerrorexpected a header name, but got Nonefailed to stat telemetry-proxy access token credentialsUDS HTTP request path must start with '/'internal error"
+ },
+ {
+  "binary": "hatch-ws-client",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variabl"
+ },
+ {
+  "binary": "hatch-zeitgeist",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "hatch-zeitgeist",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "hatch_gws_auth",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variabl"
+ },
+ {
+  "binary": "hatch_gws_cli",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": " !\"#$%&'()*+,-./0123 | Vec is sized conservativelyInvalid UTF8ConnectorQuotaFailureconnectorretry_after_secondslimitrequested_unitsused_unitsremaining_unitsterminal_for_attemptpayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_idbinding_idbrowser_ins"
+ },
+ {
+  "binary": "hatch_messenger_cli",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": " !\"#$%&'()*+,-./0123 | country_codepayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_idbinding_idbrowser_instance_idtask_scopecard_shapeddirect_merchant_tokenversionmerchant_nameline_item_namesWalletDelegatedCheckoutContractcheckout_request_idmercha"
+ },
+ {
+  "binary": "health-cli",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "health-cli",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": " !\"#$%&'()*+,-./0123 | payment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_idbinding_idbrowser_instance_idtask_scopecard_shapeddirect_merchant_tokenversionmerchant_nameline_item_namescheckout_request_idmerchant_urlamount_minorpayment_selectionpayment_"
+ },
+ {
+  "binary": "healthex",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "trampoline: create request pipetrampoline: resolve executabletrampoline: missing client stdin fdtrampoline: missing client stdout fdtrampoline: missing client stderr fdPRIVSEP_RESPONSE_FDPRIVSEP_REQUEST_FDPRIVSEP_OUTPUT_FD_COUNTPRIVSEP_INPUT_FD_COUNTJARVIS_LOCAL_CLI_REQUEST_IDJARVIS_RUNTIME_CONTEXT_"
+ },
+ {
+  "binary": "healthkit-cli",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "healthkit-cli",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "image-search",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "^_`abcdefghijklmnopqrstuvwxyz | internal error: entered unreachable codeexact_url_from_conversationpublic_site_filter_for_requested_platformfresh_browser_snapshotcontinue_without_toolactionconstraintpayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_"
+ },
+ {
+  "binary": "ingress-rev-proxy",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "setsockopt | prctl | readv"
+ },
+ {
+  "binary": "ingress-rev-proxy",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variabl"
+ },
+ {
+  "binary": "instagram-cli",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": " !\"#$%&'()*+,-./0123 | ConnectorAuthFailureTelemetrymessageerror_codeerror_typeerror_categoryerror_stageerror_retryablereconnect_availableConnectorQuotaFailureconnectorretry_after_secondslimitrequested_unitsused_unitsremaining_unitsterminal_for_attemptpayment_methodpayment_typepayment_idinternally t"
+ },
+ {
+  "binary": "instagram-messages-cli",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": " !\"#$%&'()*+,-./0123 | Vec is sized conservativelyInvalid UTF8payment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_idbinding_idbrowser_instance_idtask_scopecard_shapeddirect_merchant_tokenversionmerchant_nameline_item_namesWalletDelegatedCheckoutContra"
+ },
+ {
+  "binary": "klaviyo",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "klaviyo",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "linear",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "linear",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "local-search",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "local-search",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variabl"
+ },
+ {
+  "binary": "lovable",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "lovable",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "mcp-cli",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "trampoline: create request pipetrampoline: resolve executabletrampoline: missing client stdin fdtrampoline: missing client stdout fdtrampoline: missing client stderr fdPRIVSEP_RESPONSE_FDPRIVSEP_REQUEST_FDPRIVSEP_OUTPUT_FD_COUNTPRIVSEP_INPUT_FD_COUNTJARVIS_LOCAL_CLI_REQUEST_IDJARVIS_RUNTIME_CONTEXT_"
+ },
+ {
+  "binary": "media-generation",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "^_`abcdefghijklmnopqrstuvwxyz | internal error: entered unreachable codeexact_url_from_conversationpublic_site_filter_for_requested_platformfresh_browser_snapshotcontinue_without_toolactionconstraintpayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_"
+ },
+ {
+  "binary": "media-library",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "^_`abcdefghijklmnopqrstuvwxyz | internal error: entered unreachable codeexact_url_from_conversationpublic_site_filter_for_requested_platformfresh_browser_snapshotcontinue_without_toolactionconstraintpayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_"
+ },
+ {
+  "binary": "meta-ads-cli",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "meta-ads-cli",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "meta-ads-cli",
+  "artifact": "cGroup",
+  "kind": "cgroup",
+  "context": "since unicode-word-boundary, syntax and unicode-perl are all enabled, it is expected that try_is_word_character succeedsReverseBackwardsDelegatepatterncapture_groupsCaptureGroupRangeEndAnyAnyNoNLAnyNoCRLFAssertionLitSplitSplitUnanchoredJmpSave0SaveCaptureGroupStartRestorelohirepeatRepeatEpsilonGrche"
+ },
+ {
+  "binary": "meta-catalog-search",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "meta-catalog-search",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "muse-mail",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "^_`abcdefghijklmnopqrstuvwxyz | internal error: entered unreachable codeexact_url_from_conversationpublic_site_filter_for_requested_platformfresh_browser_snapshotcontinue_without_toolactionconstraintpayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_"
+ },
+ {
+  "binary": "native-comms-cli",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "native-comms-cli",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variabl"
+ },
+ {
+  "binary": "notion-cli",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": " !\"#$%&'()*+,-./0123 | Vec is sized conservativelyInvalid UTF8tokenTelegramBotIdentityokresultdescriptioninput_schemaoutput_schemaannotationsauth_statusauthenticatedconfig_pathreasonserver_nameserver_versionsession_headertoolstool_namestructured_contentcontenterrorInitializeBodyprotocolVersionserver"
+ },
+ {
+  "binary": "onepassword",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "onepassword",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variabl"
+ },
+ {
+  "binary": "opentable",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": " !\"#$%&'()*+,-./0123 | methodheadersresource_tokenstimeout_secscommandStatusverifyDisconnectLookupRidquerycountry_codecuisinepriceridlimitAvailabilityparty_sizeSearchAvailabilitystart_date_timeforward_minutesrequire_attributesinclude_experiencesListExperiencesAvailabilityMetadataDeleteSlotLockreserv"
+ },
+ {
+  "binary": "outlook-calendar",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "trampoline: create request pipetrampoline: resolve executabletrampoline: missing client stdin fdtrampoline: missing client stdout fdtrampoline: missing client stderr fdPRIVSEP_RESPONSE_FDPRIVSEP_REQUEST_FDPRIVSEP_OUTPUT_FD_COUNTPRIVSEP_INPUT_FD_COUNTJARVIS_LOCAL_CLI_REQUEST_IDJARVIS_RUNTIME_CONTEXT_"
+ },
+ {
+  "binary": "outlook-contacts",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "trampoline: create request pipetrampoline: resolve executabletrampoline: missing client stdin fdtrampoline: missing client stdout fdtrampoline: missing client stderr fdPRIVSEP_RESPONSE_FDPRIVSEP_REQUEST_FDPRIVSEP_OUTPUT_FD_COUNTPRIVSEP_INPUT_FD_COUNTJARVIS_LOCAL_CLI_REQUEST_IDJARVIS_RUNTIME_CONTEXT_"
+ },
+ {
+  "binary": "outlook-mail",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "trampoline: create request pipetrampoline: resolve executabletrampoline: missing client stdin fdtrampoline: missing client stdout fdtrampoline: missing client stderr fdPRIVSEP_RESPONSE_FDPRIVSEP_REQUEST_FDPRIVSEP_OUTPUT_FD_COUNTPRIVSEP_INPUT_FD_COUNTJARVIS_LOCAL_CLI_REQUEST_IDJARVIS_RUNTIME_CONTEXT_"
+ },
+ {
+  "binary": "peloton",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "trampoline: create request pipetrampoline: resolve executabletrampoline: missing client stdin fdtrampoline: missing client stdout fdtrampoline: missing client stderr fdPRIVSEP_RESPONSE_FDPRIVSEP_REQUEST_FDPRIVSEP_OUTPUT_FD_COUNTPRIVSEP_INPUT_FD_COUNTJARVIS_LOCAL_CLI_REQUEST_IDJARVIS_RUNTIME_CONTEXT_"
+ },
+ {
+  "binary": "philips-hue",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "trampoline: create request pipetrampoline: resolve executabletrampoline: missing client stdin fdtrampoline: missing client stdout fdtrampoline: missing client stderr fdPRIVSEP_RESPONSE_FDPRIVSEP_REQUEST_FDPRIVSEP_OUTPUT_FD_COUNTPRIVSEP_INPUT_FD_COUNTJARVIS_LOCAL_CLI_REQUEST_IDJARVIS_RUNTIME_CONTEXT_"
+ },
+ {
+  "binary": "places",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variabl"
+ },
+ {
+  "binary": "plaid",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "plaid_read_incompleteerrorwrite Plaid output | write Plaid output newlineflush Plaid output  internal error: entered unreachable codeserialize prepared args for privsep retrydeserialize prepared args for privsep retryokauthorize_urlconnect_urloutput_pathcommandCommandStatusAuthorizeUrlstatescopeExch"
+ },
+ {
+  "binary": "printify",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "trampoline: create request pipetrampoline: resolve executabletrampoline: missing client stdin fdtrampoline: missing client stdout fdtrampoline: missing client stderr fdPRIVSEP_RESPONSE_FDPRIVSEP_REQUEST_FDPRIVSEP_OUTPUT_FD_COUNTPRIVSEP_INPUT_FD_COUNTJARVIS_LOCAL_CLI_REQUEST_IDJARVIS_RUNTIME_CONTEXT_"
+ },
+ {
+  "binary": "privsep-test-fully-isolated",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "^_`abcdefghijklmnopqrstuvwxyz | internal error: entered unreachable codeexact_url_from_conversationpublic_site_filter_for_requested_platformfresh_browser_snapshotcontinue_without_toolactionconstraintpayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_"
+ },
+ {
+  "binary": "quickbooks",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "quickbooks",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "quickbooks",
+  "artifact": "cGroup",
+  "kind": "cgroup",
+  "context": "since unicode-word-boundary, syntax and unicode-perl are all enabled, it is expected that try_is_word_character succeedsReverseBackwardsDelegatepatterncapture_groupsCaptureGroupRangeEndAnyAnyNoNLAnyNoCRLFAssertionLitSplitSplitUnanchoredJmpSave0SaveCaptureGroupStartRestorelohirepeatRepeatEpsilonGrche"
+ },
+ {
+  "binary": "remote-storage",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "[]newtype variant\"false,:privsep trampoline failed before returning a resulttrampoline: serialize stripped worker requesttrampoline: write request to request pipetrampoline: wait for workermid > lenfilled must not become larger than initializedversionflow_idcheckout_idstatusbuyeritemsselected_delive"
+ },
+ {
+  "binary": "replit",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "replit",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "save-to-spotify",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "http://localhost/hatch/check_gatekeepersGatekeeper response was invalid; using defaultGatekeeper check failed; using defaulthttp://localhost/hatch/viewer/countryerrormid > lenfilled must not become larger than initializedFromUtf8Errorbytesa Display implementation returned an error unexpectedlyErrorM"
+ },
+ {
+  "binary": "share",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "^_`abcdefghijklmnopqrstuvwxyz | internal error: entered unreachable codeexact_url_from_conversationpublic_site_filter_for_requested_platformfresh_browser_snapshotcontinue_without_toolactionconstraintpayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_"
+ },
+ {
+  "binary": "shop-wallet-cli",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "shop-wallet-cli",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdecided_from_ipdecided_user_agentdestinationreference_idpayloadcheckpointexternal_iddetailclaimed_"
+ },
+ {
+  "binary": "shopify",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "shopify",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "shopify-ucp-cli",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "shopify-ucp-cli",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "internal error: entered unreachable codetimeout_secsformatcommandcheckout_idinput_filepayment_methodpayment_typepayment_idpayment_method_labelcard_brandcard_last4access_tokenitemscart_idbuyerselected_delivery_option_idpayment_method_idwallet_providerdiscount_codesmedia_typemax_bytesbyte_countiditem_"
+ },
+ {
+  "binary": "shopping",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "^_`abcdefghijklmnopqrstuvwxyz | internal error: entered unreachable codeexact_url_from_conversationpublic_site_filter_for_requested_platformfresh_browser_snapshotcontinue_without_toolactionconstraintpayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_"
+ },
+ {
+  "binary": "slack",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "slack",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "spawnd",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "/v1/runtime-eventscomputer_control_observationcomputer_control_summary_statuscomputer_control_steps_totalcomputer_control_first_failed_step_indexcomputer_control_first_failed_actioncomputer_control_first_failed_outcomecomputer_control_client_elapsed_mscomputer_control_client_okcomputer_control_actio"
+ },
+ {
+  "binary": "spawnd",
+  "artifact": "connect4",
+  "kind": "connect46",
+  "context": "failed to write install trace:  | create temp file for systemd journal capturereopen systemd journal capture temp filereopen systemd journal capture temp file for stderrjournalctl-f-n0-oshort-unix-tsystemdinstalled_assets_missingread_only_bind_failedmap `HOST_ADDRS4` not presentmap `HOST_ADDRS6` not"
+ },
+ {
+  "binary": "spawnd",
+  "artifact": "connect6",
+  "kind": "connect46",
+  "context": "failed to write install trace:  | create temp file for systemd journal capturereopen systemd journal capture temp filereopen systemd journal capture temp file for stderrjournalctl-f-n0-oshort-unix-tsystemdinstalled_assets_missingread_only_bind_failedmap `HOST_ADDRS4` not presentmap `HOST_ADDRS6` not"
+ },
+ {
+  "binary": "spawnd",
+  "artifact": "ebpf",
+  "kind": "ebpf_word",
+  "context": "bpf_flow_keys | /jarvis/bundle-setup/crates/spawnd/ebpf/cell_gate.bpf.c |     return connect_policy_v4(ctx->user_ip4, ctx->protocol, dport);"
+ },
+ {
+  "binary": "spawnd",
+  "artifact": "BPF_F_ALLOW_MULTI",
+  "kind": "bpf_const",
+  "context": "write decoy-removal stampopen /home/hatch/.ssh for decoy removalprobe decoy-removal stampcom.hatch.messengerd.servicecom.hatch.ssh-access.servicecom.hatch.tee-report.servicecom.hatch.armor.servicecom.hatch.peerd.service | hatch-seed.servicecom.hatch.diagnostic.servicecom.hatch.privsep-worker-prep.se"
+ },
+ {
+  "binary": "spawnd",
+  "artifact": "Cgroup",
+  "kind": "cgroup",
+  "context": "workspaceinferenceinference-per-uidtelemetrytelemetry-per-uidevent bundle-setup/crates/spawnd/src/install/journal_capture.rs:33bundle-setup/crates/spawnd/src/install/journal_capture.rsevent bundle-setup/crates/spawnd/src/systemd/manager.rs:518spawnd::systemd::managerbundle-setup/crates/spawnd/src/sy"
+ },
+ {
+  "binary": "spawnd",
+  "artifact": "CGROUP",
+  "kind": "cgroup",
+  "context": "proc_root=\"${HATCH_DIAG_FORENSIC_PROC_ROOT:-${HATCH_DIAG_PROC_ROOT:-/proc}}\" | cgroup_root=\"${HATCH_DIAG_FORENSIC_CGROUP_ROOT:-/sys/fs/cgroup}\" | # Each is a SEPARATE mount on a Hatch VM (/ overlay; /hatch, /var/lib/hatch,"
+ },
+ {
+  "binary": "spawnd",
+  "artifact": "eBPF",
+  "kind": "ebpf_word",
+  "context": "  \"dmesg --color=never\" | run_expect_blocked \"eBPF programs\" \\ |   \"empty CapabilityBoundingSet -- no CAP_BPF (or bpftool not installed)\" \\"
+ },
+ {
+  "binary": "spawnd",
+  "artifact": "BPF_MAP_CREATE",
+  "kind": "bpf_const",
+  "context": "#   (tp_btf/sched_process_exec and the task iterators). | # CAP_SYS_ADMIN: bpf(BPF_MAP_CREATE) with BTF on kernels < 6.9, matching the | #   reason hatch-sentinel carries it."
+ },
+ {
+  "binary": "spawnd",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "# peer that can kill the broker can still race its restart into the | # exec-to-prctl window. These masks are one-directional: the user broker's | # namespace still reaches this plane's tunnel sockets. The full fix is the"
+ },
+ {
+  "binary": "spawnd",
+  "artifact": "BPF_PROG_ATTACH",
+  "kind": "bpf_const",
+  "context": "/opt/hatch-image/bin/rtc-sidecar | BPF_PROG_ATTACH(BPF_TCX_INGRESS) | run PostgreSQL startup preflight"
+ },
+ {
+  "binary": "spawnd",
+  "artifact": "BPF_TCX_INGRESS",
+  "kind": "bpf_const",
+  "context": "/opt/hatch-image/bin/rtc-sidecar | BPF_PROG_ATTACH(BPF_TCX_INGRESS) | run PostgreSQL startup preflight"
+ },
+ {
+  "binary": "spawnd",
+  "artifact": "libbpf",
+  "kind": "libbpf",
+  "context": "P?READABLElifetimeextern \"P | libbpf_n' | TooSmall"
+ },
+ {
+  "binary": "spawnd",
+  "artifact": "libbpf-rs",
+  "kind": "libbpf",
+  "context": "(encountered unexpected or invalid data:  | cargo-registry/index.crates.io-1949cf8c6b5b557f/libbpf-rs-0.24.8/src/program.rs | ActiveState="
+ },
+ {
+  "binary": "spawnd",
+  "artifact": "BPF_PROG_BIND_MAP",
+  "kind": "bpf_const",
+  "context": " expected= | BPF_PROG_BIND_MAP support |  numeric field was not a number: "
+ },
+ {
+  "binary": "spawnd",
+  "artifact": "BPF_PROG_LOAD",
+  "kind": "bpf_const",
+  "context": "libbpf: sec '%s': failed to find name of DATASEC's member #%d | BPF_PROG_LOAD expected_attach_type attribute | libbpf: map '%s': skipped auto-creating..."
+ },
+ {
+  "binary": "spawnd",
+  "artifact": "landlock",
+  "kind": "landlock",
+  "context": "D$PH | landlockH | cess"
+ },
+ {
+  "binary": "spotify-api",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "    LeftOrRight::Right(idx) => idx <= right_len, | }assertion failed: new_left_len <= CAPACITYassertion failed: edge.height == self.node.height - 1assertion failed: self.height > 0internal error: entered unreachable codeassertion failed: src.len() == dst.len()payment_methodpayment_typepayment_idinte"
+ },
+ {
+  "binary": "stripe",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "stripe",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "stripe-link",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variabl"
+ },
+ {
+  "binary": "subscription-status",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "^_`abcdefghijklmnopqrstuvwxyz | internal error: entered unreachable codeexact_url_from_conversationpublic_site_filter_for_requested_platformfresh_browser_snapshotcontinue_without_toolactionconstraintpayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_"
+ },
+ {
+  "binary": "tailscale",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variabl"
+ },
+ {
+  "binary": "tessie-api",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variabl"
+ },
+ {
+  "binary": "threads-cli",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variabl"
+ },
+ {
+  "binary": "threads-messages-cli",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variabl"
+ },
+ {
+  "binary": "ticketmaster",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variabl"
+ },
+ {
+  "binary": "todoist",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "todoist",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "tts",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "^_`abcdefghijklmnopqrstuvwxyz | internal error: entered unreachable codeexact_url_from_conversationpublic_site_filter_for_requested_platformfresh_browser_snapshotcontinue_without_toolactionconstraintpayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_"
+ },
+ {
+  "binary": "vercel",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "vercel",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "wearables-display",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "wearables-display",
+  "artifact": "cGroup",
+  "kind": "cgroup",
+  "context": "since unicode-word-boundary, syntax and unicode-perl are all enabled, it is expected that try_is_word_character succeedsReverseBackwardsDelegatepatterncapture_groupsCaptureGroupRangeEndAnyAnyNoNLAnyNoCRLFAssertionLitSplitSplitUnanchoredJmpSave0SaveCaptureGroupStartRestorelohirepeatRepeatEpsilonGrche"
+ },
+ {
+  "binary": "wearables-display",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variabl"
+ },
+ {
+  "binary": "web-search",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "^_`abcdefghijklmnopqrstuvwxyz | internal error: entered unreachable codeexact_url_from_conversationpublic_site_filter_for_requested_platformfresh_browser_snapshotcontinue_without_toolactionconstraintpayment_methodpayment_typepayment_idinternally tagged enum EgressApprovalExecutionResultbrowser_task_"
+ },
+ {
+  "binary": "withings",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variabl"
+ },
+ {
+  "binary": "zapier",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "zapier",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ },
+ {
+  "binary": "zoom",
+  "artifact": "prctl",
+  "kind": "prctl",
+  "context": "__isoc23_strtoull | prctl | readv"
+ },
+ {
+  "binary": "zoom",
+  "artifact": "cgroup",
+  "kind": "cgroup",
+  "context": "payment_methodpayment_typepayment_idbrowser_task_idbinding_idbrowser_instance_idtask_scopeartifact_idsha256content_typeclassgoverned_byreasonallowedapproval_idcontext_idexpires_at_mscontexttry_url_indexdestinationmerchant_urlemailphone_numbercountry_codeaddressurlidlabelcarrierestimated_deliverytota"
+ }
+]

@@ -1,0 +1,14 @@
+Share, remove, or check artifact deployment status.
+
+Usage: share <COMMAND>
+
+Commands:
+  remove           Take down a legacy shared artifact (un-share only)
+  share-space      Share a published space
+  unshare-space    Un-share a published space
+  fetch-space-url  Check if a space is currently shared
+  export-html      Export a built static space as one standalone .html file under workspace/your_files/<slug>/, with its asset references inlined as data: URIs
+  help             Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help

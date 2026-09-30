@@ -1,0 +1,15 @@
+Use the mailbox attached to this Hatch environment
+
+Usage: muse-mail <COMMAND>
+
+Commands:
+  mailbox      Inspect, create, or rename this Hatch mailbox
+  messages     List, read, send, or reply to email messages
+  attachments  Download a message attachment
+  threads      List or read email threads
+  owners       Manage verified owner addresses
+  intake       Manage revocable Intake addresses for untrusted inbound mail
+  help         Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help

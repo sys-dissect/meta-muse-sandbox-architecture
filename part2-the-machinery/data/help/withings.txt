@@ -1,0 +1,23 @@
+Withings OAuth helper used by the Withings skill.
+
+Usage: withings [OPTIONS] <COMMAND>
+
+Commands:
+  status         Withings connector status (connect/disconnect URLs)
+  list-fields    List the available fields for a category
+  query          Query Withings data with hatch-style snake_case fields
+  authorize-url  
+  disconnect     
+  measures       Get body measurements (weight, blood pressure, etc.)
+  activity       Get daily activity summaries (steps, calories, distance, etc.)
+  sleep-summary  Get sleep summaries
+  sleep          Get detailed sleep data (high-frequency)
+  workouts       Get workout sessions
+  intraday       Get intraday activity data
+  heart-list     List heart rate (ECG/AFib) recordings
+  heart-get      Get a specific heart recording signal
+  devices        List paired devices
+
+Options:
+      --timeout-secs <TIMEOUT_SECS>  HTTP timeout in seconds [default: 30]
+  -h, --help                         Print help

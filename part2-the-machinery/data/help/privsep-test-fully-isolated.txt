@@ -1,0 +1,15 @@
+Test fixture for the privsep system. When authoring a new privsep tool, copy the `example` subcommand — it is the representative pattern (typed args plus the shared fd-passing / credential-probe body). The `health-check`, `ping`, and `privesc` subcommands are special-purpose infra/security-test probes, not templates.
+
+Usage: privsep-test-fully-isolated [OPTIONS] <COMMAND>
+
+Commands:
+  health-check  Infra probe, NOT a template to copy: cross the privsep boundary and exit 0. A one-shot daemon health-check canary whose marker string is a hard contract — copy `example`, not this
+  ping          Infra probe, NOT a template to copy: end-to-end stefi-proxy health check — open the stefi-proxy socket, issue a single verify_oauth_token round-trip, print a success marker, exit 0. Absorbs the retired standalone `privsep-ping` tool. Its marker is a smoke-test contract — copy `example`, not this
+  privesc       Security-test fixture, NOT a template to copy: run a command on the host outside the sandbox to exercise the privilege-separation code path (default-disabled, requires `JARVIS_DANGEROUSLY_ENABLE_PRIVESC_TOOL`). It deliberately does the exec-gadget anti-pattern the authoring docs tell you NOT to copy. Absorbs the retired standalone `privsep-privesc-{fully,partially}-isolated` tools
+  example       The representative example to copy when authoring a new privsep tool: typed subcommand args flowing into the shared fd-passing + authd/stefi/Clippy credential-probe body (see `run`). Unlike the probes above, this is the shape of a normal tool
+  help          Print this message or the help of the given subcommand(s)
+
+Options:
+      --output-file <OUTPUT_FILE>  Output file paths for fd-passing verification
+      --input-file <INPUT_FILE>    Input file paths for fd-passing verification
+  -h, --help                       Print help

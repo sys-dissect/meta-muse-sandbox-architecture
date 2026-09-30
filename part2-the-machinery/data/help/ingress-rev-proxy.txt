@@ -1,0 +1,55 @@
+Internet-facing ingress reverse proxy with Noise_XX encryption
+
+Usage: ingress-rev-proxy [OPTIONS]
+
+Options:
+      --listen-user <LISTEN_USER>
+          Public-internet data-plane listener. The `:4431` surface is a strict SUBSET of `:443` — the full `Surface::PublicInternet` route set (see `routes.rs`): proxy-local `ping`, `v1/noise`, and `spaces`. Nothing is exclusive to this plane, so an operator auditing this internet-facing listener must scope monitoring/firewall/cert review to ALL of the above, not just Spaces/Noise. Uses the INTERNAL PKI (`--tls-cert`/`--tls-key` = the Meta-RA "credentials" cert), the identity ingress has always served on `:4431`.
+          
+          `--listen-public-internet` is the preferred, impact-focused flag name; the `--listen-user` spelling is retained as an alias so callers (systemd unit, e2e scripts) can migrate gradually before it is retired.
+          
+          [default: [::]:4431]
+          [aliases: --listen-public-internet]
+
+      --listen-infra <LISTEN_INFRA>
+          INFRA/ops listener: the SAME `Surface::PublicInternet` set as `--listen-user` (ping, noise, spaces) PLUS the infra-only routes (`noise-probe`, `health`, `healthz`, `version`, auth-test/*, `v1/ops/*`, journal, rescue, yolk). Serves the SAME private-PKI Meta-RA "credentials" cert as `:4431` (`--tls-cert`/`--tls-key`), falling back to the staged bootstrap wildcard (`--tls-bootstrap-cert`) pre-provisioning. Binding `443` requires `CAP_NET_BIND_SERVICE` (granted by the systemd unit via `AmbientCapabilities`), since the proxy is non-root
+          
+          [default: [::]:443]
+
+      --tls-cert <TLS_CERT>
+          INTERNAL PKI cert for the PUBLIC-INTERNET (`:4431`) listener: the Meta-RA "credentials" cert. The systemd unit passes `/etc/tls/credentials` (key 0640 root:hatch-shared, readable by this non-root proxy via the group). The `/etc/tls/prodca` default is a manual-invocation placeholder
+          
+          [default: /etc/tls/prodca/fullchain.pem]
+
+      --tls-key <TLS_KEY>
+          See `tls_cert`: the INTERNAL PKI (Meta-RA credentials) key
+          
+          [default: /etc/tls/prodca/privkey.pem]
+
+      --tls-bootstrap-cert <TLS_BOOTSTRAP_CERT>
+          Bootstrap wildcard cert used until the real credentials cert is provisioned, letting the proxy serve pre-provisioning traffic (yolk cert bootstrap) exactly like nginx does with its wildcard cert. Normally the systemd unit passes explicit paths to a PRIVATE per-service copy that a root `ExecStartPre` stages from the per-VM wildcard cert hatchling injects at `/etc/tls/wildcard` (whose key is 0600 root:root and thus unreadable by this non-root process). The `/etc/tls/wildcard` default below is only a sane fallback for direct/manual invocation; in that case the process must be able to read the source key itself
+          
+          [default: /etc/tls/wildcard/fullchain.pem]
+
+      --tls-bootstrap-key <TLS_BOOTSTRAP_KEY>
+          See `tls_bootstrap_cert`: normally the staged private copy passed explicitly by the unit; the `/etc/tls/wildcard` default is a fallback
+          
+          [default: /etc/tls/wildcard/privkey.pem]
+
+      --daemon-http-sock <DAEMON_HTTP_SOCK>
+          Daemon HTTP backend UDS path override (default: daemon http-api socket)
+          
+          [env: PROXY_DAEMON_HTTP_SOCK=]
+
+      --sentinel-http-sock <SENTINEL_HTTP_SOCK>
+          Sentinel HTTP backend UDS path override
+          
+          [env: PROXY_SENTINEL_HTTP_SOCK=]
+
+      --vault-sock <VAULT_SOCK>
+          Vault HTTP backend UDS path override (default: vault auth socket)
+          
+          [env: PROXY_VAULT_SOCK=]
+
+  -h, --help
+          Print help (see a summary with '-h')

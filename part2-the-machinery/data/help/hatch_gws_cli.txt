@@ -1,0 +1,13 @@
+Thin passthrough args: forward everything to the vendored `gws` binary.
+
+`name` is pinned rather than derived: the agent types `hatch_gws_cli`, so that is what clap's usage and error text must say. It matches the binary again now that the wrapper carries that name directly, but it did not while an exec shim sat in front, and it would not again if a second target were ever built from this same `Args` type.
+
+Usage: hatch_gws_cli [ARGS]...
+
+Arguments:
+  [ARGS]...
+          All remaining args are forwarded to `gws`
+
+Options:
+  -h, --help
+          Print help (see a summary with '-h')

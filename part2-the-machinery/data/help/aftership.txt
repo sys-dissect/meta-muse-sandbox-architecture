@@ -1,0 +1,13 @@
+Track shipments through Hatch's managed AfterShip connector
+
+Usage: aftership [OPTIONS] <COMMAND>
+
+Commands:
+  status          Check connector availability. --verify performs a lightweight AfterShip probe
+  detect-courier  Detect possible couriers for a tracking number
+  tracking        Read an existing tracking record
+  register        Register a tracking number with AfterShip
+
+Options:
+      --compact  Print compact JSON
+  -h, --help     Print help

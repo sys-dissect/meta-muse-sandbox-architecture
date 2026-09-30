@@ -1,0 +1,80 @@
+Public web search via web-search-tool.
+
+Usage: web-search [OPTIONS] [QUERY]...
+
+Arguments:
+  [QUERY]...
+          Search query (free text). If you provide multiple tokens, they are joined with spaces
+
+Options:
+  -q, --query <QUERIES>
+          Search query. Overrides positional QUERY; when repeated, only the first nonempty query is searched. Use separate calls for other queries
+
+      --max-age-days <MAX_AGE_DAYS>
+          Drop results whose page is older than this many days, or states no date at all, before returning them.
+          
+          OFF unless passed, so every existing caller is unaffected. Unlike `--since`, which the search service ignores, this is enforced here on the results the service actually returned. Callers filling a daily (the Hatch feed's research desks) set it; a caller answering one person's question should not, since an older page is often the right answer there.
+
+      --max-age-keep-when-empty
+          With `--max-age-days`, return an all-stale page intact and labelled rather than empty.
+          
+          For callers that cannot afford an empty page. Only the ALL-stale case falls back: a page holding one fresh result is still thinned to it. Ignored without `--max-age-days`.
+
+      --max-age-widenable
+          With `--max-age-days`, whether the caller could have asked for a WIDER bar than the one it passed.
+          
+          Copy only, and it exists because an emptied page has two very different causes and the notice has to name the right remedy. A caller filtering at a narrow bar may have asked a question with no news cycle, and re-asking it at a wide bar is the fix; a caller already at its widest bar has genuinely found nothing current, and telling it to widen would loop. This crate holds no opinion about what the bands ARE, so the caller answers the one question the copy needs rather than passing its vocabulary down. Ignored without `--max-age-days`.
+
+      --max-age-keep-undated
+          With `--max-age-days`, keep results that state no publication date, listed after the dated ones, instead of removing them.
+          
+          OFF by default, which is the stricter behaviour: an undated page is removed with the stale ones. That default is right for a caller whose question expires inside a news cycle, where a page that will not say when it was published cannot be shown to be today's. A caller asking something with no news cycle passes this, because there the missing date is no evidence against a page and those pages are frequently the canonical source. Ignored without `--max-age-days`.
+
+      --max-age-keep-stale
+          With `--max-age-days`, keep results OLDER than the bar too, listed after the fresh ones, instead of removing them.
+          
+          OFF by default. Passing it turns this filter from a gate into a pure SORTER: nothing is removed, everything is ordered and labelled. Only a caller whose question has no expiry at all should ask for that, because for every narrower question a page stating a date past the bar is convicted by its own timestamp and keeping it is how a stale telling reaches the reader. Ignored without `--max-age-days`.
+
+      --language <LANGUAGE>
+          ISO 639-1 language code
+
+      --verticals <VERTICALS>
+          Vertical intent hint (repeatable)
+
+      --serving-config-name <SERVING_CONFIG_NAME>
+          Override the MSL serving config by name (e.g. `hatch_space`, `hatch_space_sports_news_obm_merged`). Forwarded to WWW as `tool_config_overrides.web_search.serving_config_name`, which MSL honors over consumer_id routing. Defaults to $WEB_SEARCH_SERVING_CONFIG
+
+      --location-context <LOCATION_CONTEXT>
+          JSON location context forwarded to the Stefi POST body as `location_context`. Passed by the daemon from session state (client_ip, latitude, longitude, timezone)
+
+      --out <OUT>
+          Where to write the extracted tool payload. Optional - when omitted, no file is written and the summary omits `output_path`
+
+      --no-save
+          Don't write the tool payload to disk (even if --out is provided)
+
+      --stdout
+          Print the extracted tool payload to stdout (disables summary output).
+          
+          Legacy alias: `--print`.
+
+      --hints
+          Include ready-to-run inspection command hints in the summary JSON.
+          
+          Off by default to keep stdout token-light.
+
+      --url <URL>
+          API endpoint URL
+
+      --conversation-id <CONVERSATION_ID>
+          Conversation id string (default: generated UUID)
+
+      --request-id <REQUEST_ID>
+          Optional request id propagated to HatchToolCallRequest.request_id
+
+      --iteration-index <ITERATION_INDEX>
+          0-based iteration index within the current user turn
+
+      --timeout-secs <TIMEOUT_SECS>
+          HTTP timeout, in seconds
+          

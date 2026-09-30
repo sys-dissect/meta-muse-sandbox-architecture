@@ -1,0 +1,39 @@
+Browser open/find via MslBrowserService through Stefi.
+
+Usage: browser-service [OPTIONS] --operation <OPERATION>
+
+Options:
+      --operation <OPERATION>
+          Tool operation: "open", "find", or "lookup_citation_url"
+      --url <URL>
+          URL to fetch (for open with URL string)
+      --url-id <URL_ID>
+          Page ID from a prior browser.open or web.search result
+      --outlink-idx <OUTLINK_IDX>
+          Outlink index to follow on the referenced page (browser.open)
+      --outlink-indices <OUTLINK_INDICES>
+          Outlink indices for batch lookup (browser.lookup_citation_url). Repeat the flag to pass multiple indices: `--outlink-indices 0 --outlink-indices 2 --outlink-indices 5`. When absent or empty, returns all outlinks (capped at 30)
+      --line-start <LINE_START>
+          Line number to start viewing/searching from (0-indexed)
+      --pattern <PATTERN>
+          Text pattern to search for (case-insensitive)
+      --mode <MODE>
+          Caller-classified request mode (open only)
+      --conversation-id <CONVERSATION_ID>
+          Conversation id for the Stefi payload (default: generated UUID). Not the local page-cache scope -- that comes from JARVIS_SESSION_ID
+      --user-provided-urls <USER_PROVIDED_URLS>
+          JSON array of URLs explicitly provided by the user in conversation
+      --location-context <LOCATION_CONTEXT>
+          JSON location context from the daemon (client_ip, lat, lon, tz)
+      --request-id <REQUEST_ID>
+          Optional request id for correlation
+      --iteration-index <ITERATION_INDEX>
+          0-based iteration index within the current user turn
+      --url-endpoint <URL_ENDPOINT>
+          API endpoint URL override
+      --timeout-secs <TIMEOUT_SECS>
+          HTTP timeout in seconds [default: 30]
+      --retries <RETRIES>
+          Retries for transient request failures (network errors, 408/425, 5xx, and direct-provider 429 responses). CAGI 429 responses are terminal [default: 2]
+  -h, --help
+          Print help

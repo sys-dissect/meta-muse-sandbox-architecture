@@ -1,0 +1,11 @@
+Geocoding via Stefi forward/reverse geocode endpoints
+
+Usage: geocode <COMMAND>
+
+Commands:
+  forward  Forward geocode: resolve an address or place name to coordinates
+  reverse  Reverse geocode: resolve coordinates to an address
+  help     Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help

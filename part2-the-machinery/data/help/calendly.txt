@@ -1,0 +1,17 @@
+Calendly API helper CLI
+
+Usage: calendly <COMMAND>
+
+Commands:
+  status         Check connection status
+  disconnect     Remove stored OAuth credentials
+  authorize-url  Generate OAuth authorization URL
+  exchange-code  Exchange OAuth authorization code for tokens
+  request        Make a raw API request
+  me             Get current user info
+  list-events    List scheduled events
+  event-types    List available event types
+  help           Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help

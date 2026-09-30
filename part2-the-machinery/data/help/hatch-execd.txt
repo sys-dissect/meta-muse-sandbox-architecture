@@ -1,0 +1,1 @@
+2026-09-30T10:21:19.609245Z ERROR execd fatal error error="execd requires --socket when systemd socket activation (LISTEN_FDS) is unavailable"

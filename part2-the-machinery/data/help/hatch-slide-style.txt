@@ -1,0 +1,12 @@
+Resolve a slide deck's StylePlan (archetype, theme, palette, fonts, scaffold).
+
+Usage: hatch-slide-style <COMMAND>
+
+Commands:
+  plan         Print a StylePlan JSON (stdout) for the deck plan described in `--input`
+  list-themes  Print the theme catalog (id, family, palette, fonts, image_style) as JSON, for the native editor's theme picker or a build-time catalog
+  theme        Print the canonical `:root` variables + Google Fonts link to APPLY a theme, so the UI's applied colours match the picker swatch
+  help         Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help

@@ -1,0 +1,80 @@
+Meta 1P social search across Instagram, Threads, and Facebook.
+
+Usage: hatch-zeitgeist [OPTIONS] [QUERY]...
+
+Arguments:
+  [QUERY]...
+          Discovery query (free text). Use this to find candidate posts and URLs. If you need rich fields for a specific post, use --post-url instead
+
+Options:
+  -q, --query <QUERIES>
+          Provide one or more discovery queries explicitly (repeatable). Overrides positional QUERY if set
+
+      --visual-query <VISUAL_QUERIES>
+          Visual/media search queries (repeatable)
+
+      --since <SINCE>
+          Filter to posts on or after this date (YYYY-MM-DD). Must not be in the future
+
+      --until <UNTIL>
+          Filter to posts on or before this date (YYYY-MM-DD). Must not be in the future
+
+      --username <USERNAMES>
+          Filter search results to posts from specific account handles (repeatable)
+
+      --key-celebrity <KEY_CELEBRITIES>
+          Key people the query is ABOUT (repeatable): boosts their authored posts in ranking without hard-filtering to them, unlike --username
+
+      --group-name <GROUP_NAMES>
+          Filter search results to Facebook Groups by display name (repeatable). Only valid for Facebook search mode
+
+      --platform <PLATFORMS>
+          Platform filter for search mode. Repeat to search a specific subset; omit to search all platforms
+          
+          [possible values: instagram, threads, facebook]
+
+      --content-type <CONTENT_TYPE>
+          Content type filter. Omit to return all content types
+          
+          [possible values: image, video]
+
+      --relation-to-author <RELATION_TO_AUTHOR>
+          Filter by author's social relationship. Omit for default behavior
+          
+          [possible values: friend, followee, follower, all]
+
+      --ranking-intent <RANKING_INTENT>
+          Ranking intent for search results. Omit for backend default
+          
+          [possible values: informational, engagement, recency]
+
+      --excerpt <EXCERPT>
+          Optional excerpt from the user's profile relevant to this query (for personalization)
+
+      --location <LOCATION>
+          Location filter for geographic search (city name, address, landmark, etc.)
+
+      --post-url <POST_URL>
+          Direct lookup for one Instagram, Facebook, or Threads post URL
+
+      --user-id <USER_ID>
+          Numeric user id for the tool call payload
+
+      --out <OUT>
+          Where to write the extracted tool payload.
+          
+          Required unless using --no-save, --stdout, --raw, or --json. This is the main output of the tool; stdout will contain a small summary by default.
+
+      --no-save
+          Don't write the tool payload to disk (not recommended; models usually want a file path)
+
+      --no-parse
+          Skip writing a parsed JSON view for XML-ish post output
+
+      --parsed-out <PARSED_OUT>
+          Where to write the parsed JSON view for XML-ish post output.
+          
+          If omitted, no parsed JSON sidecar is written.
+
+      --stdout
+          Print the extracted tool payload to stdout (disables summary output).

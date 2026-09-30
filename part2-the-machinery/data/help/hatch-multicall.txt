@@ -1,0 +1,1 @@
+Error: hatch-multicall: unknown tool identity "hatch-multicall". Invoke via one of the installed name-symlinks (e.g. /opt/hatch/bin/media-generation), not by the hatch-multicall name directly.

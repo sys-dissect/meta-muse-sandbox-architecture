@@ -1,0 +1,16 @@
+HealthEx OAuth helper and MCP proxy used by the HealthEx skill.
+
+Usage: healthex <COMMAND>
+
+Commands:
+  status         
+  setup          
+  disconnect     
+  authorize-url  
+  refresh        
+  exchange-code  
+  mcp-list       
+  mcp-call       
+
+Options:
+  -h, --help  Print help

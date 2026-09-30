@@ -1,0 +1,15 @@
+Use Figma's official remote MCP server
+
+Usage: figma <COMMAND>
+
+Commands:
+  status         Check OAuth state and, when connected, verify the MCP server
+  authorize-url  Generate an OAuth authorization URL
+  exchange-code  Exchange an OAuth authorization code for tokens
+  refresh        Refresh the stored access token
+  disconnect     Delete the stored OAuth connection
+  list-tools     List the live MCP tools and schemas
+  call-tool      Call a reviewed tool from the official MCP server
+
+Options:
+  -h, --help  Print help

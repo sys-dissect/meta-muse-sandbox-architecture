@@ -1,0 +1,856 @@
+{
+ "aftership": [
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "asana": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "authdc": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/noded/ephemeral.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "box-cli": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "browser-broker": [
+  "/run/hatch/browser-broker/browser-broker.sock",
+  "/run/hatch/browser-lease-helper/helper.sock",
+  "/run/hatch/browser/control.sock",
+  "/run/hatch/daemon/browser-control.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "browser-service": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/noded/ephemeral.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "calendly": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "canva": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "device-data": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/noded/ephemeral.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "dropbox": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "duffel": [
+  "/run/hatch/checkout-spend/checkout-spend.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "edits": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/noded/ephemeral.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "etsy-cli": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "evernote": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "facebook-cli": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "feature-request": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/noded/ephemeral.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "figma": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "flightaware": [
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "function-health": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "genui-display-render": [
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/inference.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sandbox-api/api.sock",
+  "/run/hatch/voice-genui-decision/voice-genui-decision.sock"
+ ],
+ "geocode": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/noded/ephemeral.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "ghl": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "github": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "granola-cli": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "hatch": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/browser-broker/browser-broker.sock",
+  "/run/hatch/checkout-spend/checkout-spend.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/cron-browser-broker/cron-browser-broker.sock",
+  "/run/hatch/cron-store/control.sock",
+  "/run/hatch/daemon/browser-control.sock",
+  "/run/hatch/daemon/egress-approvals-events.sock",
+  "/run/hatch/daemon/enter-tool-environment.sock",
+  "/run/hatch/daemon/http-api.sock",
+  "/run/hatch/daemon/metrics.sock",
+  "/run/hatch/daemon/realtime-protocol.sock",
+  "/run/hatch/daemon/rtc-stats.sock",
+  "/run/hatch/exec/execd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/health-delete/health-delete.sock",
+  "/run/hatch/noded/control.sock",
+  "/run/hatch/peerd/api.sock",
+  "/run/hatch/present-widget/present-widget.sock",
+  "/run/hatch/privsep/privsep-test-fully-isolated.sock",
+  "/run/hatch/proactivity-browser-broker/proactivity-browser-broker.sock",
+  "/run/hatch/proxy/inference.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/research-browserd/research-browserd.sock",
+  "/run/hatch/rtc/realtime.sock",
+  "/run/hatch/safety/security.sock",
+  "/run/hatch/sandbox-api/api.sock",
+  "/run/hatch/sandbox/space-inference.sock",
+  "/run/hatch/sandbox/space-media.sock",
+  "/run/hatch/sandbox/space-privileged.sock",
+  "/run/hatch/sandbox/space-web-search.sock",
+  "/run/hatch/sentinel/daemon-egress-approvals.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/sentinel/http-api.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/ssh-access/ssh-access.sock",
+  "/run/hatch/tailscale/control.sock",
+  "/run/hatch/telemetry/bugreport.sock",
+  "/run/hatch/telemetry/telemetry.sock",
+  "/run/hatch/vault-encrypt/encrypt.sock",
+  "/run/hatch/voice-genui-decision/voice-genui-decision.sock",
+  "/run/hatch/whatsapp-keyd/keyd.sock"
+ ],
+ "hatch-browser-lease-helper": [
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock"
+ ],
+ "hatch-connector-output": [],
+ "hatch-doctor": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "hatch-execd": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/exec/execd-taint.sock"
+ ],
+ "hatch-healthd": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/daemon/metrics.sock",
+  "/run/hatch/healthd/healthd.sock",
+  "/run/hatch/proxy/inference.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/sentinel/http-api.sock",
+  "/run/hatch/telemetry/telemetry.sock",
+  "/run/hatch/vault/health.sock"
+ ],
+ "hatch-multicall": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/noded/ephemeral.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "hatch-rescue": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/daemon/metrics.sock",
+  "/run/hatch/disk-usage/disk-usage.sock",
+  "/run/hatch/healthd/healthd.sock",
+  "/run/hatch/proxy/inference.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/rescue/http-api.sock",
+  "/run/hatch/rescue/systemctl.sock",
+  "/run/hatch/rescue/ws.sock",
+  "/run/hatch/sentinel/http-api.sock",
+  "/run/hatch/telemetry/telemetry.sock",
+  "/run/hatch/vault/health.sock"
+ ],
+ "hatch-rescue-systemctl": [
+  "/run/hatch/rescue/systemctl.sock"
+ ],
+ "hatch-rescuectl": [
+  "/run/hatch/disk-usage/disk-usage.sock",
+  "/run/hatch/rescue/http-api.sock",
+  "/run/hatch/storage-recovery/filesystem.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "hatch-slide-style": [
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock"
+ ],
+ "hatch-vault": [
+  "/run/hatch/tee-report/tee-report.sock",
+  "/run/hatch/telemetry/telemetry.sock",
+  "/run/hatch/vault-encrypt/encrypt.sock",
+  "/run/hatch/vault-hmac/hmac.sock",
+  "/run/hatch/vault/auth.sock",
+  "/run/hatch/vault/cvm.sock",
+  "/run/hatch/vault/health.sock"
+ ],
+ "hatch-ws-client": [
+  "/run/hatch/daemon/http-api.sock"
+ ],
+ "hatch-zeitgeist": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "hatch_gws_auth": [
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock"
+ ],
+ "hatch_gws_cli": [
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "hatch_messenger_cli": [
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "health-cli": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/health-delete/health-delete.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "healthex": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "healthkit-cli": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "image-search": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/noded/ephemeral.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "ingress-rev-proxy": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/daemon/browser-control.sock",
+  "/run/hatch/daemon/http-api.sock",
+  "/run/hatch/daemon/metrics.sock",
+  "/run/hatch/healthd/healthd.sock",
+  "/run/hatch/journal/gateway.sock",
+  "/run/hatch/noded/http-api.sock",
+  "/run/hatch/peerd/ingress.sock",
+  "/run/hatch/rescue/http-api.sock",
+  "/run/hatch/rescue/ws.sock",
+  "/run/hatch/sentinel/http-api.sock",
+  "/run/hatch/ssh-access/ssh-access.sock",
+  "/run/hatch/storage-recovery/http-api.sock",
+  "/run/hatch/tee-report/tee-report.sock",
+  "/run/hatch/telemetry/telemetry.sock",
+  "/run/hatch/tunnel/raw.sock",
+  "/run/hatch/vault/auth.sock",
+  "/run/hatch/vault/health.sock",
+  "/run/hatch/yolk/yolk.sock"
+ ],
+ "instagram-cli": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "instagram-messages-cli": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "klaviyo": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "linear": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "local-search": [
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock"
+ ],
+ "lovable": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "mcp-cli": [
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "media-generation": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/noded/ephemeral.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "media-library": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/noded/ephemeral.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "meta-ads-cli": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "meta-catalog-search": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "muse-mail": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/noded/ephemeral.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "native-comms-cli": [
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock"
+ ],
+ "notion-cli": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "nutrition-cli": [],
+ "onepassword": [
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock"
+ ],
+ "opentable": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "outlook-calendar": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "outlook-contacts": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "outlook-mail": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "peloton": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "philips-hue": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "places": [
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock"
+ ],
+ "plaid": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "printify": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "privsep-test-fully-isolated": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/noded/ephemeral.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "quickbooks": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "remote-storage": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "replit": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "save-to-spotify": [
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "share": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/noded/ephemeral.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "shop-wallet-cli": [
+  "/run/hatch/checkout-spend/checkout-spend.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "shopify": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "shopify-ucp-cli": [
+  "/run/hatch/checkout-spend/checkout-spend.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "shopping": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/noded/ephemeral.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "slack": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "spawnd": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/browser-broker/browser-broker.sock",
+  "/run/hatch/browser-lease-helper/helper.sock",
+  "/run/hatch/cagi-proxy/cagi.sock",
+  "/run/hatch/checkout-spend/checkout-spend.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/cron-browser-broker/cron-browser-broker.sock",
+  "/run/hatch/cron-store/control.sock",
+  "/run/hatch/daemon/browser-control.sock",
+  "/run/hatch/daemon/egress-approvals-events.sock",
+  "/run/hatch/daemon/enter-tool-environment.sock",
+  "/run/hatch/daemon/execd-taint.sock",
+  "/run/hatch/daemon/execd.sock",
+  "/run/hatch/daemon/http-api.sock",
+  "/run/hatch/daemon/metrics.sock",
+  "/run/hatch/daemon/present-widget.sock",
+  "/run/hatch/daemon/realtime-protocol.sock",
+  "/run/hatch/daemon/rtc-stats.sock",
+  "/run/hatch/disk-usage/disk-usage.sock",
+  "/run/hatch/exec/execd-taint.sock",
+  "/run/hatch/exec/execd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/health-delete/health-delete.sock",
+  "/run/hatch/journal-projection/telemetry.sock",
+  "/run/hatch/local-models/inference.sock",
+  "/run/hatch/memory/memory.sock",
+  "/run/hatch/messenger/messengerd.sock",
+  "/run/hatch/noded/control.sock",
+  "/run/hatch/noded/ephemeral.sock",
+  "/run/hatch/noded/http-api.sock",
+  "/run/hatch/present-widget/present-widget.sock",
+  "/run/hatch/privsep/ads-mcp.sock",
+  "/run/hatch/privsep/browser.sock",
+  "/run/hatch/privsep/flock-cli.sock",
+  "/run/hatch/privsep/hatch-email-provision.sock",
+  "/run/hatch/privsep/hatch-gws-cli.sock",
+  "/run/hatch/privsep/oura.sock",
+  "/run/hatch/privsep/phone.sock",
+  "/run/hatch/privsep/privsep-test-partially-isolated.sock",
+  "/run/hatch/privsep/square.sock",
+  "/run/hatch/privsep/strava-cli.sock",
+  "/run/hatch/privsep/user-context.sock",
+  "/run/hatch/proactivity-browser-broker/proactivity-browser-broker.sock",
+  "/run/hatch/proxy/db.sock",
+  "/run/hatch/proxy/inference.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/rescue/http-api.sock",
+  "/run/hatch/rescue/rescue-signal.sock",
+  "/run/hatch/rescue/systemctl.sock",
+  "/run/hatch/rescue/ws.sock",
+  "/run/hatch/research-browserd/research-browserd.sock",
+  "/run/hatch/rtc/realtime.sock",
+  "/run/hatch/safety/security.sock",
+  "/run/hatch/sandbox-api/api.sock",
+  "/run/hatch/sentinel/daemon-egress-approvals.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/sentinel/egress-approvals.sock",
+  "/run/hatch/sentinel/http-api.sock",
+  "/run/hatch/shop-wallet-proxy/proxy.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/ssh-access/ssh-access.sock",
+  "/run/hatch/storage-recovery/filesystem.sock",
+  "/run/hatch/storage-recovery/http-api.sock",
+  "/run/hatch/tailscale/proxy.sock",
+  "/run/hatch/tee-report/tee-report.sock",
+  "/run/hatch/telemetry/bugreport.sock",
+  "/run/hatch/telemetry/telemetry.sock",
+  "/run/hatch/tunnel/link-proxy.sock",
+  "/run/hatch/tunnel/raw.sock",
+  "/run/hatch/voice-genui-decision/voice-genui-decision.sock",
+  "/run/hatch/wai/wai.sock",
+  "/run/hatch/whatsapp-companion/companion.sock",
+  "/run/hatch/whatsapp-keyd/keyd.sock",
+  "/run/hatch/www-proxy/www.sock"
+ ],
+ "spotify-api": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "stripe": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "stripe-link": [
+  "/run/hatch/checkout-spend/checkout-spend.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "subscription-status": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/noded/ephemeral.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "tailscale": [
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/tailscale/control.sock"
+ ],
+ "tessie-api": [
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "threads-cli": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "threads-messages-cli": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "ticketmaster": [
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "todoist": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "tts": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/noded/ephemeral.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "vercel": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "wearables-display": [
+  "/run/hatch/daemon/present-widget.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/inference.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock"
+ ],
+ "web-search": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/credit-watcher/credit-watcher.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/noded/ephemeral.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock",
+  "/run/hatch/space-share/space-share.sock",
+  "/run/hatch/telemetry/telemetry.sock"
+ ],
+ "withings": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "zapier": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ],
+ "zoom": [
+  "/run/hatch/auth/authd.sock",
+  "/run/hatch/gk-proxy/gk.sock",
+  "/run/hatch/proxy/stefi.sock",
+  "/run/hatch/safety-scan/verification-codes.sock",
+  "/run/hatch/sentinel/egress-approvals-admin.sock"
+ ]
+}

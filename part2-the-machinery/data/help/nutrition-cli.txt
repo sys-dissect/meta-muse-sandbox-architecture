@@ -1,0 +1,54 @@
+Nutrition — local meal logging plus a structured read interface, under `health-cli nutrition`.
+
+Reading nutrition data: use `query`, and `list-fields` to discover the fields for a category. All options are FLAGS, never positional, e.g. `--category daily`.
+  WRONG:   health-cli nutrition query daily
+  CORRECT: health-cli nutrition query --category daily --today
+
+Read commands:
+  list-fields   list the field names available for a --category (meals|daily|items)
+  query         query meals / daily totals / items over a date range; never write SQL
+
+Examples:
+  health-cli nutrition list-fields --category daily
+  health-cli nutrition query --category daily --today
+  health-cli nutrition query --category daily --start-date 2026-06-01 --end-date 2026-06-07 --interval daily --timezone America/Los_Angeles
+  health-cli nutrition query --category meals --start-date 2026-06-18 --timezone America/Los_Angeles
+  health-cli nutrition query --category items --name chicken --start-date 2026-06-01
+
+Meal logging and other commands are listed under Commands below.
+
+>>> IMPORTANT: for the full flag list, field names, output shapes, and the meal-logging workflow, READ the nutrition skill (`/opt/hatch/skills/nutrition/SKILL.md`) — THAT IS THE SOURCE OF TRUTH, NOT THIS TEXT. <<<
+
+Usage: health-cli nutrition [OPTIONS] <COMMAND>
+
+Commands:
+  init                          Initialize the local nutrition database (idempotent; no-op if already initialized)
+  cleanup                       Delete the local nutrition database file and its WAL/SHM siblings. Destructive — requires `--yes` to proceed
+  create                        Create a meal with items
+  create-batch                  Create multiple meals atomically from one JSON array. Every entry has its own `summary` (or `title`), `meal_type`, `timestamp`, `raw_input`, `notes`, `photo_path`, and `items`. If any entry is invalid, no meals are written
+  update                        Update a meal's metadata and (optionally) replace its items
+  delete                        Soft-delete a meal
+  list-fields                   List the field names available for a `query --category`
+  query                         Structured, read-only query over logged nutrition data (no raw SQL)
+  food-search                   Search the nutrition food database and matching logged-item history by food name (`--query`), or look up only a UPC barcode (`--upc`)
+  barcode-decode                Decode a barcode image to look up product nutrition data
+  create-from-queue             Convert a queued meal (in `data/nutrition_ingestion/queued/<UUID>/`) into a logged meal: read its metadata.json, INSERT the meal into the local nutrition DB, and remove the UUID dir on success. Used by the meal-review skill on the "accept" branch
+  queue-list                    List meals in the review queue. Defaults to `--state queued`. Pass `--meal-id <X>` to fetch a single entry across all storage states
+  queue-update                  Update a queued meal in place. Optionally move it to a new state and/or replace its `food_items` payload. With neither `--state` nor `--items`, this is a no-op. To hard-delete a queue entry, use `queue-delete`
+  queue-delete                  Hard-delete a queued meal: removes its UUID dir (image + json) from whichever state subdir it currently lives in. Used by the meal-review skill on the "reject" branch
+  meal-photo-group-list         List the pre-extracted meals in queued meal-photo-group batch folder(s) under `data/nutrition_ingestion/queued/`. With `--dir` lists one folder; without it, lists every queued batch. Each meal carries `event_id`, `folder`, `summary`, `food_items`, `captured_at_ms`, `image_path`, and `already_logged`. Used by the recap and the execute-resolve procedure to render the batch
+  create-from-meal-photo-group  Log the pre-extracted meals from a single meal photo group batch folder into the nutrition DB (mapping nutrients, copying images, deduping by tombstone), then delete the folder once fully resolved. With no `--accept-id` / `--reject-id`, logs every (non-duplicate) meal (auto mode). In review mode pass `--accept-id <event_id>` (repeatable) to log a subset and/or `--reject-id <event_id>` to tombstone-reject without logging; meals in neither set are left for a later pass
+  places-nearby                 Find nearby restaurants and cafes by WGS-84 coordinates
+  present-card                  Present the meal-history chat card for a date window — the SAME window you passed to `query --category meals`. Use this ONLY when the user asked to SEE or REVIEW their meals across that window (e.g. "what did I eat today / this past week?"). The `query --category meals` output's `card` field restates when to use it and gives the exact command. Do NOT use it for a metric, a single meal type, or a food lookup. Re-queries the window and renders the card; safe to run after a `query` read
+  targets-set                   Append one revision for each calorie or macronutrient target in `--items`
+  targets-clear                 Clear calorie or macronutrient targets by appending zero tombstones
+  targets-query                 Query current, point-in-time, or bounded nutrition target history
+
+Options:
+      --timeout-secs <TIMEOUT_SECS>
+          HTTP timeout in seconds
+          
+          [default: 30]
+
+  -h, --help
+          Print help (see a summary with '-h')

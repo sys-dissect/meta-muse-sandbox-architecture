@@ -1,0 +1,8 @@
+{
+ "hatch-ws-client": "diagnostic client for the daemon http-api; its clap args (--http_api_url, --path, --verb, --subscribe_path) and string refs make these the highest-confidence daemon routes. JARVIS_WS_ADDR default ws://127.0.0.1:18789/",
+ "hatch": "/hatch/* are stefi-proxy routes (http://localhost/hatch/...); /api/* /fs/* also served on daemon http-api (subset string-confirmed). Glued literals mean some multi-segment routes may be truncated.",
+ "ingress-rev-proxy": "internet-facing Noise_XX reverse proxy; this is the EXTERNAL route table it proxies. /api/permissions/* family = Sentinel permission surface; /v1/vault/migration/* = vault migration; /v1/ssh/operator/* = SSH access control.",
+ "hatch-rescue": "rescue agent http-api routes.",
+ "spawnd": "no routes served; only client-side substring refs (/fs/read, /v1/noise).",
+ "_method": "strings -a -n 4 + manual curation; Rust literals glue without NUL so raw tokens were split at route-prefix boundaries and verified by byte context; no methods or liveness claimed"
+}

@@ -1,0 +1,10 @@
+Search for places by name, category, or intent.
+
+Usage: local-search [OPTIONS]
+
+Options:
+      --query <QUERIES>            Place-search query. Repeat for complementary queries; the first is the anchor (max 6)
+      --location <LOCATION>        City, neighborhood, or area. Omit to use runtime location context when available
+      --radius <RADIUS>            Search radius as "<number> <unit>" (for example "5 mi" or "2 km")
+      --search-type <SEARCH_TYPE>  discovery for category/set searches; known_place for a named venue or landmark [default: discovery] [possible values: discovery, known_place]
+  -h, --help                       Print help

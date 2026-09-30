@@ -1,0 +1,23 @@
+Philips Hue Remote API v2 helper CLI
+
+Usage: philips-hue <COMMAND>
+
+Commands:
+  status         Check OAuth connection and bridge link status
+  authorize-url  Return the authorization URL for the active backend
+  disconnect     Disconnect from the active backend
+  link-bridge    Pair with Hue Bridge via remote API
+  list-lights    List all lights
+  list-rooms     List all rooms
+  list-zones     List all zones
+  list-scenes    List scenes, optionally filtered by room
+  list-devices   List all physical devices
+  list-sensors   List motion, temperature, and light-level sensors
+  list-buttons   List buttons and rotary controls
+  light          Control a single light
+  group          Control a grouped light (room/zone)
+  scene          Activate a scene
+  help           Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help

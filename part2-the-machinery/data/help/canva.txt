@@ -1,0 +1,19 @@
+Use Canva's official remote MCP server
+
+Usage: canva <COMMAND>
+
+Commands:
+  upload-file         Upload one local file to Canva with a file-aware approval preview
+  status              Check OAuth state and, when connected, verify the Canva MCP catalogue
+  authorize-url       Generate a Canva OAuth authorization URL
+  exchange-code       Exchange an OAuth authorization code for tokens
+  refresh             Refresh the stored Canva access token
+  disconnect          Delete the stored Canva OAuth connection
+  search-designs      Search the authenticated user's designs
+  get-design-content  Read text content from one design
+  get-design-pages    List page metadata for one design
+  list-tools          List the currently available reviewed Canva MCP tools and their schemas
+  call-tool           Call one reviewed tool from Canva's official MCP catalogue
+
+Options:
+  -h, --help  Print help

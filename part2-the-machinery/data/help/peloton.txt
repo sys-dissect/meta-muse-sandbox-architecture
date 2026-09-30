@@ -1,0 +1,21 @@
+Peloton 3P API helper CLI
+
+Usage: peloton <COMMAND>
+
+Commands:
+  status                  
+  disconnect              
+  authorize-url           
+  refresh                 Ensure the stored access token is fresh, refreshing only when needed
+  ride-archived           
+  ride-live               
+  search-class            
+  search-class-widget     Search classes and present the results as a Muse widget in one invocation
+  schedule-event          
+  delete-scheduled-event  
+  reschedule-event        
+  deeplink                
+  metadata-mappings       
+
+Options:
+  -h, --help  Print help

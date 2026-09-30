@@ -1,0 +1,13 @@
+Shopify UCP checkout helper with trusted endpoint-derived state.
+
+Usage: shopify-ucp-cli [OPTIONS] <COMMAND>
+
+Commands:
+  checkout  Work with Shopify UCP checkout state
+  order     Read placed Shopify UCP order state
+  cart      Assemble, inspect, modify, or cancel a Shopify UCP cart
+
+Options:
+      --timeout-secs <TIMEOUT_SECS>  HTTP timeout in seconds [default: 30]
+      --format <FORMAT>              Output format. Only JSON is supported [default: json] [possible values: json]
+  -h, --help                         Print help

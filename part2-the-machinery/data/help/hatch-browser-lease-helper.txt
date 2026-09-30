@@ -1,0 +1,9 @@
+Socket-activated root relay: forwards broker lease ops to the stefi-proxy and performs the viewer bind-mount
+
+Usage: hatch-browser-lease-helper [OPTIONS]
+
+Options:
+      --stefi-socket <STEFI_SOCKET>  Stefi-proxy UDS lease ops are forwarded to [default: /run/hatch/proxy/stefi.sock]
+      --allowed-peer-uid <UID>       uid(s) allowed to connect (SO_PEERCRED). When empty, the helper resolves `--broker-user`'s uid instead. An empty resulting allow-list rejects every peer (fail-closed)
+      --broker-user <BROKER_USER>    System user whose uid is admitted when `--allowed-peer-uid` is not given [default: hatch-browser-broker]
+  -h, --help                         Print help

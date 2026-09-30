@@ -1,0 +1,14 @@
+Use release-reviewed remote MCP connectors
+
+Usage: mcp-cli <COMMAND>
+
+Commands:
+  servers   List connectors enabled in this release and channel
+  status    Check whether OAuth credentials are available without remote I/O
+  tools     List checked-in descriptions and schemas for reviewed tools
+  call      Execute one reviewed tool after its connector permission check
+  auth-url  Request an authd-owned OAuth connection link
+  help      Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help

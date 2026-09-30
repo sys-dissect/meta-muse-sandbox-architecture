@@ -1,0 +1,25 @@
+Search, read, manage, and share Box content.
+
+Usage: box-cli <COMMAND>
+
+Commands:
+  download        Download a complete file, overwriting --output
+  upload          Upload a local file
+  upload-version  Upload a new version of a file
+  update-file     Rename, move, or change a file's description
+  update-folder   Rename, move, or change a folder's description
+  delete-file     Delete a file. Box may delete permanently if trash is disabled
+  delete-folder   Delete a folder. Box may delete permanently if trash is disabled
+  restore-file    Restore a file retained in Box trash
+  restore-folder  Restore a folder retained in Box trash
+  list-trash      List a page of Box trash; pass next_marker as --marker for the next page
+  status          Check Box OAuth connection and optional command permission status
+  authorize-url   Start the Box connection flow with read-only file access
+  refresh         Refresh the stored Box token without changing its scopes
+  disconnect      Disconnect Box and remove its local credentials
+  list-tools      Discover supported MCP tools, permission groups, and live argument schemas
+  call-tool       Call a supported Box MCP tool. Discover its schema with list-tools
+  help            Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help

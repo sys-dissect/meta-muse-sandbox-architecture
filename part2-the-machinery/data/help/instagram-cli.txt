@@ -1,0 +1,9 @@
+Fetch authenticated Instagram account data (excluding messaging).
+
+Usage: instagram-cli <COMMAND_AND_ARGS>...
+
+Arguments:
+  <COMMAND_AND_ARGS>...  Command name followed by its flags, e.g. `posts --account-id <user_own_fbid> --username <name>`
+
+Options:
+  -h, --help  Print help

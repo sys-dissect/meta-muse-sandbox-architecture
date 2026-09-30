@@ -1,0 +1,9 @@
+Check Instagram Messages account status and access or manage messages.
+
+Usage: instagram-messages-cli <COMMAND_AND_ARGS>...
+
+Arguments:
+  <COMMAND_AND_ARGS>...  Command name followed by its flags, e.g. `inbox --account-id <user_own_fbid> --folder INBOX`
+
+Options:
+  -h, --help  Print help

@@ -1,0 +1,14 @@
+Use Slack's official remote MCP server
+
+Usage: slack <COMMAND>
+
+Commands:
+  status         Check OAuth state and, when connected, verify the Slack MCP server
+  authorize-url  Generate a Slack user-token OAuth authorization URL
+  exchange-code  Exchange an OAuth authorization code for a Slack user token
+  disconnect     Delete the stored Slack OAuth connection
+  list-tools     List Slack's live MCP tools and schemas for review
+  call-tool      Call a tool currently advertised by Slack's official MCP server
+
+Options:
+  -h, --help  Print help

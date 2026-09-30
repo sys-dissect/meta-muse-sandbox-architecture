@@ -1,0 +1,15 @@
+Use Zoom's official remote MCP servers
+
+Usage: zoom <COMMAND>
+
+Commands:
+  status         Check OAuth state and, when connected, verify every MCP server
+  authorize-url  Generate an OAuth authorization URL
+  exchange-code  Exchange an OAuth authorization code for tokens
+  refresh        Refresh the stored access token
+  disconnect     Delete the stored OAuth connection
+  list-tools     List live MCP tools and schemas across every server, or one selected server
+  call-tool      Call a tool currently advertised by a selected official MCP server
+
+Options:
+  -h, --help  Print help

@@ -1,0 +1,11 @@
+CLI for native (SMS/MMS/RCS) comms: contact resolution and message recall.
+
+Usage: native-comms-cli <COMMAND>
+
+Commands:
+  contacts  Search or list contacts (name -> phone-number resolution)
+  messages  Search, list, or fetch native messages
+  threads   List conversation threads
+
+Options:
+  -h, --help  Print help

@@ -1,0 +1,12 @@
+Describe the user's Muse subscription, usage, and available plans
+
+Usage: subscription-status <COMMAND>
+
+Commands:
+  status    Describe the current subscription, usage, and credit availability
+  plans     Describe the current tier and available subscription plans and prices
+  overview  Describe both current usage and available subscription plans
+  help      Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help

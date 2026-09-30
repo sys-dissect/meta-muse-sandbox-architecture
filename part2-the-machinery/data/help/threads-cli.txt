@@ -1,0 +1,33 @@
+Fetch authenticated Threads data.
+
+Usage: threads-cli [OPTIONS] <COMMAND>
+
+Commands:
+  accounts               
+  profile                
+  activity-feed          
+  liked-media            
+  saved-posts            
+  insights-overview      
+  post-insights          
+  top-posts              
+  user-profile           
+  profile-threads        
+  profile-replies        
+  profile-media          
+  followers              
+  following              
+  post                   
+  fetch-post-comments    
+  fetch-post-likers      
+  feedback-hub-overview  
+  feedback-hub-tab       
+  trends                 
+  search                 
+  feed                   
+  dear-algo-whisper      
+
+Options:
+      --retries <RETRIES>        Retries for transient request failures (network errors and 5xx) [default: 0]
+      --account-id <ACCOUNT_ID>  Run the command for a specific Threads account. Get available IDs from `accounts`
+  -h, --help                     Print help

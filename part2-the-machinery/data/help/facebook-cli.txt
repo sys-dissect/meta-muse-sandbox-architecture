@@ -1,0 +1,21 @@
+Facebook CLI via stefi proxy.
+
+Usage: facebook-cli [OPTIONS] <COMMAND>
+
+Commands:
+  me            Current user operations. Run without a subcommand to get your identity
+  post          Post operations: read posts, comments, and reactions
+  pages         Managed Page discovery, insights, native drafts and approved posts
+  link-sharing  Facebook link-sharing operations for wrapped share URLs
+  profile       Profile operations
+  timeline      Timeline operations
+  story         Story operations
+  marketplace   Marketplace operations
+  groups        Groups operations
+  feed          Feed operations: newsfeed and friends feed
+  events        Events operations: search events and read event details
+  saved         Saved items: list, add, remove, and manage collections
+
+Options:
+      --timeout-secs <TIMEOUT_SECS>  HTTP timeout in seconds [default: 30]
+  -h, --help                         Print help

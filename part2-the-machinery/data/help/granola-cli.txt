@@ -1,0 +1,17 @@
+Granola MCP helper for Muse.
+
+Usage: granola-cli [OPTIONS] <COMMAND>
+
+Commands:
+  status         Check OAuth state and, when connected, verify MCP connectivity
+  authorize-url  Generate an OAuth authorization URL for Granola
+  exchange-code  Exchange an OAuth authorization code for tokens
+  refresh        Refresh the stored Granola access token
+  disconnect     Delete stored Granola OAuth state locally
+  list-tools     List the currently exposed remote MCP tools
+  call-tool      Call a Granola MCP tool with a JSON arguments object
+
+Options:
+      --endpoint <ENDPOINT>          MCP endpoint URL [default: https://mcp.granola.ai/mcp]
+      --timeout-secs <TIMEOUT_SECS>  HTTP timeout in seconds [default: 120]
+  -h, --help                         Print help

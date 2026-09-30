@@ -1,0 +1,7 @@
+Hatch daemon service binary
+
+Usage: hatch
+
+Options:
+  -h, --help     Print help
+  -V, --version  Print version

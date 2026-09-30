@@ -1,0 +1,35 @@
+Connect this device to a Tailscale network, see what is on it, and disconnect. Joining and leaving need your approval; read-only queries do not.
+
+Usage: tailscale <COMMAND>
+
+Commands:
+  up      Join a tailnet, printing a link to approve this device
+  down    Disconnect and erase this device's identity; delete it yourself in the Tailscale admin console or your own control server
+  status  Show enrollment state and known devices, not service reachability
+  ip      Show this device's own tailnet addresses
+  help    Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help
+          Print help (see a summary with '-h')
+
+Tailnet access:
+  Connected means enrolled, not verified machine or service reachability.
+  Read ~/docs/devices/tailscale.md before accessing a machine.
+  Ordinary networking does not reach the tailnet. Reuse the runtime HTTP proxy,
+  changing only its port to 3130:
+
+    tunnel_proxy="${HTTPS_PROXY%:*}:3130"
+    curl --proxy "$tunnel_proxy" --fail-with-body "http://<tailnet-ip>:<port>/<path>"
+
+  Use an existing service and a safe read path. Other TCP clients, including SSH,
+  must use the same HTTP proxy with CONNECT support.
+  Use tailnet IPs from /opt/hatch/bin/tailscale status or names when MagicDNS is
+  enabled. The proxy honors the tailnet's DNS servers, search domains and split DNS.
+  TCP only: direct curl/SSH, ping, ICMP, and UDP do not test this path. This is not
+  the upstream CLI; its ping, ssh, serve, and funnel subcommands are unsupported.
+  The tunnel runs outside the container and accepts no inbound connections.
+  The first tunnel request to an address needs its own approval; wait for the
+  user instead of timing out or retrying while any approval is pending. For the
+  selected permission lifetime, it covers other ports and TCP services on that
+  exact name or IP; another name or IP for the same machine needs its own.

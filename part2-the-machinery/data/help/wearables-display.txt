@@ -1,0 +1,9 @@
+CLI arguments for `wearables-display`.
+
+The tool takes no user-facing flags — it is a `Stop` lifecycle hook driven entirely by the HookEvent piped to stdin. `event_json` is not a CLI flag: it is populated from stdin in [`WearablesDisplayTool::prepare`] (cell-side) so the raw event travels across the privsep boundary inside the serialized args, since the trusted worker has no stdin of its own.
+
+Usage: wearables-display
+
+Options:
+  -h, --help
+          Print help (see a summary with '-h')

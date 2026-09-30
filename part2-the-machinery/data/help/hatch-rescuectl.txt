@@ -1,0 +1,12 @@
+Rescue-owned operations helper
+
+Usage: hatch-rescuectl <COMMAND>
+
+Commands:
+  restart-component   
+  emit-flare          Emit one validated rescue-diagnosis flare from JSON on stdin
+  emit-codex-session  Emit one bounded rescue Codex session summary from JSON on stdin
+  help                Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help

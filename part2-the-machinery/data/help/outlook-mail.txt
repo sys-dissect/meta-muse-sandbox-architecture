@@ -1,0 +1,22 @@
+Manage Outlook Mail via the Microsoft Graph API.
+
+Usage: outlook-mail [OPTIONS] [COMMAND]
+
+Commands:
+  status         Return connector status/connect/disconnect URLs
+  disconnect     Return a verified disconnect URL for the Outlook Mail connector
+  authorize-url  Generate an OAuth authorization URL
+  exchange-code  Exchange an OAuth authorization code for tokens
+  list           List messages from the inbox
+  get            Get a single message by ID (includes full body)
+  search         Search messages by query string
+  send           Send a new email
+  reply          Reply to an existing message
+  delete         Move a message to the Deleted Items folder
+  mark-read      Mark a message as read
+  mark-unread    Mark a message as unread
+
+Options:
+      --status                       Return connector status/connect/disconnect URLs
+      --timeout-secs <TIMEOUT_SECS>  HTTP timeout in seconds [default: 30]
+  -h, --help                         Print help

@@ -1,0 +1,10 @@
+Shopping product tools.
+
+Usage: shopping <COMMAND>
+
+Commands:
+  product-details        Retrieve canonical product details and variants for a catalog product
+  payment-lane-selected  Record the payment lane chosen for a catalog checkout
+
+Options:
+  -h, --help  Print help

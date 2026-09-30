@@ -1,0 +1,20 @@
+Manage Outlook Contacts via the Microsoft Graph API.
+
+Usage: outlook-contacts [OPTIONS] [COMMAND]
+
+Commands:
+  status         Return connector status/connect/disconnect URLs
+  disconnect     Return a verified disconnect URL for the Outlook Contacts connector
+  authorize-url  Generate an OAuth authorization URL
+  exchange-code  Exchange an OAuth authorization code for tokens
+  list           List contacts from the authenticated user's account
+  get            Get a single contact by ID
+  search         Search contacts by query string
+  create         Create a new contact
+  update         Update an existing contact
+  delete         Delete a contact by ID
+
+Options:
+      --status                       Return connector status/connect/disconnect URLs
+      --timeout-secs <TIMEOUT_SECS>  HTTP timeout in seconds [default: 30]
+  -h, --help                         Print help

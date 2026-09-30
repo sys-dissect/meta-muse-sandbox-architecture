@@ -1,0 +1,23 @@
+Long-running broker daemon that routes browser sessions to leased VMVM browsers
+
+Usage: browser-broker [OPTIONS] --browser-vm-image <BROWSER_VM_IMAGE>
+
+Options:
+      --socket <SOCKET>
+          UDS path to listen on. Default `/run/hatch/browser-broker/browser-broker.sock`, owned by `hatch-browser-broker`. The broker uses mode `0666` for reachability and authorizes peers with SO_PEERCRED after accept. Lives in a per-service subdir of the shared `/run/hatch/` tree, but that subdir is DELIBERATELY not bind-mounted into the runtime cell: the cell has NO path to the broker. The sole client is the host daemon, admitted by exact cgroup identity plus `--allowed-peer-uid`; the in-cell→broker bind remains absent to close the HiTL-consent bypass [default: /run/hatch/browser-broker/browser-broker.sock]
+      --instance <INSTANCE>
+          Fixed runtime owned by this process; never selected by an RPC caller [default: user]
+      --audit-log <AUDIT_LOG>
+          Optional audit-log file. Omitted in production: the broker writes its JSON audit trail to stdout, captured by the journal (`journalctl -u com.hatch.browser-broker`). A path selects a file sink instead (tests / ad-hoc local runs)
+      --allowed-peer-uid <UID>
+          One or more daemon uids allowed to connect after the PeerAcl cgroup check (SO_PEERCRED). Empty list rejects every connection fail-closed
+      --lease-helper-socket <LEASE_HELPER_SOCKET>
+          UDS of the privileged lease helper the on-demand lease router relays lease ops through (forwards to the stefi-proxy; performs the viewer bind-mount). The broker uid cannot reach the stefi-proxy directly [default: /run/hatch/browser-lease-helper/helper.sock]
+      --browser-vm-image <BROWSER_VM_IMAGE>
+          Immutable leased browser VM image ref
+      --muse-browser-vm-image <MUSE_BROWSER_VM_IMAGE>
+          Paired immutable Muse image. Required when the enhanced GK selects Muse
+      --retain-vmvm-for-debug
+          Development only: retain an already-active failed VMVM route and its broker-private Docker API socket until the 15-minute lease TTL or broker shutdown. Idle retained leases are not renewed; renewed demand extends the lease before reuse when its remaining runway is unsafe and restarts an exited retained browser container without recreating it. Has no effect on local-cell routes or VMVM admission
+  -h, --help
+          Print help

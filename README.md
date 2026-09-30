@@ -3,7 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Ubuntu%2024.04%20%7C%20Linux%207.0-informational.svg)](part1-the-cage/)
 [![Isolation](https://img.shields.io/badge/Isolation-Cloud%20Hypervisor%20%2B%20nspawn-orange.svg)](part1-the-cage/)
-[![Security Plane](https://img.shields.io/badge/Security-Sentinel%20Daemon%20(Out--of--Band)-red.svg)](part2-the-mind/)
+[![Engine](https://img.shields.io/badge/Engine-100%20Rust%20Binaries%20%7C%20mold-blueviolet.svg)](part2-the-machinery/)
+[![Security Plane](https://img.shields.io/badge/Security-Sentinel%20Daemon%20(Out--of--Band)-red.svg)](part3-the-mind/)
 [![Methodology](https://img.shields.io/badge/Methodology-Black--Box%20Verification-brightgreen.svg)](part1-the-cage/evidence/)
 
 > Meta published the blueprint. We measured the building.<br>
@@ -19,17 +20,18 @@ While Meta published their high-level Secure VM design (Sept 8, 2026), this repo
 2. **Egress CA Certificate Details:** On-the-fly TLS inspection and re-signing verified via locally installed per-instance egress CA trust anchors.
 3. **AF_VSOCK Hypervisor Channel:** Confirmed connectivity to CID 2 (the hypervisor host) on port 512, identifying the narrow guest-host boundary.
 4. **Transparent Compression Accounting:** 2 GB of zeroes written to `/var/cache/apt/archives` consumed only ~58 MB of physical storage, verifying Btrfs `compress-force=zstd:3` overmount behavior.
-5. **Observed Sentinel Interception:** Empirical capture of real-time stream scrubbing and transcript excision when credentials were leaked during diagnostics, forcing an immediate out-of-band agent re-steering.
+5. **The 100-Binary Suite & Multi-Call Engine:** Full static dissection of `/opt/hatch/bin/`, discovering the 17-applet `hatch-multicall` architecture (Inode 1062), `spawnd` eBPF gatekeeping, and pure Rust 1.97.1 toolchain.
+6. **Observed Sentinel Interception:** Empirical capture of real-time stream scrubbing and transcript excision when credentials were leaked during diagnostics, forcing an immediate out-of-band agent re-steering.
 
 ---
 
 ## Overview
 
-This repository provides an empirical, non-invasive verification of **Meta Muse** (built on the internal Hatch platform runtime). Rather than analyzing static tool definitions or prompt wrappers, this research verifies the architecture from within the live runtime cell:
+This repository provides an empirical, non-invasive verification of **Meta Muse** (built on the internal Hatch platform runtime). Rather than analyzing static tool definitions or prompt wrappers, this research verifies the architecture from within the live runtime cell across three tracks:
 
-1. **The Sandbox & Hypervisor Confinement:** How untrusted agent code runs with container root privileges while strictly isolated via user namespaces (`uid 0 -> 131072`), Seccomp BPF filters, Btrfs zstd overmounts, RFC 2544 synthetic DNS (`198.18.0.0/15`), and transparent egress proxies.
-2. **The Cognitive Engine:** How enterprise autonomous agents evolve across multi-frequency asynchronous cadences (hourly memory consolidation, overnight goal studying, and nightly self-healing "dreaming" passes).
-3. **The Out-of-Band Security Plane ("Sentinel"):** Why prompt-based permissions fail, and how an independent policy daemon enforces opaque approval cards and live output scrubbing without trusting model token streams.
+1. **The Sandbox & Hypervisor Confinement ([Track 1: The Cage](part1-the-cage/)):** How untrusted agent code runs with container root privileges while strictly isolated via user namespaces (`uid 0 -> 131072`), Seccomp BPF filters, Btrfs zstd overmounts, RFC 2544 synthetic DNS (`198.18.0.0/15`), and transparent egress proxies.
+2. **The Binary Engine & IPC Machinery ([Track 2: The Machinery](part2-the-machinery/)):** The full 100-binary suite, the 17-applet `hatch-multicall` memory deduplication architecture, `spawnd` lifecycle and eBPF cgroup supervisor, `hatch-execd` subprocess cgroups, and the 38+ Unix domain socket matrix.
+3. **The Cognitive Engine & Sentinel Security ([Track 3: The Mind](part3-the-mind/)):** How enterprise autonomous agents evolve across multi-frequency asynchronous cadences (hourly memory consolidation, overnight goal studying, and nightly self-healing "dreaming" passes), shell hook event throttling (`silent()` vs `wake()`), and out-of-band Sentinel egress screening.
 
 ---
 
@@ -42,8 +44,8 @@ This research builds on and cross-verifies earlier disclosures, binary teardowns
   *What this repo adds:* Empirical verification from inside the running cell, mapping theoretical boundaries to exact syscall filters, network routes, and storage quotas.
 
 ### Independent Teardowns & Incidents
-- **Hatch Engine Binary Teardown** ([Gist by @simonpure](https://gist.github.com/simonpure/d6f960045334453360eff1e2a0ebda1e)): Static reverse-engineering revealing 38 Unix sockets, `seccompiler`, `libbpf-rs`, `/run/hatch/sentinel/` and `/run/hatch/egress-tls/` paths, and JARVIS/Avocado codenames.
-  *What this repo adds:* Live runtime behavior and socket verification from within the active container environment.
+- **Hatch Engine Binary Teardown** ([Gist by @simonpure](https://gist.github.com/simonpure/d6f960045334453360eff1e2a0ebda1e)): Static reverse-engineering of an isolated single `hatch` binary, identifying 38 Unix sockets and JARVIS codenames.
+  *What this repo adds:* Simon Pure analyzed only one 332 MB executable. Our work maps the entire **100-binary ecosystem**, the `hatch-multicall` architecture, the `spawnd` supervisor, and combines static binary extraction with live in-situ runtime verification from inside the running cell.
 - **macOS Client Teardown** ([muse-endo-teardown by @barkleesanders](https://github.com/barkleesanders/muse-endo-teardown)): Teardown of the Endo desktop client, 51-command device catalog, and Noise-encrypted WebSocket connection to per-user cloud VMs (measured 2026-09-17).
   *What this repo adds:* Focus on the cloud guest and container internals rather than client-side IPC.
 - **Sandbox Export Incident** ([ai-tldr.dev report](https://ai-tldr.dev/releases/mousedev-muse-runtime-export/)): 6.8 GB runtime filesystem export via Google Drive (HN front page, 204 pts; closed as N/A by Meta).
@@ -73,7 +75,19 @@ This research builds on and cross-verifies earlier disclosures, binary teardowns
 │   └── tools/                       # Reproduction tooling
 │       ├── tailscale_ssh_proxy.py   # Port 3130 stdio CONNECT tunnel helper
 │       └── README.md
-└── part2-the-mind/                  # Track 2: Cognitive Engine & Sentinel Whitepaper
+├── part2-the-machinery/             # Track 2: Binary Architecture, Multicall & IPC Whitepaper
+│   ├── README.md                    # 100-binary suite, multicall dispatch, spawnd & IPC matrix
+│   └── data/                        # Extracted JSON schemas, crate deps, metrics & help dumps
+│       ├── applet_dispatch.json
+│       ├── crates.json
+│       ├── ebpf.json
+│       ├── inventory_table.md
+│       ├── metrics.json
+│       ├── routes_by_binary.json
+│       ├── sockets_by_binary_v2.json
+│       ├── tls.json
+│       └── help/
+└── part3-the-mind/                  # Track 3: Cognitive Engine & Sentinel Whitepaper
     ├── README.md                    # Multi-cadence loops, dreaming, and Sentinel security
     └── references/                  # Sanitized architecture references
         ├── alignment_synthesis_sample.md
@@ -87,9 +101,13 @@ This research builds on and cross-verifies earlier disclosures, binary teardowns
   * [Raw Diagnostic Evidence Logs](part1-the-cage/evidence/)
   * [Standalone Reproduction Tools](part1-the-cage/tools/README.md) (including `tailscale_ssh_proxy.py`)
 
-* 📁 [**Part 2: The Mind — Cognitive Cadences, State Loops & Sentinel Security**](part2-the-mind/README.md)
+* 📁 [**Part 2: The Machinery — Binary Architecture, Multi-Call Sub-Agents & IPC Topography**](part2-the-machinery/README.md)
+  * Complete systems whitepaper on the 100-binary `/opt/hatch/bin/` suite, Inode 1062 `hatch-multicall` deduplication, `spawnd` eBPF cgroup gates, `hatch-execd` socket activation, toolchain verification, and the 38+ socket IPC matrix.
+  * [Extracted Datasets & Schemas](part2-the-machinery/data/) (crate graph, sockets, route tables, eBPF rules, metrics)
+
+* 📁 [**Part 3: The Mind — Cognitive Cadences, State Loops & Sentinel Security**](part3-the-mind/README.md)
   * Autonomous agent systems whitepaper deconstructing the multi-frequency cognitive daemons, nightly alignment synthesis, latent goal inference engine (`INFERRED_GOAL_LEADS`), shell hook throttling (`silent()` vs `wake()`), and Sentinel IPC architecture.
-  * [Architecture References](part2-the-mind/references/) (sanitized cognitive engine schemas and hook runtime)
+  * [Architecture References](part3-the-mind/references/) (sanitized cognitive engine schemas and hook runtime)
 
 ---
 

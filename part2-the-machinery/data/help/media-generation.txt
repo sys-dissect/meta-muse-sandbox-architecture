@@ -1,0 +1,80 @@
+Generate images and videos via Meta's media generation API.
+
+Usage: media-generation [OPTIONS] [QUERY]...
+
+Arguments:
+  [QUERY]...
+          Generation query (free text). Multiple tokens are joined with spaces
+
+Options:
+      --icon-pool-name <NAME>
+          Artifact name for an atomic Hatch Icon Atlas pool selection
+
+      --icon-pool-description <DESCRIPTION>
+          Optional artifact description used by Atlas semantic retrieval
+
+      --icon-pool-idempotency-key <KEY>
+          Stable logical-operation key for an idempotent Atlas selection
+
+      --icon-pool-replaces-selection-id <SELECTION_ID>
+          Prior Atlas selection receipt to exclude when explicitly regenerating
+
+      --icon-pool-type <ICON_POOL_TYPE>
+          Camera view: front_view for artifacts, isometric for feed and ideas
+
+      --icon-pool-kind <ICON_POOL_KIND>
+          Product kind supplied to Atlas retrieval (for example `artifact`)
+
+      --icon-pool-tag <ICON_POOL_TAGS>
+          Retrieval tag; repeat for multiple tags, up to 20
+
+      --icon-pool-mode <ICON_POOL_MODE>
+          Select a reusable icon or replace the prior selection receipt
+
+      --media-subagent-output-type <MEDIA_SUBAGENT_OUTPUT_TYPE>
+          Use the unified media_subagent endpoint for image or video output
+          
+          [possible values: image, video]
+
+      --conversation-json <JSON>
+          Ordered JSON array whose entries contain exactly one text or image field
+
+      --task-type <TASK_TYPE>
+          Declare the generation's task type so the server applies its conventions. Never names a model
+
+      --resume-from-snapshot-id <SNAPSHOT_ID>
+          Explicit server-minted snapshot to resume through media_subagent
+
+      --image-output-format <IMAGE_OUTPUT_FORMAT>
+          Re-encode generated images before writing the single final media file
+          
+          [possible values: png, jpg, jpeg, webp]
+
+      --image-id <IMAGE_ID>
+          Source image IDs used for edit mode (repeat flag or pass comma-separated IDs)
+
+      --image-file <PATH>
+          Local file paths to upload via FB Upload Service and use as source image IDs
+
+      --orientation <ORIENTATION>
+          Orientation for the generated media ("square", "vertical", or "landscape")
+          
+          [possible values: square, vertical, landscape]
+
+      --aspect-ratio <ASPECT_RATIO>
+          Exact image width-to-height ratio when orientation is not precise enough
+          
+          [possible values: 4:5, 7:12, 9:16]
+
+      --conversation-id <CONVERSATION_ID>
+          Conversation id string (default: generated UUID)
+
+      --request-id <REQUEST_ID>
+          Per-invocation request id propagated to HatchToolCallRequest.request_id.
+          
+          Hatch dispatch supplies its tool call id so concurrent media calls from one turn retain distinct Mango/Pariscope request trees. The enclosing turn id is propagated separately as parent_request_id. Standalone calls may omit this and inherit the turn-level id from JARVIS_TRACE_CONTEXT.
+
+      --output-dir <DIR>
+          Directory where media-generation should write payload JSON and downloaded media
+
+      --timeout-secs <TIMEOUT_SECS>

@@ -1,0 +1,18 @@
+Connect to HighLevel's Muse MCP server
+
+Usage: ghl <COMMAND>
+
+Commands:
+  status             Check the stored OAuth connection
+  authorize-url      Start connecting a HighLevel account through OAuth
+  exchange-code      Complete an OAuth callback through authd
+  refresh            Refresh the stored OAuth token through authd
+  disconnect         Disconnect the HighLevel account
+  list-tools         Inspect the authenticated provider's tool names and input schemas
+  list-operations    List the pinned HighLevel operations and their granular permission methods
+  execute-operation  Execute or dry-run one HighLevel catalog operation
+  call-tool          Call a reviewed discovery tool using its live input schema
+  help               Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help

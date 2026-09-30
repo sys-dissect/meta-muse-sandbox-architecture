@@ -1,0 +1,18 @@
+Tessie API helper CLI.
+
+Usage: tessie-api [OPTIONS] <COMMAND>
+
+Commands:
+  authorize-url  Return the Muse connect URL for Tessie API-key setup
+  set-token      
+  disconnect     
+  verify         Verify stored API key by calling the Tessie API
+  vehicles       
+  status         
+  state          
+  command        
+  request        
+
+Options:
+      --timeout-secs <TIMEOUT_SECS>  [default: 30]
+  -h, --help                         Print help

@@ -1,0 +1,34 @@
+Spotify Partner API CLI
+
+Usage: spotify-api <COMMAND>
+
+Commands:
+  status             Check connection status
+  disconnect         Disconnect Spotify account
+  authorize-url      Get the active environment's connect URL
+  exchange-code      Exchange an in-VM OAuth authorization code (CVM only)
+  search             Search for content
+  library            Get user's library
+  experience         Get experience by ID (artist, album, show, etc.)
+  next-page          Fetch a pagination cursor URL returned by a prior Spotify response
+  save               Save an item to the user's library
+  create-collection  Create a new collection (playlist)
+  add-to-collection  Add items to a collection
+  update-collection  Update a collection's name
+  play               Start playback of a specific content URI or let Spotify decide
+  pause              Pause playback on the active device
+  resume             Resume paused playback on the active device
+  skip               Skip to the next item
+  previous           Go to the previous item
+  seek               Seek to a position in the currently playing item
+  set-volume         Set playback volume (0-100)
+  transfer           Transfer playback to a different device
+  now-playing        Get the current playback state
+  devices            List available Spotify Connect devices
+  get-queue          Get the current playback queue
+  add-to-queue       Add an item to the playback queue
+  wearable-play      Resolve a track and emit the `music_fulfillment` node-command params for a wearable (glasses) cold-start. Does NOT itself launch playback — it prints the params the model passes to `devices invoke music_fulfillment`, which reaches the on-device partner-fulfillment engine (search/launch/play)
+  help               Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help

@@ -1,0 +1,13 @@
+Function Health FHIR API helper CLI.
+
+Usage: function-health <COMMAND>
+
+Commands:
+  status         Check connector auth status
+  authorize-url  Build the authorization URL for whichever backend is active
+  disconnect     Remove stored credentials
+  observations   Fetch lab biomarker observations
+  documents      Fetch clinician consultation notes. Base64 JSON attachments are inlined; HTML attachments are stripped from output in v0
+
+Options:
+  -h, --help  Print help

@@ -1,0 +1,15 @@
+Use Dropbox's official remote MCP server
+
+Usage: dropbox <COMMAND>
+
+Commands:
+  status         Check OAuth state or whether the grant covers one command
+  authorize-url  Generate a Dropbox OAuth authorization URL
+  exchange-code  Exchange a Dropbox OAuth authorization code for tokens
+  refresh        Refresh the stored Dropbox access token
+  disconnect     Delete the stored Dropbox connection
+  list-tools     List the reviewed tools currently advertised by Dropbox
+  call-tool      Call one reviewed Dropbox MCP tool
+
+Options:
+  -h, --help  Print help

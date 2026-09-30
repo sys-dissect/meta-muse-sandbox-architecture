@@ -1,0 +1,2 @@
+hatch-connector-output <outlook_mail|outlook_calendar|google_calendar|plaid>
+Read bounded provider JSON from stdin; write bounded JSON to stdout.

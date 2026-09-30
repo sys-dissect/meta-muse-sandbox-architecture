@@ -1,0 +1,43 @@
+Look up live and historical flight status, delays, positions, routes, maps, airport, and airline information via FlightAware.
+
+Usage: flightaware [OPTIONS] <COMMAND>
+
+Commands:
+  status                Check whether the broker is reachable. Use --verify to call a safe read-only endpoint
+  flight                Current/recent flight status by flight ident, registration, or fa_flight_id
+  canonical-flight      Resolve canonical FlightAware flight identifier
+  create-flight-intent  File a FlightAware intent for a flight
+  position              Current position for a fa_flight_id
+  track                 Current/recent track for a fa_flight_id
+  route                 Filed route for a fa_flight_id
+  map                   Static flight map for a fa_flight_id
+  search                Search airborne flights with simplified AeroAPI query syntax
+  search-positions      Search airborne flight positions
+  search-count          Count flights matching a query
+  search-advanced       Search flights with advanced AeroAPI query syntax
+  foresight             
+  airports              List airports
+  airport               Airport metadata
+  airport-canonical     Resolve canonical airport code
+  nearby-airports       Nearby airports by coordinates or airport id
+  airport-delays        Airport delays, globally or for a single airport
+  airport-flights       Airport FIDS-style flights
+  airport-to            Flights from one airport to another
+  airport-counts        Flight counts by category for an airport
+  airport-weather       Airport weather observations or forecast
+  airport-routes        Common routes between airports
+  operators             List operators/airlines
+  operator              Operator metadata
+  operator-canonical    Resolve canonical operator code
+  operator-flights      Operator flights
+  operator-counts       Operator flight counts
+  history               
+  aircraft              
+  schedules             Scheduled flights between dates. Add other provider filters with --param key=value
+  disruptions           Disruption counts globally or for an entity id
+
+Options:
+      --timeout-secs <TIMEOUT_SECS>  HTTP timeout, in seconds [default: 30]
+      --compact                      Print compact JSON
+  -h, --help                         Print help
+  -V, --version                      Print version

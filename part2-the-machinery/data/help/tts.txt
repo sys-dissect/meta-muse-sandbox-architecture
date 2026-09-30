@@ -1,0 +1,23 @@
+Text-to-speech via Meta Shortwave API.
+
+Usage: tts [OPTIONS]
+       tts <COMMAND>
+
+Commands:
+  speak              Synthesize text directly
+  synthesize-script  Synthesize a multi-speaker script file with automatic text prep, chunking, parallel synthesis, and concatenation
+
+Options:
+      --text <TEXT>                    Text to synthesize
+      --text-stdin                     Read text to synthesize from stdin instead of argv
+      --voice <VOICE>                  Primary voice ID [default: avocado_v2:MAI_03]
+      --voice2 <VOICE2>                Secondary voice ID for multi-speaker dialogue
+      --voice-prefix <VOICE_PREFIX>    Primary voice prefix (for example "Speaker 1: ")
+      --voice-prefix2 <VOICE_PREFIX2>  Secondary voice prefix (for example "Speaker 2: ")
+      --language <LANGUAGE>            Language code [default: en]
+      --format <FORMAT>                Output format [default: mp3]
+      --speed <SPEED>                  Speech speed from 1-200 [default: 100]
+      --output <OUTPUT>                Output file path
+      --stream                         Stream raw audio bytes to stdout instead of writing an output file
+      --timeout-secs <TIMEOUT_SECS>    HTTP timeout in seconds [default: 120]
+  -h, --help                           Print help

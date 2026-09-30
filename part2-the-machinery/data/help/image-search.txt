@@ -1,0 +1,14 @@
+Search for images through Muse's Stefi image-search API
+
+Usage: image-search [OPTIONS] <QUERY>
+
+Arguments:
+  <QUERY>  A single image-search query
+
+Options:
+      --max-results <MAX_RESULTS>    Maximum number of usable results to return (1-50) [default: 3]
+      --language <LANGUAGE_CODE>     Search-result language code, such as en, fr, or pt_BR [default: en]
+      --request-id <REQUEST_ID>      Optional backend request id for tracing
+      --timeout-secs <TIMEOUT_SECS>  Per-attempt HTTP timeout [default: 30]
+      --retries <RETRIES>            Number of transient retries; values above two are capped at two [default: 2]
+  -h, --help                         Print help

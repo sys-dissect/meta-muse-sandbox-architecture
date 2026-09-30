@@ -1,0 +1,16 @@
+Use GitHub's official remote MCP server
+
+Usage: github <COMMAND>
+
+Commands:
+  status          Check OAuth state and, when connected, verify the GitHub MCP server
+  install-url     Generate the GitHub App installation URL, for orgs/accounts that have not yet installed the app
+  authorize-url   Generate a GitHub OAuth authorization URL
+  exchange-code   Exchange an OAuth authorization code for a GitHub user token
+  disconnect      Delete the stored GitHub OAuth connection
+  list-tools      List GitHub's live MCP tools and their local permission classification
+  call-read-tool  Call one locally reviewed read-only GitHub MCP tool
+  call-tool       Call any tool currently advertised by GitHub's official MCP server. This path is always write-capable and requires approval
+
+Options:
+  -h, --help  Print help

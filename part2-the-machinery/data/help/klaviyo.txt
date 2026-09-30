@@ -1,0 +1,19 @@
+Use Klaviyo's official remote MCP server
+
+Usage: klaviyo <COMMAND>
+
+Commands:
+  status           Check the connection and discover capabilities
+  authorize-url    Generate a Klaviyo OAuth authorization URL
+  exchange-code    Exchange an OAuth authorization code for tokens
+  refresh          Refresh the stored Klaviyo access token
+  disconnect       Delete the stored Klaviyo OAuth connection
+  account-details  Read basic details for the connected Klaviyo account
+  list-campaigns   List campaign metadata for one Klaviyo channel
+  list-flows       List flow metadata
+  list-metrics     List metric metadata
+  list-tools       List reviewed tools, or fetch one tool's live input and output schemas
+  call-tool        Call a reviewed operation. Use list-tools --name for its live schemas
+
+Options:
+  -h, --help  Print help

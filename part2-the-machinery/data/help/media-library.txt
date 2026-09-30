@@ -1,0 +1,14 @@
+Query the media library index
+
+Usage: media-library <COMMAND>
+
+Commands:
+  stats   Library overview: counts, date range, description coverage
+  search  Full-text search with optional filters. Returns compact ranked results
+  scan    Rich results with summaries. Requires narrowing (--ids, --after/--before, or --limit)
+  get     Full detail for a single item by media_id
+  recent  Latest uploads by upload time
+  help    Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help

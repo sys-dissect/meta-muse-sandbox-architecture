@@ -1,0 +1,40 @@
+Meta Ads helper for Jarvis.
+
+Usage: meta-ads-cli [OPTIONS] <COMMAND>
+
+Commands:
+  status                   Check connection state and, when connected, verify MCP connectivity
+  manage-consent           Open the first-party consent card to manage Meta Business access
+  disconnect-url           Return the standard Hatch connector link for disconnect confirmation
+  list-tools               List the currently exposed MCP tools
+  describe-tool            Return the complete live descriptor for one exposed MCP tool
+  estimate-budget          Price a complete campaign plan with typed arguments
+  render-campaign-summary  Render a validated campaign-summary payload for widget.create
+  render-campaign-success  Render the fixed Ads Manager link widget for a verified campaign
+  render-chart             Render a validated line or bar chart payload for widget.create
+  creative                 Prepare placement-specific creative assets without changing an Ads account
+  call-tool                Call a Meta Ads tool with a JSON arguments object
+
+Options:
+      --auth-mode <AUTH_MODE>
+          Authentication transport. Auto and first-party use the Hatch route; OAuth is retired and rejected
+
+          Possible values:
+          - auto
+          - oauth:       Retired compatibility value; Meta Ads OAuth requests are rejected
+          - first-party
+          
+          [default: auto]
+
+      --endpoint <ENDPOINT>
+          Legacy endpoint option; first-party calls always use the fixed Hatch route
+          
+          [default: https://mcp.facebook.com/ads]
+
+      --timeout-secs <TIMEOUT_SECS>
+          HTTP timeout in seconds
+          
+          [default: 120]
+
+  -h, --help
+          Print help (see a summary with '-h')

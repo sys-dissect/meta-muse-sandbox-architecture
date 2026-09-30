@@ -1,0 +1,11 @@
+Usage: hatch-healthd [OPTIONS]
+
+Options:
+      --daemon-metrics-socket <DAEMON_METRICS_SOCKET>
+          Daemon status / metrics Unix socket. healthd polls `/health` on this socket to refresh its daemon-internal cache. The socket lives in the shared `/run/hatch/daemon/` bind mount so host-side healthd can dial it without going through the runtime cell's IPv6 veth [env: JARVIS_METRICS_SOCKET=] [default: /run/hatch/daemon/metrics.sock]
+      --vault-socket <VAULT_SOCKET>
+          Vault health socket path [env: JARVIS_VAULT_SOCK=] [default: /run/hatch/vault/health.sock]
+  -h, --help
+          Print help
+  -V, --version
+          Print version

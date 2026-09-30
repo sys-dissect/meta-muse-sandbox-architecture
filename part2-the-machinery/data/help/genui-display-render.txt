@@ -1,0 +1,26 @@
+Generate and present component-based GenUI wearable cards.
+
+Usage: genui-display-render [OPTIONS] [DATA]
+
+Arguments:
+  [DATA]  Widget data. If omitted, stdin is read
+
+Options:
+      --hook-event
+          Treat stdin/DATA as a HookEvent JSON and apply post-turn guards
+      --user-query <USER_QUERY>
+          Original user query. If omitted in non-hook mode, DATA is used
+      --print-html
+          Print generated HTML to stdout
+      --print-raw-fragment
+          Print the direct GenUI inference fragment and skip parsing and presentation
+      --no-present
+          Generate HTML but do not call present_widget
+      --max-output-tokens <MAX_OUTPUT_TOKENS>
+          Override the inference output-token limit
+      --surface <SURFACE>
+          Layout and generation profile for the presentation target [default: coop] [possible values: coop, mobile]
+      --theme <THEME>
+          Color theme for the presentation target [possible values: auto, dark, light]
+  -h, --help
+          Print help

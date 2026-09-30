@@ -1,0 +1,2927 @@
+{
+ "aftership": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "asana": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "authdc": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "box-cli": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "browser-broker": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "browser-service": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "calendly": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "canva": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "device-data": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "dropbox": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "duffel": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "edits": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "etsy-cli": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "evernote": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "facebook-cli": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "feature-request": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "figma": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "flightaware": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "function-health": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "genui-display-render": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "geocode": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "ghl": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "github": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "granola-cli": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "hatch": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/ca-bundle.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "hatch-browser-lease-helper": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "hatch-doctor": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "hatch-execd": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "hatch-healthd": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "hatch-multicall": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "hatch-rescue": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "hatch-rescuectl": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "hatch-slide-style": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "hatch-vault": {
+  "noise": [
+   "Noise_N_25519_AESGCM_SHA256hatch"
+  ],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "hatch-ws-client": {
+  "noise": [
+   "Noise_XX",
+   "Noise_XX_25519_AESGCM_SHA256generate"
+  ],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "hatch-zeitgeist": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "hatch_gws_auth": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "hatch_gws_cli": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/ca-bundle.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "hatch_messenger_cli": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "health-cli": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "healthex": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "healthkit-cli": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "image-search": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "ingress-rev-proxy": {
+  "noise": [
+   "Noise_XX",
+   "Noise_XX_25519_AESGCM_SHA256assertion"
+  ],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "instagram-cli": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "instagram-messages-cli": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "klaviyo": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "linear": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "local-search": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "lovable": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "mcp-cli": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/ca-bundle.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "media-generation": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "media-library": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "meta-ads-cli": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "meta-catalog-search": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "muse-mail": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "native-comms-cli": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "notion-cli": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "onepassword": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "opentable": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "outlook-calendar": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "outlook-contacts": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "outlook-mail": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "peloton": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "philips-hue": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "places": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "plaid": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "printify": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "privsep-test-fully-isolated": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "quickbooks": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "remote-storage": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "replit": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "save-to-spotify": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/ca-bundle.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "share": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "shop-wallet-cli": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/ca-bundle.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "shopify": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "shopify-ucp-cli": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "shopping": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "slack": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "spawnd": {
+  "noise": [
+   "Noise_IK"
+  ],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/cell-anchors/hatch-egress-ca.pem",
+   "/run/hatch/cell-anchors/hatch-ingress-ca.pem",
+   "/etc/tls/credentials/fullchain.pem",
+   "/etc/tls/wildcard/fullchain.pem",
+   "/etc/tls/wildcard/privkey.pem",
+   "/run/hatch/ingress-rev-proxy/bootstrap-fullchain.pem",
+   "/run/hatch/ingress-rev-proxy/bootstrap-privkey.pem",
+   "/run/hatch/egress-tls/ca-bundle.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "spotify-api": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "stripe": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "stripe-link": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "subscription-status": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "tailscale": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "tessie-api": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "threads-cli": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "threads-messages-cli": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "ticketmaster": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "todoist": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "tts": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "vercel": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "wearables-display": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "web-search": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem",
+   "/run/hatch/egress-tls/hatch-egress-ca.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "withings": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3",
+   "TLS1.3"
+  ],
+  "alpn": [
+   "ALPN"
+  ],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "zapier": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ },
+ "zoom": {
+  "noise": [],
+  "ciphers": [
+   "AES_128_GCM",
+   "AES_256_GCM",
+   "CHACHA20_POLY1305",
+   "Ed25519",
+   "X448"
+  ],
+  "tls_versions": [
+   "TLS 1.2",
+   "TLS 1.3"
+  ],
+  "alpn": [],
+  "cert_paths": [
+   "/etc/pki/tls/certs/ca-bundle.crt",
+   "/etc/ssl/certs/ca-certificates.crt",
+   "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem",
+   "/etc/ssl/ca-bundle.pem",
+   "/etc/pki/tls/cacert.pem",
+   "/etc/ssl/cert.pem",
+   "/opt/etc/ssl/certs/ca-certificates.crt",
+   "/etc/ssl/certs/cacert.pem"
+  ],
+  "tls_libs": [
+   "rustls"
+  ]
+ }
+}

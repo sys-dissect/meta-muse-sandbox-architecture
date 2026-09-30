@@ -1,0 +1,37 @@
+Jarvis runtime installer engine
+
+Usage: spawnd [COMMAND]
+
+Commands:
+  emit-daemon-lifecycle               Prepare daemon lifecycle handoff data from the runtime-cell boundary
+  emit-mount-stop-lifecycle           Emit one mount-stop lifecycle runtime event and update local timing files
+  record-shutdown-observability       Record the fixed shutdown observability rows for an RV stop
+  drain-shutdown-observability        Drain durable shutdown observability rows left by a previous stop
+  queue-runtime-cell-bootstrap        Queue a runtime-cell bootstrap phase for best-effort runtime-event emission
+  watch-runtime-cell-bootstrap        Watch queued runtime-cell bootstrap phases and emit runtime events
+  emit-critical-failure               Emit one structured critical failure runtime event
+  rv-graft                            Graft RV identity onto the pre-booted runtime: verify the RV binds, superficially validate the resume handoff marker, ensure the os-intent ledger dir, and write the boot-id-stamped /hatch/data/resume/rv-identity-ready
+  publish-post-mount-boundaries       Relay this boot's complete post-mount readiness boundaries into the runtime cell's read-only lifecycle projection. Runs from db-preflight's ExecStartPost, after the recorder that produces the boundary record, and is additive over whatever rv-graft already published
+  append-clean-stop-proof             Append one clean-stop proof line (symlink-safe, validator grammar)
+  install                             Install a bundle to the target host
+  install-timeline                    Render a compact timeline from structured installer events
+  prepare-runtime                     Run installer-equivalent runtime prep for runtime reconciliation
+  prepare-authd-state                 Normalize authd state while temporarily holding root custody of its root
+  ensure-guest-home-mountpoints       Prepare home-publication state and mount points; print the assets verdict
+  render-systemd                      Render systemd units for host/docker profiles
+  render                              Pre-render application units for bundle packaging
+  verify-contract                     Emit contract metadata
+  ensure-worker-accounts              Ensure the per-tool `hatch-w-<tool>` privsep worker accounts exist (create-if-absent, direct /etc database edits under the shadow-utils lock; never modifies an existing entry). Internal worker-prep step and compatibility command
+  prepare-privsep-workers             Prepare every privsep worker behind one idempotent gate: reconcile its account, state directory and idmapped view, then repair deferred restricted sockets, worker-gated RPC parents, and Messenger ownership
+  repair-deferred-restricted-sockets  Promote restricted sockets backed by deferred worker groups after the exact frozen account identity exists. Missing accounts or sockets are an ordinary no-op so this can run from each socket's post-start hook
+  release-privsep-worker-views        Detach all per-tool idmapped state views when the RV lifecycle stops
+  idmap-state-dir                     Maintain one privsep tool's idmapped state-dir view under /run/hatch/worker-state/<tool>: disk state stays owned by the legacy on-disk identity while the worker unit sees it as `hatch-w-<tool>`
+  attach-cell-gate                    Attach (adopt-or-replace) the fail-closed runtime-cell egress gate: cgroup/connect4+6 eBPF programs owned by the runtime-cell service cgroup (re-attached from pre-start.sh on every cell start)
+  attach-veth-filter                  Attach (idempotent) the ingress classifier on the HOST side of the runtime-cell veth, dropping cell frames aimed at host-local destinations while proxy/DNS/ND traffic passes
+  fsop                                fd-safe filesystem operations rooted at a trusted directory, for the runtime-cell host scripts (openat2 RESOLVE_BENEATH|RESOLVE_NO_SYMLINKS from the root; never a raw path the cell can re-point)
+  scrub-env-override                  Render the cell-visible copy of /etc/hatch/env.override to stdout with secret-shaped assignments scrubbed, multiline-aware (quoted PEM blocks and backslash continuations drop whole). Shares the exact `runtime_env_key_forbidden` predicate the host-side env scrub uses, so the two can no longer drift. Used by ensure-rootfs.sh; the host file is never modified
+  help                                Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help     Print help
+  -V, --version  Print version

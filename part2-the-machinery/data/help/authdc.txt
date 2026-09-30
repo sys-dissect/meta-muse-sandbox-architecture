@@ -1,0 +1,12 @@
+Debug client for hatch-authd. Talks to its Unix socket ($JARVIS_AUTHD_SOCK or /run/hatch/auth/authd.sock) and streams responses to stdout. Runs as the invoking user; authd gates most endpoints by peer credentials, so use `sudo` for privileged calls.
+
+Usage: authdc <COMMAND>
+
+Commands:
+  file  Operate on auth-files
+  cred  Operate on dynamic credentials
+  help  Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help
+          Print help (see a summary with '-h')

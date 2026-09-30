@@ -1,0 +1,18 @@
+Search, validate, book, and manage Duffel flights
+
+Usage: duffel [OPTIONS] <COMMAND>
+
+Commands:
+  search              Search and compare flights priced for the exact passenger mix
+  seat-options        Read seat choices for one or more shortlisted offers
+  validate-booking    Refresh the offer and check every booking field without payment or approval
+  book                Validate, show one purchase approval, pay, and create the booking
+  booking-status      List owned bookings, or read one booking's current status
+  cancellation-quote  Preview cancellation eligibility, refund destination/value, and expiry
+  cancel-booking      Confirm an exact cancellation quote. This is irreversible
+  help                Print this message or the help of the given subcommand(s)
+
+Options:
+      --compact  Print compact JSON
+  -h, --help     Print help
+  -V, --version  Print version

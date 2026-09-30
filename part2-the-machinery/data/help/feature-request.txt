@@ -1,0 +1,16 @@
+File user feedback with the Muse team
+
+Usage: feature-request <COMMAND>
+
+Commands:
+  draft           Store a proposed summary without filing or submitting a report. For a new report, show the returned summary verbatim, ask for approval, and end your turn. File only after explicit approval in a later turn. For an existing report, retain the original approval and follow the skill's repeat-filing steps; the report's original summary is unchanged
+  file            File one report. The ledger records every accepted filing. Each filing makes at most one delivery attempt. Filing again can retry an unconfirmed report after 24 hours. `sent_to_developers` says whether this filing was forwarded or only recorded. After five submission attempts in a rolling hour on this VM, another filing is refused outright and records nothing. Explicit requests to join the general early access program use missing-capability/early-access-group and need no draft or second approval
+  prepare-delete  Prepare one exact report for the user's withdrawal approval
+  delete          Withdraw an approved report and irreversibly remove its local content
+  list            List current local reports and withdrawal records
+  show            Show one local report's saved content, status, and any withdrawal
+  check           Check a bounded set of unresolved local reports with the Muse team and print any it newly marks addressed. A correlated response also confirms an ambiguously delivered report. Each report prints here exactly once; `show` keeps rendering its durable review state afterward. Makes no network request when no report is due
+  help            Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help

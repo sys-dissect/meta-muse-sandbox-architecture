@@ -1,0 +1,9 @@
+Muse wrapper for Stripe Link CLI.
+
+Usage: stripe-link <LINK_ARGS>...
+
+Arguments:
+  <LINK_ARGS>...  
+
+Options:
+  -h, --help  Print help

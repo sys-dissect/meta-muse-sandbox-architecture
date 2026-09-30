@@ -1,0 +1,80 @@
+Muse Places API: rich place details
+
+Usage: places <COMMAND>
+
+Commands:
+  details  Look up details for one or more places by numeric FBID
+  detect   Resolve captured glasses frame(s) + GPS into ranked place candidates
+  help     Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help
+          Print help (see a summary with '-h')
+
+# Places CLI Help
+
+Use `places` for rich Muse place details by numeric place ID.
+
+All commands print pretty JSON to stdout.
+
+## Commands
+
+```sh
+places details <place_id> [<place_id>...] [--motivation "..."] [--num-gallery-media N] [--num-quotes N] [--product-source IG|FB|YELP|TRIPADVISOR ...] [--product-id ID] [--product-version V] [--caller-request-id ID]
+places detect --frame <path> --location "<lat>,<lng>,<timestamp_ms>[,<bssid>]" [--frame ... --location ...] [--client-id ID]
+```
+
+## Details
+
+Look up rich details for one or more places by numeric FBID.
+
+```sh
+places details 755728335673330
+places details 755728335673330 1124993194757094 356831603318230
+places details 755728335673330 --motivation "best brunch spot"
+places details 755728335673330 --product-source IG --num-gallery-media 5 --num-quotes 5
+places details 755728335673330 --product-source IG --product-source YELP
+```
+
+Output is always a map of place ID to detail object, even for one ID:
+
+```json
+{
+  "755728335673330": {
+    "...": "..."
+  }
+}
+```
+
+Options:
+
+- `--motivation`: user intent used to rank quotes and gallery items.
+- `--num-gallery-media`: maximum gallery items per place.
+- `--num-quotes`: maximum quote items per place.
+- `--product-source`: source filter. Repeat for multiple sources. Accepted values depend on backend data, commonly `IG`, `FB`, `YELP`, and `TRIPADVISOR`.
+- `--product-id`: product identifier for ranking or attribution.
+- `--product-version`: product version for ranking or attribution.
+- `--caller-request-id`: request ID for end-to-end tracing.
+
+## Detect
+
+Resolve captured glasses frame(s) plus their GPS into a ranked list of place
+candidates, via the Stefi `POST /me/place-detections` endpoint. Pass one
+`--location "latitude,longitude,timestamp_ms[,bssid]"` per `--frame`, paired by
+index. The 4th `bssid` field is optional: when the connected Wi-Fi access point
+is known, include it so the backend can match Home/Work by access point; omit it
+(or leave it empty) otherwise and matching falls back to GPS radius.
+
+```sh
+places detect --frame /path/frame0.jpg --location "42.3736,-71.1190,1784821422000"
+places detect \
+  --frame /path/f0.jpg --location "42.3736,-71.1190,1784821422000" \
+  --frame /path/f1.jpg --location "42.3737,-71.1191,1784821423000" \
+  --client-id c50_real_time
+```
+
+Output is the endpoint's ranked candidate list:
+
+```json
+{
+  "candidates": [

@@ -1,0 +1,16 @@
+Use Intuit's official QuickBooks MCP server
+
+Usage: quickbooks <COMMAND>
+
+Commands:
+  status            Check the connection, or whether the grant covers one command
+  authorize-url     Generate an Intuit OAuth authorization URL
+  exchange-code     Exchange an Intuit OAuth authorization code for user tokens
+  refresh           Refresh the stored Intuit user token
+  disconnect        Delete the stored QuickBooks connection
+  list-tools        List the reviewed tools advertised by Intuit
+  call-public-tool  Call one reviewed public tool using a 2LO app token
+  call-tool         Call one reviewed company-backed tool using the connected user's 3LO token
+
+Options:
+  -h, --help  Print help

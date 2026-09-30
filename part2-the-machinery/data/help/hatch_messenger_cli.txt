@@ -1,0 +1,25 @@
+Messenger read/write privsep wrapper.
+
+Usage: hatch_messenger_cli <COMMAND>
+
+Commands:
+  check           
+  logout          
+  connect-url     
+  disconnect-url  
+  disconnect      
+  repair          
+  call-logs       
+  contacts        
+  threads         
+  messages        
+  search          
+  sync            
+  marketplace     
+  send            
+  react           
+  unsend          
+  edit            
+
+Options:
+  -h, --help  Print help

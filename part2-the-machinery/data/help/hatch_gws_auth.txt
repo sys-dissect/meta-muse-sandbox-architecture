@@ -1,0 +1,13 @@
+Google connector OAuth helper
+
+Usage: hatch_gws_auth <PROVIDER> <COMMAND>
+
+Commands:
+  authorize-url  Create a Google OAuth authorization URL
+  help           Print this message or the help of the given subcommand(s)
+
+Arguments:
+  <PROVIDER>  Canonical connector provider name
+
+Options:
+  -h, --help  Print help

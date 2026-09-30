@@ -1,0 +1,18 @@
+Plaid API helper CLI used by the Plaid skill.
+
+Usage: plaid <COMMAND>
+
+Commands:
+  status                    
+  authorize-url             
+  disconnect                
+  accounts                  
+  transactions-get          Read all available transactions for an inclusive date range
+  transactions-sync         Read one page of changes for a workflow that owns durable state and cursors
+  investments-holdings      
+  investments-transactions  
+  liabilities               
+  transactions-recurring    
+
+Options:
+  -h, --help  Print help

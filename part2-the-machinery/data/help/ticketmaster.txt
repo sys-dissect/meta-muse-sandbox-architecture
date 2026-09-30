@@ -1,0 +1,13 @@
+Search Ticketmaster events and get seat recommendations
+
+Usage: ticketmaster <COMMAND>
+
+Commands:
+  search-events       Search for events by keyword, location, and date range
+  event-details       Get detailed information about a specific event
+  top-picks           Get seat recommendations with pricing for an event
+  seat-view-carousel  Generate a seat-view carousel HTML widget from top-picks JSON
+  help                Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help

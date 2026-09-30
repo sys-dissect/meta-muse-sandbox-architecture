@@ -1,0 +1,13 @@
+Read and send authenticated Threads messages.
+
+Usage: threads-messages-cli [OPTIONS] <COMMAND>
+
+Commands:
+  connect-url  
+  inbox        
+  thread       
+
+Options:
+      --retries <RETRIES>        Retries for transient request failures (network errors and 5xx) [default: 0]
+      --account-id <ACCOUNT_ID>  Run the command for a specific Threads account. Get available IDs from `threads-cli accounts`
+  -h, --help                     Print help

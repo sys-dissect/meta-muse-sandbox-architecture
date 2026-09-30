@@ -1,0 +1,19 @@
+Manage Outlook Calendar via the Microsoft Graph API.
+
+Usage: outlook-calendar [OPTIONS] [COMMAND]
+
+Commands:
+  status         Return connector status/connect/disconnect URLs
+  disconnect     Return a verified disconnect URL for the Outlook Calendar connector
+  authorize-url  Generate an OAuth authorization URL
+  exchange-code  Exchange an OAuth authorization code for tokens
+  list           List upcoming events from a calendar
+  get            Get a single event by ID
+  create         Create a new calendar event
+  update         Update an existing calendar event
+  delete         Delete a calendar event
+
+Options:
+      --status                       Return connector status/connect/disconnect URLs
+      --timeout-secs <TIMEOUT_SECS>  HTTP timeout in seconds [default: 30]
+  -h, --help                         Print help

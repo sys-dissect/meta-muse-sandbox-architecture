@@ -1,0 +1,80 @@
+Minimal websocket client for Jarvis daemon RPCs.
+
+Usage: hatch-ws-client [OPTIONS] <COMMAND>
+
+Commands:
+  chat-send     Send a single chat message and print the final response
+  chat-history  Fetch chat history via daemon HTTP API
+  fs            Filesystem operations via HTTP fileserver
+  activity      Activity log methods via daemon HTTP API
+  ws            Socket-level checks and generic websocket RPCs
+  noise         Generic Noise data-plane operations (one-shot request / streaming subscribe) against the ingress-rev-proxy `/v1/noise` endpoint. Unlike the global `--noise` flag (which only adapts `chat-send`), these are inherently Noise-only and need no `--noise`
+
+Options:
+      --url <URL>
+          Daemon websocket URL (falls back to JARVIS_WS_ADDR env)
+          
+          [default: ws://198.19.0.1:18789/]
+
+      --app-id <APP_ID>
+          Caller app attribution; required for new voice calls. No default identity
+          
+          [env: JARVIS_CLIENT_APP_ID=]
+
+      --fileserver-url <FILESERVER_URL>
+          Fileserver HTTPS base URL for `fs` subcommands
+          
+          [env: JARVIS_FILESERVER_URL=]
+          [default: https://127.0.0.1]
+
+      --http-api-url <HTTP_API_URL>
+          Daemon HTTP API base URL for non-streaming `activity`/`chat-history` subcommands.
+          
+          If omitted, this is derived from `--url` (with local ws default `:18789` mapped to HTTP `:18792`).
+          
+          [env: JARVIS_HTTP_API_URL=]
+          [default: ""]
+
+      --auth-token <AUTH_TOKEN>
+          JWT auth token for daemon/fileserver HTTP requests.
+          
+          Sent as `Authorization: Bearer <jwt>`. WebSocket connections use the `?auth_token=` query string (see `--url`) because the WS handshake cannot carry custom headers.
+          
+          [env: JARVIS_AUTH_TOKEN=]
+          [default: ""]
+
+      --timeout-secs <TIMEOUT_SECS>
+          Overall timeout in seconds (connect + request/response)
+          
+          [default: 60]
+
+      --danger-accept-invalid-certs
+          Accept invalid TLS certificates (self-signed, expired, wrong host). For local testing only
+
+      --http-api-socket <HTTP_API_SOCKET>
+          Daemon HTTP API Unix socket path. Overrides --http-api-url for HTTP connections
+          
+          [env: JARVIS_HTTP_API_SOCKET=]
+
+      --use-json
+          Force JSON text framing instead of auto-negotiating protobuf
+
+      --noise
+          Send over the Noise data plane (/v1/noise on the ingress-rev-proxy :4431) instead of the daemon WS — the path a real web client uses
+
+      --noise-notary-token-file <NOISE_NOTARY_TOKEN_FILE>
+          File containing the notary token for `/v1/noise` msg3 auth.
+          
+          If omitted for `/v1/noise`, the client mints one through Hen using `--noise-hen-env` and `--noise-hen-env-id` (or the env id derived from the URL host).
+
+      --noise-hen-env <NOISE_HEN_ENV>
+          Hen tier used to mint `/v1/noise` notary tokens
+          
+          [env: HATCH_HEN_ENV=]
+          [default: prod]
+
+      --noise-hen-env-id <NOISE_HEN_ENV_ID>
+          Hen environment id used to mint `/v1/noise` notary tokens.
+          
+          Defaults to the UUID prefix in `<env-id>.metaaivm.com`.
+          

@@ -1,0 +1,14 @@
+Query interface over the user's health/fitness data. `--provider healthkit` queries the user's synced Apple HealthKit data; `--provider healthconnect` queries the user's synced Google Health Connect (Android) data. Both are device-synced.
+
+Usage shape:
+  health-cli [GLOBAL OPTIONS] <COMMAND> [SUBCOMMAND] <COMMAND OPTIONS>
+  (<> required, [] optional; GLOBAL OPTIONS e.g. --timeout-secs are optional, while per-command options follow the (sub)command and some are required, e.g. --provider.)
+
+Commands (COMMAND [SUBCOMMAND]):
+  query metrics              all-day metric rollups (daily-metrics)
+  query samples              raw samples with optional local-time bounds
+  query sessions             discrete sessions: sleep, workout
+  delete                     erase stored records; destructive, one-time approval
+  status                     HealthKit data-sync status
+  auth connect | disconnect  connect/disconnect guidance
+  nutrition <SUBCOMMAND>     meal logging, food lookup, structured nutrition queries

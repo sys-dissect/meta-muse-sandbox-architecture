@@ -1,0 +1,14 @@
+Use Shopify's official merchant MCP server
+
+Usage: shopify <COMMAND>
+
+Commands:
+  status         Check OAuth state and verify Shopify's reviewed MCP catalogue
+  authorize-url  Generate the Shopify OAuth authorization URL
+  exchange-code  Exchange a Shopify OAuth authorization code using PKCE
+  disconnect     Delete the stored Shopify connection
+  list-tools     List the reviewed tools currently advertised by Shopify
+  call-tool      Call one reviewed Shopify MCP tool
+
+Options:
+  -h, --help  Print help

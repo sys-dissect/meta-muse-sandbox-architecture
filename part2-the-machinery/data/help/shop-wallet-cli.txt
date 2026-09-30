@@ -1,0 +1,9 @@
+Hatch policy wrapper for Shopify's Shop wallet CLI.
+
+Usage: shop-wallet-cli <SHOP_ARGS>...
+
+Arguments:
+  <SHOP_ARGS>...  
+
+Options:
+  -h, --help  Print help
