@@ -71,8 +71,8 @@ ALIGNMENT_SYNTHESIS.md      REPAIR_THREADS.yaml
 
 1. **Rupture & Friction Detection:** The dreamer parses whether the user pushed back against unrequested proposals, expressed annoyance at verbose responses, or corrected tool usage.
 2. **Dynamic Register Calibration:** In `ALIGNMENT_SYNTHESIS.md`, the agent dynamically recalibrates its persona:
-   > *"His terseness is a complete register — 'Send to both', 'Go on', '7309' each moved work forward without a wasted word; read fast-typed messages for intent and never flag typos... match his technical register and give tested, verifiable results rather than assurances."*
-3. **Conversational Repair Threads:** When an alignment issue is detected (e.g. suggesting an unwanted watchdog), an entry is written to `REPAIR_THREADS.yaml` to ensure future sessions actively avoid repeating the mistake.
+   > *"Their concise directives represent a complete operational register — brief confirmations like 'Approved' or 'Next' advance execution without conversational filler; interpret concise notes for core intent and provide verifiable data points rather than conversational assurances."*
+3. **Conversational Repair Threads:** When an alignment issue is detected (e.g. proposing an unrequested recurring task), an entry is written to `REPAIR_THREADS.yaml` to ensure future sessions actively avoid repeating the mistake.
 
 ---
 
@@ -161,7 +161,7 @@ The defining security pattern in Meta Muse is the **complete decoupling of autho
 
 ### Case Study: Live In-Flight Output Scrubbing & Agent Re-Steering
 
-During diagnostic probing of the container environment (Diagnostic Session 1, turn 1146), an empirical demonstration of Sentinel's active stream filter was captured:
+During diagnostic probing of the container environment (during diagnostic probing), an empirical demonstration of Sentinel's active stream filter was captured:
 
 1. **The Trigger:** The agent executed a shell diagnostic command dumping system environment variables into an evidence report. The output contained the container's raw HTTP egress proxy credentials (`https_proxy=http://hatch-runtime:[TOKEN]@hatch-egress-proxy:3128`).
 2. **The Interception:** Before the raw output could be written into the model's conversation history, Sentinel's streaming classifier intercepted the event.

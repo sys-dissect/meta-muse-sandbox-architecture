@@ -89,7 +89,7 @@ This research builds on and cross-verifies earlier disclosures, binary teardowns
 │       └── help/
 └── part3-the-mind/                  # Track 3: Cognitive Engine & Sentinel Whitepaper
     ├── README.md                    # Multi-cadence loops, dreaming, and Sentinel security
-    └── references/                  # Sanitized architecture references
+    └── references/                  # Synthetic examples of architecture references
         ├── alignment_synthesis_sample.md
         ├── hatch_hook_runtime.sh    # silent() vs wake() event throttling wrapper
         ├── inferred_goal_leads_sample.md
@@ -107,7 +107,7 @@ This research builds on and cross-verifies earlier disclosures, binary teardowns
 
 * 📁 [**Part 3: The Mind — Cognitive Cadences, State Loops & Sentinel Security**](part3-the-mind/README.md)
   * Autonomous agent systems whitepaper deconstructing the multi-frequency cognitive daemons, nightly alignment synthesis, latent goal inference engine (`INFERRED_GOAL_LEADS`), shell hook throttling (`silent()` vs `wake()`), and Sentinel IPC architecture.
-  * [Architecture References](part3-the-mind/references/) (sanitized cognitive engine schemas and hook runtime)
+  * [Architecture References](part3-the-mind/references/) (synthetic examples of cognitive engine schemas and hook runtime)
 
 ---
 

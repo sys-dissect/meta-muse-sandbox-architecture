@@ -1,7 +1,7 @@
 # VM Boundary Probe — Report
 
-Date: 2026-09-29 ~10:30 IST (Asia/Kolkata)
-Scope: `/tmp/boundary-probe/` only. No system configuration modified, no processes killed, no exploits attempted.
+Date: 2026-09-29 ~05:00 UTC
+Scope: `/tmp/probe-1/` only. No system configuration modified, no processes killed, no exploits attempted.
 Method: each check run via shell; command, raw output and verdict recorded. Evidence files in `ev/`.
 Secrets: proxy credentials and internal trace metadata are redacted in this report (see `ev/01-env-redacted.txt` for the safe env listing).
 
@@ -95,12 +95,12 @@ JARVIS_PRESENTATION_LOCALE=en-US
 NODE_EXTRA_CA_CERTS=/run/hatch/egress-tls/ca-bundle.pem
 JARVIS_FQDN=cell.internal.vm
 JARVIS_TIER=prod
-PWD=/tmp/boundary-probe
+PWD=/tmp/probe-1
 JARVIS_EGRESS_APPROVAL_ADMIN_SOCK=/run/hatch/sentinel/egress-approvals-admin.sock
 JARVIS_INFERENCE_PROXY_SOCK=/run/hatch/proxy/inference.sock
 JARVIS_TELEMETRY_PROXY_SOCK=/run/hatch/telemetry/telemetry.sock
 JARVIS_TOOL_CALL_ID=[CALL_ID_REDACTED]
-TZ=Asia/Kolkata
+TZ=[REDACTED]
 NODE_USE_ENV_PROXY=1
 JARVIS_SESSION_ID=[SESSION_ID_REDACTED]
 HOME=/home/hatch
@@ -116,7 +116,7 @@ WGETRC=/opt/hatch/runtime-cell/etc/wgetrc
 JARVIS_STEFI_PROXY_SOCK=/run/hatch/proxy/stefi.sock
 JARVIS_CD_PINNED=0
 JARVIS_IS_ASSIGNED=1
-NO_PROXY=localhost,127.0.0.1,::1,[::1],198.19.0.1,198.19.0.2,fd8b:4f84:7d32:99::1,[fd8b:4f84:7d32:99::1],fd8b:4f84:7d32:99::2,[fd8b:4f84:7d32:99::2]
+NO_PROXY=localhost,127.0.0.1,::1,[::1],198.19.0.1,198.19.0.2,fdXX:XXXX:XXXX:XX::1,[fdXX:XXXX:XXXX:XX::1],fdXX:XXXX:XXXX:XX::2,[fdXX:XXXX:XXXX:XX::2]
 CURL_CA_BUNDLE=/run/hatch/egress-tls/ca-bundle.pem
 JARVIS_VM_COMPUTE_REGION=zch
 JARVIS_RUNTIME_CONTEXT_TOKEN=[REDACTED]
@@ -130,7 +130,7 @@ JARVIS_HATCHLING_ID=[CELL_ID_REDACTED]
 JARVIS_SECURITY_SOCK=/run/hatch/safety/security.sock
 SSL_CERT_FILE=/run/hatch/egress-tls/ca-bundle.pem
 JARVIS_HOME=/home/hatch
-JARVIS_USER_TIMEZONE=Asia/Kolkata
+JARVIS_USER_TIMEZONE=[REDACTED]
 JARVIS_CD_CHANNEL=alpha
 ALL_PROXY=http://hatch-runtime:[REDACTED]@hatch-egress-proxy:3128
 REQUESTS_CA_BUNDLE=/run/hatch/egress-tls/ca-bundle.pem
@@ -142,64 +142,6 @@ JARVIS_MEMORY_SOCK=/run/hatch/memory/memory.sock
 _=/usr/bin/env
 ```
 
-Environment (redacted; trace context omitted):
-```
-=== env (redacted) ===
-JARVIS_VM_DATA_REGION=zch
-no_proxy=localhost,127.0.0.1,::1,[::1],198.19.0.1,198.19.0.2,fd8b:4f84:7d32:99::1,[fd8b:4f84:7d32:99::1],fd8b:4f84:7d32:99::2,[fd8b:4f84:7d32:99::2]
-JARVIS_REQUEST_MODE=production
-HATCH_API_SOCKET=/run/hatch/daemon/http-api.sock
-JARVIS_PRESENTATION_LOCALE=en-US
-NODE_EXTRA_CA_CERTS=/run/hatch/egress-tls/ca-bundle.pem
-JARVIS_FQDN=cell.internal.vm
-JARVIS_TIER=prod
-PWD=/tmp/boundary-probe
-JARVIS_EGRESS_APPROVAL_ADMIN_SOCK=/run/hatch/sentinel/egress-approvals-admin.sock
-JARVIS_INFERENCE_PROXY_SOCK=/run/hatch/proxy/inference.sock
-JARVIS_TELEMETRY_PROXY_SOCK=/run/hatch/telemetry/telemetry.sock
-JARVIS_TOOL_CALL_ID=[CALL_ID_REDACTED]
-TZ=Asia/Kolkata
-NODE_USE_ENV_PROXY=1
-JARVIS_SESSION_ID=[SESSION_ID_REDACTED]
-HOME=/home/hatch
-GIT_SSL_CAINFO=/run/hatch/egress-tls/ca-bundle.pem
-JARVIS_RESCUE_SIGNAL_SOCK=/run/hatch/rescue/rescue-signal.sock
-JARVIS_BIN_DIR=/opt/hatch/bin
-JARVIS_INFERENCE_HOSTNAME=[INFERENCE_HOST_REDACTED]
-JARVIS_SANDBOX_API_SOCK=/run/hatch/sandbox-api/api.sock
-JARVIS_AUTHD_SOCK=/run/hatch/auth/authd.sock
-JARVIS_EGRESS_APPROVAL_EVENTS_SOCK=/run/hatch/daemon/egress-approvals-events.sock
-https_proxy=http://hatch-runtime:[REDACTED]@hatch-egress-proxy:3128
-WGETRC=/opt/hatch/runtime-cell/etc/wgetrc
-JARVIS_STEFI_PROXY_SOCK=/run/hatch/proxy/stefi.sock
-JARVIS_CD_PINNED=0
-JARVIS_IS_ASSIGNED=1
-NO_PROXY=localhost,127.0.0.1,::1,[::1],198.19.0.1,198.19.0.2,fd8b:4f84:7d32:99::1,[fd8b:4f84:7d32:99::1],fd8b:4f84:7d32:99::2,[fd8b:4f84:7d32:99::2]
-CURL_CA_BUNDLE=/run/hatch/egress-tls/ca-bundle.pem
-JARVIS_VM_COMPUTE_REGION=zch
-JARVIS_RUNTIME_CONTEXT_TOKEN=[REDACTED]
-JARVIS_AUTHD_INGRESS_ALLOWED_USERS=hatch-proxy-noise-ingress
-SHLVL=1
-JARVIS_DAEMON_EGRESS_APPROVAL_SOCK=/run/hatch/sentinel/daemon-egress-approvals.sock
-HTTPS_PROXY=http://hatch-runtime:[REDACTED]@hatch-egress-proxy:3128
-HTTP_PROXY=http://hatch-runtime:[REDACTED]@hatch-egress-proxy:3128
-http_proxy=http://hatch-runtime:[REDACTED]@hatch-egress-proxy:3128
-JARVIS_HATCHLING_ID=[CELL_ID_REDACTED]
-JARVIS_SECURITY_SOCK=/run/hatch/safety/security.sock
-SSL_CERT_FILE=/run/hatch/egress-tls/ca-bundle.pem
-JARVIS_HOME=/home/hatch
-JARVIS_USER_TIMEZONE=Asia/Kolkata
-JARVIS_CD_CHANNEL=alpha
-ALL_PROXY=http://hatch-runtime:[REDACTED]@hatch-egress-proxy:3128
-REQUESTS_CA_BUNDLE=/run/hatch/egress-tls/ca-bundle.pem
-AWS_CA_BUNDLE=/run/hatch/egress-tls/ca-bundle.pem
-all_proxy=http://hatch-runtime:[REDACTED]@hatch-egress-proxy:3128
-PATH=/opt/hatch/bin:/opt/hatch-image/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/hatch/skills/artifacts/scripts:/opt/hatch/skills/generate_podcast/scripts:/opt/hatch/skills/podcast/scripts:/opt/hatch/skills/spaces/scripts
-JARVIS_SENTINEL_HTTP_API_SOCKET=/run/hatch/sentinel/http-api.sock
-JARVIS_MEMORY_SOCK=/run/hatch/memory/memory.sock
-_=/usr/bin/env
-OLDPWD=/home/hatch
-```
 ### 2. Resources
 ```
 === nproc ===
@@ -504,12 +446,12 @@ Cloud Hypervisor
     inet6 ::1/128 scope host noprefixroute 
        valid_lft forever preferred_lft forever
 2: host0@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
-    link/ether 72:dc:7c:34:2f:fd brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    link/ether xx:xx:xx:xx:xx:xx brd ff:ff:ff:ff:ff:ff link-netnsid 0
     inet 198.19.0.2/30 scope global host0
        valid_lft forever preferred_lft forever
-    inet6 fd8b:4f84:7d32:99::2/64 scope global 
+    inet6 fdXX:XXXX:XXXX:XX::2/64 scope global 
        valid_lft forever preferred_lft forever
-    inet6 fe80::70dc:7cff:fe34:2ffd/64 scope link 
+    inet6 fe80::[REDACTED]/64 scope link 
        valid_lft forever preferred_lft forever
 === ip route ===
 default via 198.19.0.1 dev host0 
@@ -523,7 +465,7 @@ Netid State Recv-Q Send-Q Local Address:Port Peer Address:PortProcess
 # content is stable across boots; nspawn is configured with ResolvConf=off so it
 # does not manage this file.
 nameserver 198.19.0.1
-nameserver fd8b:4f84:7d32:99::1
+nameserver fdXX:XXXX:XXXX:XX::1
 options edns0 trust-ad
 === dig example.com ===
 198.18.228.83
@@ -584,14 +526,14 @@ Date: Tue, 29 Sep 2026 04:59:50 GMT
 Content-Type: application/json
 CF-RAY: a4286bbb98a2b5ed-SEA
 Cache-Control: public, immutable, max-age=31557600
-set-cookie: __cf_bm=et1ZES2kbYnHHcp840mIgWzr_96PLy2i3iecvV9X1w8-1790657990.9725766-1.0.1.1-qz.aYT64ib8VjlL5bpNpj5OGnZvcdXKgmFIim548cUefI8KYuUef.pR7d5qVxuaUmee9cmjxDtGE2xpE9BPM4Bp9wRq6s5PWkWyXuoQlihvRj5O4HtJFphkjbA8P0mgF; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Tue, 29 Sep 2026 05:29:50 GMT
+set-cookie: __cf_bm=[REDACTED]; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Tue, 29 Sep 2026 05:29:50 GMT
 [curl exit=0]
 === https://www.google.com ===
 HTTP/1.1 200 Connection Established
 
 HTTP/1.1 200 OK
 Content-Type: text/html; charset=ISO-8859-1
-Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce-zDn9cPS5U7e_LJfD6Z53Sw' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce-[REDACTED]' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
 Accept-CH: Sec-CH-Prefers-Color-Scheme
 P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
 Date: Tue, 29 Sep 2026 04:59:51 GMT
@@ -643,21 +585,21 @@ http_code=200
 rc=0
 === ss listening ===
 State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
-LISTEN 0      0          127.0.0.1:18080      0.0.0.0:*    users:(("python3",pid=13118,fd=3))
+LISTEN 0      0          127.0.0.1:18080      0.0.0.0:*    users:(("python3",pid=[PID],fd=3))
 server stopped
 ```
 
 ### 5e. Network (proxy and DNS)
 ```
 === proxy env ===
-no_proxy=localhost,127.0.0.1,::1,[::1],198.19.0.1,198.19.0.2,fd8b:4f84:7d32:99::1,[fd8b:4f84:7d32:99::1],fd8b:4f84:7d32:99::2,[fd8b:4f84:7d32:99::2]
+no_proxy=localhost,127.0.0.1,::1,[::1],198.19.0.1,198.19.0.2,fdXX:XXXX:XXXX:XX::1,[fdXX:XXXX:XXXX:XX::1],fdXX:XXXX:XXXX:XX::2,[fdXX:XXXX:XXXX:XX::2]
 JARVIS_TRACE_CONTEXT=[internal runtime metadata omitted]
 JARVIS_INFERENCE_PROXY_SOCK=/run/hatch/proxy/inference.sock
 JARVIS_TELEMETRY_PROXY_SOCK=/run/hatch/telemetry/telemetry.sock
 NODE_USE_ENV_PROXY=1
 https_proxy=http://hatch-runtime:[REDACTED]@hatch-egress-proxy:3128
 JARVIS_STEFI_PROXY_SOCK=/run/hatch/proxy/stefi.sock
-NO_PROXY=localhost,127.0.0.1,::1,[::1],198.19.0.1,198.19.0.2,fd8b:4f84:7d32:99::1,[fd8b:4f84:7d32:99::1],fd8b:4f84:7d32:99::2,[fd8b:4f84:7d32:99::2]
+NO_PROXY=localhost,127.0.0.1,::1,[::1],198.19.0.1,198.19.0.2,fdXX:XXXX:XXXX:XX::1,[fdXX:XXXX:XXXX:XX::1],fdXX:XXXX:XXXX:XX::2,[fdXX:XXXX:XXXX:XX::2]
 JARVIS_AUTHD_INGRESS_ALLOWED_USERS=hatch-proxy-noise-ingress
 HTTPS_PROXY=http://hatch-runtime:[REDACTED]@hatch-egress-proxy:3128
 HTTP_PROXY=http://hatch-runtime:[REDACTED]@hatch-egress-proxy:3128
@@ -676,42 +618,42 @@ rc=0
 ```
 === ps aux (head 25) ===
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root           1  0.0  0.1  20932 12260 ?        Ss   07:24   0:00 /usr/lib/systemd/systemd
-root          17  0.0  0.1  34096 10988 ?        Ss   07:24   0:00 /usr/lib/systemd/systemd-journald
-root          67  0.8  6.6 3065816 540044 ?      Sl   07:24   1:36 /opt/hatch/bin/hatch daemon --runtime-cell-leader=2061
-root         727  0.0  0.1 1064376 9984 ?        S    07:24   0:00 /opt/hatch/bin/hatch-execd --runtime-cell-leader=2061
-root       13144  0.0  0.0   4344  3636 ?        S    10:30   0:00 /bin/bash --norc --noprofile -c umask 0007; cd /tmp/boundary-probe && { echo '=== proxy env ==='; env | grep -iE 'proxy' | sed -E 's/(proxy=.*:\/\/[^:]+:)[^@]+@/\1[REDACTED]@/i'; echo '=== getent hosts github.com ==='; getent hosts github.com 2>&1; echo '=== getent hosts pypi.org ==='; getent hosts pypi.org 2>&1; echo '=== real DNS via 8.8.8.8 ==='; dig +short @8.8.8.8 github.com 2>&1 | head -3; echo "rc=$?"; } > ev/05e-proxy.txt 2>&1; echo done; cat ev/05e-proxy.txt
-root       13145  0.0  0.0   4344  3468 ?        S    10:30   0:00 /bin/bash --norc --noprofile -c umask 0007; cd /tmp/boundary-probe && { echo '=== ps aux (head 25) ==='; ps aux 2>&1 | head -25; echo '=== pstree ==='; pstree -p 2>&1 | head -20 || ps -ef --forest 2>&1 | head -25; echo '=== systemctl is-system-running ==='; systemctl is-system-running 2>&1; echo "rc=$?"; echo '=== journalctl -n 20 ==='; journalctl -n 20 2>&1 | head -25; echo "rc=$?"; echo '=== dmesg head ==='; dmesg 2>&1 | head -10; echo "rc=$?"; echo '=== strace self ==='; timeout 3 strace -f -e trace=none /bin/true 2>&1 | tail -3; echo "strace_rc=$?"; } > ev/06-process.txt 2>&1; echo done; wc -l ev/06-process.txt
-root       13150  0.0  0.0   7916  4356 ?        R    10:30   0:00 ps aux
-root       13151  0.0  0.0   2728  1564 ?        S    10:30   0:00 head -25
-root       13153  0.0  0.0  54472  2536 ?        R    10:30   0:00 dig +short @8.8.8.8 github.com
-root       13154  0.0  0.0   2728  1704 ?        S    10:30   0:00 head -3
+root           1  0.0  0.1  20932 12260 ?        Ss   01:54   0:00 /usr/lib/systemd/systemd
+root          17  0.0  0.1  34096 10988 ?        Ss   01:54   0:00 /usr/lib/systemd/systemd-journald
+root          67  0.8  6.6 3065816 540044 ?      Sl   01:54   1:36 /opt/hatch/bin/hatch daemon --runtime-cell-leader=2061
+root         727  0.0  0.1 1064376 9984 ?        S    01:54   0:00 /opt/hatch/bin/hatch-execd --runtime-cell-leader=2061
+root       [PID]  0.0  0.0   4344  3636 ?        S    05:00   0:00 /bin/bash --norc --noprofile -c umask 0007; cd /tmp/probe-1 && { echo '=== proxy env ==='; env | grep -iE 'proxy' | sed -E 's/(proxy=.*:\/\/[^:]+:)[^@]+@/\1[REDACTED]@/i'; echo '=== getent hosts github.com ==='; getent hosts github.com 2>&1; echo '=== getent hosts pypi.org ==='; getent hosts pypi.org 2>&1; echo '=== real DNS via 8.8.8.8 ==='; dig +short @8.8.8.8 github.com 2>&1 | head -3; echo "rc=$?"; } > ev/05e-proxy.txt 2>&1; echo done; cat ev/05e-proxy.txt
+root       [PID]  0.0  0.0   4344  3468 ?        S    05:00   0:00 /bin/bash --norc --noprofile -c umask 0007; cd /tmp/probe-1 && { echo '=== ps aux (head 25) ==='; ps aux 2>&1 | head -25; echo '=== pstree ==='; pstree -p 2>&1 | head -20 || ps -ef --forest 2>&1 | head -25; echo '=== systemctl is-system-running ==='; systemctl is-system-running 2>&1; echo "rc=$?"; echo '=== journalctl -n 20 ==='; journalctl -n 20 2>&1 | head -25; echo "rc=$?"; echo '=== dmesg head ==='; dmesg 2>&1 | head -10; echo "rc=$?"; echo '=== strace self ==='; timeout 3 strace -f -e trace=none /bin/true 2>&1 | tail -3; echo "strace_rc=$?"; } > ev/06-process.txt 2>&1; echo done; wc -l ev/06-process.txt
+root       [PID]  0.0  0.0   7916  4356 ?        R    05:00   0:00 ps aux
+root       [PID]  0.0  0.0   2728  1564 ?        S    05:00   0:00 head -25
+root       [PID]  0.0  0.0  54472  2536 ?        R    05:00   0:00 dig +short @8.8.8.8 github.com
+root       [PID]  0.0  0.0   2728  1704 ?        S    05:00   0:00 head -3
 === pstree ===
 systemd(1)---systemd-journal(17)
 === systemctl is-system-running ===
 running
 rc=0
 === journalctl -n 20 ===
-Sep 29 07:24:27 htch-runtime update-ca-certificates[79]: 0 added, 0 removed; done.
-Sep 29 07:24:27 htch-runtime update-ca-certificates[79]: Running hooks in /etc/ca-certificates/update.d...
-Sep 29 07:24:27 htch-runtime update-ca-certificates[79]: done.
-Sep 29 07:24:27 htch-runtime systemd[1]: hatch-ca-trust.service: Deactivated successfully.
-Sep 29 07:24:27 htch-runtime systemd[1]: Finished hatch-ca-trust.service - Refresh guest CA trust from host-published hatch anchors.
-Sep 29 07:24:27 htch-runtime systemd[1]: Startup finished in 2.263s.
-Sep 29 07:24:36 htch-runtime systemd[1]: Starting hatch-ca-trust.service - Refresh guest CA trust from host-published hatch anchors...
-Sep 29 07:24:38 htch-runtime update-ca-certificates[753]: Updating certificates in /etc/ssl/certs...
-Sep 29 07:24:40 htch-runtime update-ca-certificates[1648]: rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
-Sep 29 07:24:40 htch-runtime update-ca-certificates[753]: 2 added, 0 removed; done.
-Sep 29 07:24:40 htch-runtime update-ca-certificates[753]: Running hooks in /etc/ca-certificates/update.d...
-Sep 29 07:24:40 htch-runtime update-ca-certificates[753]: done.
-Sep 29 07:24:40 htch-runtime systemd[1]: hatch-ca-trust.service: Deactivated successfully.
-Sep 29 07:24:40 htch-runtime systemd[1]: Finished hatch-ca-trust.service - Refresh guest CA trust from host-published hatch anchors.
-Sep 29 07:24:40 htch-runtime systemd[1]: hatch-ca-trust.service: Consumed 1.116s CPU time.
-Sep 29 10:29:37 htch-runtime sudo[12957]:     root : PWD=/tmp/boundary-probe ; USER=root ; COMMAND=/usr/bin/true
-Sep 29 10:29:37 htch-runtime sudo[12957]: pam_limits(sudo:session): Could not set limit for 'core' to soft=0, hard=-1: Operation not permitted; uid=0,euid=0
-Sep 29 10:29:37 htch-runtime sudo[12957]: pam_limits(sudo:session): Could not set limit for 'nofile' to soft=1024, hard=524288: Operation not permitted; uid=0,euid=0
-Sep 29 10:29:37 htch-runtime sudo[12957]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
-Sep 29 10:29:37 htch-runtime sudo[12957]: pam_unix(sudo:session): session closed for user root
+Sep 29 01:54:27 htch-runtime update-ca-certificates[79]: 0 added, 0 removed; done.
+Sep 29 01:54:27 htch-runtime update-ca-certificates[79]: Running hooks in /etc/ca-certificates/update.d...
+Sep 29 01:54:27 htch-runtime update-ca-certificates[79]: done.
+Sep 29 01:54:27 htch-runtime systemd[1]: hatch-ca-trust.service: Deactivated successfully.
+Sep 29 01:54:27 htch-runtime systemd[1]: Finished hatch-ca-trust.service - Refresh guest CA trust from host-published hatch anchors.
+Sep 29 01:54:27 htch-runtime systemd[1]: Startup finished in 2.263s.
+Sep 29 01:54:36 htch-runtime systemd[1]: Starting hatch-ca-trust.service - Refresh guest CA trust from host-published hatch anchors...
+Sep 29 01:54:38 htch-runtime update-ca-certificates[753]: Updating certificates in /etc/ssl/certs...
+Sep 29 01:54:40 htch-runtime update-ca-certificates[1648]: rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+Sep 29 01:54:40 htch-runtime update-ca-certificates[753]: 2 added, 0 removed; done.
+Sep 29 01:54:40 htch-runtime update-ca-certificates[753]: Running hooks in /etc/ca-certificates/update.d...
+Sep 29 01:54:40 htch-runtime update-ca-certificates[753]: done.
+Sep 29 01:54:40 htch-runtime systemd[1]: hatch-ca-trust.service: Deactivated successfully.
+Sep 29 01:54:40 htch-runtime systemd[1]: Finished hatch-ca-trust.service - Refresh guest CA trust from host-published hatch anchors.
+Sep 29 01:54:40 htch-runtime systemd[1]: hatch-ca-trust.service: Consumed 1.116s CPU time.
+Sep 29 04:59:37 htch-runtime sudo[[PID]]:     root : PWD=/tmp/probe-1 ; USER=root ; COMMAND=/usr/bin/true
+Sep 29 04:59:37 htch-runtime sudo[[PID]]: pam_limits(sudo:session): Could not set limit for 'core' to soft=0, hard=-1: Operation not permitted; uid=0,euid=0
+Sep 29 04:59:37 htch-runtime sudo[[PID]]: pam_limits(sudo:session): Could not set limit for 'nofile' to soft=1024, hard=524288: Operation not permitted; uid=0,euid=0
+Sep 29 04:59:37 htch-runtime sudo[[PID]]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Sep 29 04:59:37 htch-runtime sudo[[PID]]: pam_unix(sudo:session): session closed for user root
 rc=0
 === dmesg head ===
 dmesg: read kernel buffer failed: Operation not permitted
@@ -725,7 +667,7 @@ strace_rc=0
 ```
 === fallocate 500M ===
 rc=0
--rw-rw---- 1 root root 500M Sep 29 10:30 /tmp/boundary-probe/ev/bigfile.bin
+-rw-rw---- 1 root root 500M Sep 29 05:00 /tmp/probe-1/ev/bigfile.bin
 deleted rc=0
 === 60s process ===
 slept 60s rc=0

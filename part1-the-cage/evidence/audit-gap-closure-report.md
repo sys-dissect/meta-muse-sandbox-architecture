@@ -1,19 +1,19 @@
 # Sandbox Boundary Audit: Gap Closure & Verification Report
 Timestamp: 2026-09-29 06:43:36 UTC
-Host Uptime:  12:13:36 up  4:49,  0 user,  load average: 0.07, 0.05, 0.07
+Host Uptime:  06:43:36 up  4:49,  0 user,  load average: 0.07, 0.05, 0.07
 
 ## 1. Session Durability & Lifecycle State
 ```
 PID 1 Info:
     PID COMMAND                          STARTED     ELAPSED
-      1 systemd         Tue Sep 29 07:24:24 2026    04:49:11
+      1 systemd         Tue Sep 29 01:54:24 2026    04:49:11
 
 Checking Previous Session Markers:
-FOUND: /home/hatch/.probe2-marker | SHA256: b3599ca50de661d104b3b31877b23f533bff0062228e8d537c258933a0e5b43d
-FOUND: /root/.probe2-marker      | SHA256: b3599ca50de661d104b3b31877b23f533bff0062228e8d537c258933a0e5b43d
-FOUND: /var/tmp/.probe2-marker   | SHA256: b3599ca50de661d104b3b31877b23f533bff0062228e8d537c258933a0e5b43d
-FOUND: /etc/.probe2-marker       | SHA256: b3599ca50de661d104b3b31877b23f533bff0062228e8d537c258933a0e5b43d
-FOUND: /tmp/.probe2-marker       | SHA256: b3599ca50de661d104b3b31877b23f533bff0062228e8d537c258933a0e5b43d
+FOUND: /home/hatch/.probe2-marker | SHA256: [HASH REDACTED]
+FOUND: /root/.probe2-marker      | SHA256: [HASH REDACTED]
+FOUND: /var/tmp/.probe2-marker   | SHA256: [HASH REDACTED]
+FOUND: /etc/.probe2-marker       | SHA256: [HASH REDACTED]
+FOUND: /tmp/.probe2-marker       | SHA256: [HASH REDACTED]
 ```
 
 ## 2. Complete TLS Chain & Intermediate CA Details
@@ -25,7 +25,7 @@ subject=CN = Hatch Sandbox Egress CA, O = Hatch
 issuer=CN = Hatch Sandbox Egress CA, O = Hatch
 notBefore=Jan  1 00:00:00 1975 GMT
 notAfter=Jan  1 00:00:00 4096 GMT
-SHA1 Fingerprint=04:91:25:C8:1B:74:FC:A3:DE:A7:F5:7C:C6:EC:4B:D7:28:92:2D:BB
+SHA1 Fingerprint=[REDACTED]
 --- File: /run/hatch/cell-anchors/hatch-ingress-ca.pem ---
 subject=C = US, O = Meta Platforms Inc., CN = Meta Hatch Intermediate CA
 issuer=C = US, O = Meta Platforms Inc., CN = Meta Hatch Root CA
@@ -39,7 +39,7 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
-            50:06:c3:f7:2a:e6:ef:b6:26:a5:d5:ec:57:90:1c:9b:c4:90:0a:ec
+            [REDACTED]
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: CN = Hatch Sandbox Egress CA, O = Hatch
         Validity
@@ -50,28 +50,21 @@ Certificate:
             Public Key Algorithm: id-ecPublicKey
                 Public-Key: (256 bit)
                 pub:
-                    04:5e:b5:e6:06:3d:84:27:48:66:0d:f6:91:10:7d:
-                    5f:29:bc:61:b5:89:04:da:41:1f:d6:07:87:39:d3:
-                    ef:23:93:de:90:6e:f8:84:f8:09:6f:aa:b4:d1:78:
-                    31:14:71:6f:0b:ba:3a:a2:09:6e:b1:5c:a8:3d:d9:
-                    99:3a:04:69:fd
+                    [REDACTED]
                 ASN1 OID: prime256v1
                 NIST CURVE: P-256
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Certificate Sign, CRL Sign
             X509v3 Subject Key Identifier: 
-                33:3D:6A:01:A1:DE:62:3D:ED:CE:A4:A7:C5:1D:A8:A0:D1:9D:50:14
+                [REDACTED]
             X509v3 Basic Constraints: critical
                 CA:TRUE
             Netscape Comment: 
                 Don't panic - generated locally inside your Hatch instance.
     Signature Algorithm: ecdsa-with-SHA256
     Signature Value:
-        30:44:02:20:13:bb:4c:f6:2e:de:70:83:ab:fb:a9:e8:03:1d:
-        e9:28:c6:de:00:63:ec:d6:43:da:d0:b6:a2:8b:bc:df:67:ed:
-        02:20:25:d1:19:cd:d7:2d:e2:ab:ce:e9:a6:d0:4c:56:98:76:
-        4d:78:cb:06:98:a7:6e:6b:f4:66:6e:04:f0:12:5c:aa
+        [REDACTED]
 
 Certificate Subject: subject=C = US, O = Meta Platforms Inc., CN = Meta Hatch Intermediate CA
 Certificate:
@@ -129,11 +122,11 @@ Certificate:
 
 ### Arbitrary SNI Interception Test
 ```
-* Connected to hatch-egress-proxy (fd8b:4f84:7d32:99::1) port 3128
+* Connected to hatch-egress-proxy (fdXX:XXXX:XXXX:XX::1) port 3128
 < HTTP/1.1 200 Connection Established
 *  subject: CN=internal.unauthorized.local
 *  subjectAltName: host "internal.unauthorized.local" matched cert's "internal.unauthorized.local"
 *  issuer: CN=Hatch Sandbox Egress CA; O=Hatch
 ```
 
---- Audit Complete. Report written to /tmp/audit-probe3/AUDIT_GAP_CLOSURE_REPORT.md ---
+--- Audit Complete. Report written to /tmp/probe-3/AUDIT_GAP_CLOSURE_REPORT.md ---

@@ -96,8 +96,8 @@ This paper uses three confidence labels:
 
 | Probe | Time window | Primary purpose |
 |---|---:|---|
-| Boundary probe | ~10:30 IST | Baseline identity, resources, mounts, network |
-| Gap probe | ~11:30 IST | Namespaces, direct-path tests, TLS, memory |
+| Boundary probe | ~05:00 UTC | Baseline identity, resources, mounts, network |
+| Gap probe | ~06:00 UTC | Namespaces, direct-path tests, TLS, memory |
 | Telemetry audit | 06:38 UTC | VSOCK, syscall matrix, ports, clocks |
 | Gap closure | 06:43 UTC | Marker recheck, CA detail, Host/SNI behavior |
 
@@ -337,7 +337,7 @@ The network namespace exposed:
 ```text
 lo      127.0.0.1/8, ::1/128
 host0   198.19.0.2/30
-        fd8b:4f84:7d32:99::2/64
+        fdXX:XXXX:XXXX:XX::2/64
 default via 198.19.0.1 dev host0
 ```
 

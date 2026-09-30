@@ -1,6 +1,6 @@
 # Sandbox Telemetry & Resource Accounting Audit
 
-Date: 2026-09-29 ~12:05 IST (Asia/Kolkata). Non-destructive, diagnostic only.
+Date: 2026-09-29 ~06:35 UTC. Non-destructive, diagnostic only.
 No sockets under `/run/hatch/` were connected to; no cgroup files written; no config changed.
 
 ## 1. Persistence State
@@ -16,13 +16,13 @@ Exact paths checked (`$path/marker`):
 | `/var/tmp/marker` | NOT FOUND |
 
 Supplementary: the `.probe2-marker` files written ~40 min earlier (probe2, section I)
-are all still present with identical sha256 (`b3599ca5…0e5b43d`):
+are all still present with identical sha256 (`[HASH REDACTED]`):
 
 - `/home/hatch/.probe2-marker`, `/root/.probe2-marker`, `/etc/.probe2-marker`,
   `/tmp/.probe2-marker`, `/var/tmp/.probe2-marker` — all FOUND, hashes match.
 
 Caveat (FACT): no boundary reset (reboot) occurred between the probe2 writes and
-this check — PID 1 (`systemd`) start time is unchanged (07:24 today) and these are
+this check — PID 1 (`systemd`) start time is unchanged (01:54 UTC today) and these are
 separate shells in one continuous session. So cross-reset persistence is
 **NOT DETERMINABLE** from this data; what is confirmed is durability across
 exec sessions (fresh shells). The literal `marker` files were simply never created.
